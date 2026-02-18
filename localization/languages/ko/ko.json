@@ -44,38 +44,38 @@
 "TYPES.Item.weapon": "무기",
 "TYPES.Item.weaponPl": "무기들",
 "DND5E.title": "던전 앤 드래곤 5판",
-  "DND5E.AbbreviationCR": "도전지수",
-  "DND5E.AbbreviationConc": "집중",
-  "DND5E.AbbreviationDC": "난이도",
-  "DND5E.AbbreviationKg": "kg",
-  "DND5E.AbbreviationLR": "긴 휴식",
-  "DND5E.AbbreviationLevel": "레벨",
-  "DND5E.AbbreviationLbs": "lbs.",
-  "DND5E.AbbreviationSR": "짧은 휴식",
-  "DND5E.Ability": "능력치",
-  "DND5E.Abilities": "능력치",
-  "DND5E.AbilityStr": "근력",
-  "DND5E.AbilityStrAbbr": "근력",
-  "DND5E.AbilityCon": "건강",
-  "DND5E.AbilityConAbbr": "건강",
-  "DND5E.AbilityDex": "민첩",
-  "DND5E.AbilityDexAbbr": "민첩",
-  "DND5E.AbilityInt": "지능",
-  "DND5E.AbilityIntAbbr": "지능",
-  "DND5E.AbilityWis": "지혜",
-  "DND5E.AbilityWisAbbr": "지혜",
-  "DND5E.AbilityCha": "매력",
-  "DND5E.AbilityChaAbbr": "매력",
-  "DND5E.AbilityHon": "명예",
-  "DND5E.AbilityHonAbbr": "명예",
-  "DND5E.AbilitySan": "정신력",
-  "DND5E.AbilitySanAbbr": "정신력",
-  "DND5E.AbilityScore": "능력 점수",
-  "DND5E.AbilityScorePl": "능력 점수들",
-  "DND5E.AbilityScoreL": "{ability} 점수",
-  "DND5E.AbilityScoreMax": "최대 능력 점수",
-  "DND5E.AbilityModifier": "능력 수정치",
-  "DND5E.AbilityPromptText": "{ability} 판정 유형을 선택하세요.",
+"DND5E.AbbreviationCR": "도전지수",
+"DND5E.AbbreviationConc": "집중",
+"DND5E.AbbreviationDC": "난이도",
+"DND5E.AbbreviationKg": "kg",
+"DND5E.AbbreviationLR": "긴 휴식",
+"DND5E.AbbreviationLevel": "레벨",
+"DND5E.AbbreviationLbs": "lbs.",
+"DND5E.AbbreviationSR": "짧은 휴식",
+"DND5E.Ability": "능력치",
+"DND5E.Abilities": "능력치",
+"DND5E.AbilityStr": "근력",
+"DND5E.AbilityStrAbbr": "근력",
+"DND5E.AbilityCon": "건강",
+"DND5E.AbilityConAbbr": "건강",
+"DND5E.AbilityDex": "민첩",
+"DND5E.AbilityDexAbbr": "민첩",
+"DND5E.AbilityInt": "지능",
+"DND5E.AbilityIntAbbr": "지능",
+"DND5E.AbilityWis": "지혜",
+"DND5E.AbilityWisAbbr": "지혜",
+"DND5E.AbilityCha": "매력",
+"DND5E.AbilityChaAbbr": "매력",
+"DND5E.AbilityHon": "명예",
+"DND5E.AbilityHonAbbr": "명예",
+"DND5E.AbilitySan": "정신력",
+"DND5E.AbilitySanAbbr": "정신력",
+"DND5E.AbilityScore": "능력 점수",
+"DND5E.AbilityScorePl": "능력 점수들",
+"DND5E.AbilityScoreL": "{ability} 점수",
+"DND5E.AbilityScoreMax": "최대 능력 점수",
+"DND5E.AbilityModifier": "능력 수정치",
+"DND5E.AbilityPromptText": "{ability} 판정 유형을 선택하세요.",
 "DND5E.AbilityPromptTitle": "{ability} 판정",
 "DND5E.AbilityUseChargesLabel": "{value} 충전",
 "DND5E.AbilityUseConsumableLabel": "{per}당 {max}회",
@@ -107,4 +107,5671 @@
 "DND5E.ActionUtil": "유틸리티",
 "DND5E.ActionWarningNoItem": "요청한 아이템 {item}이(가) 더 이상 캐릭터 {name}에게 존재하지 않습니다.",
 "DND5E.ActionWarningNoToken": "이 기능을 사용하려면 하나 이상의 토큰을 선택해야 합니다.",
-
+"DND5E.ACTIVATION": {
+  "FIELDS": {
+    "activation": {
+      "label": "활성화",
+      "condition": {
+        "label": "활성화 조건",
+        "hint": "이 활동을 활성화하는 데 필요한 조건입니다."
+      },
+      "override": {
+        "label": "활성화 덮어쓰기",
+        "hint": "이 활동에 대해 아이템에 설정된 값 대신 여기서 설정한 활성화 비용 값을 사용합니다."
+      },
+      "type": {
+        "label": "활성화 비용 유형",
+        "hint": "활성화 유형(예: 행동, 전설적 행동, 분 단위 등)입니다."
+      },
+      "value": {
+        "label": "활성화 수치",
+        "hint": "활성화와 관련된 척도 값입니다."
+      }
+    }
+  },
+  "Category": {
+    "Standard": "표준",
+    "Time": "시간",
+    "Monster": "몬스터",
+    "Vehicle": "탈것",
+    "Combat": "전투",
+    "Rest": "휴식"
+  },
+  "Type": {
+    "Encounter": {
+      "Label": "조우 시작 시"
+    },
+    "Legendary": {
+      "Counted": {
+        "other": "전설적 행동 {number}회",
+        "one": "전설적 행동 {number}회"
+      },
+        "Label": "전설적 행동",
+        "Header": "전설적 행동"
+      },
+      "TurnEnd": {
+        "Label": "턴 종료 시"
+      },
+      "TurnStart": {
+        "Label": "턴 시작 시"
+      },
+      "LongRest": {
+        "Label": "긴 휴식 종료 시"
+      },
+      "ShortRest": {
+        "Label": "짧은 휴식 종료 시"
+      },
+      "Action": {
+        "Label": "행동",
+        "Header": "행동"
+      },
+      "BonusAction": {
+        "Header": "보조 행동",
+        "Label": "보조 행동"
+      },
+      "Crew": {
+        "Header": "승무원 행동",
+        "Label": "승무원 행동",
+        "Counted": {
+          "one": "승무원 행동 {number}회",
+          "other": "승무원 행동 {number}회"
+        }
+      },
+      "Day": {
+        "Label": "일",
+        "Header": "일"
+      },
+      "Hour": {
+        "Header": "시간",
+        "Label": "시간"
+      },
+      "Minute": {
+        "Header": "분",
+        "Label": "분"
+      },
+      "Mythic": {
+        "Header": "신화적 행동",
+        "Label": "신화적 행동",
+        "Counted": {
+          "one": "신화적 행동 {number}회",
+          "other": "신화적 행동 {number}회"
+        }
+      },
+      "Lair": {
+        "Header": "안식처 행동",
+        "Label": "안식처 행동"
+      },
+      "Reaction": {
+        "Header": "대응",
+        "Label": "대응"
+      }
+    },
+    "Warning": {
+      "NoActions": "사용 가능한 {type}이 없지만, 이를 활성화하려면 적어도 {required}의 비용이 필요합니다.",
+      "NotEnoughActions": "활성화하기 위한 {type}이 부족합니다. {required}만큼 필요하지만 현재 {available}만 가능합니다."
+    },
+    "DND5E.ACTIVITY": {
+    "Action": {
+      "Create": "활동 생성",
+      "Delete": "활동 삭제",
+      "Edit": "활동 수정"
+    },
+    "Title": {
+      "one": "활동",
+      "other": "활동들"
+    },
+    "FIELDS": {
+      "description": {
+        "label": "설명",
+        "chatFlavor": {
+          "label": "추가 텍스트",
+          "hint": "대화창 활성화 메시지에 표시될 추가 텍스트입니다."
+        }
+      },
+      "effects": {
+        "label": "적용된 효과",
+        "element": {
+          "level": {
+            "label": "레벨 제한",
+            "hint": "이 효과를 적용하기 위해 필요한 레벨 범위입니다.",
+            "max": {
+              "label": "최대 레벨"
+            },
+            "min": {
+              "label": "최소 레벨"
+            }
+          }
+        }
+      },
+      "img": {
+        "label": "아이콘"
+      },
+      "name": {
+        "label": "이름"
+      },
+      "visibility": {
+        "identifier": {
+          "hint": "레벨 제한이 적용될 클래스의 식별자입니다. 비워두면 캐릭터 레벨을 사용합니다.",
+          "label": "클래스 식별자"
+        },
+        "label": "가시성",
+        "level": {
+          "hint": "이 활동을 사용하는 데 필요한 레벨입니다.",
+          "label": "레벨 제한",
+          "max": {
+            "label": "최대 레벨"
+          },
+          "min": {
+            "label": "최소 레벨"
+          }
+        },
+        "requireAttunement": {
+          "hint": "아이템에 조율이 필요하지만 조율되지 않은 경우 활동을 사용할 수 없습니다.",
+          "label": "조율 필요"
+        },
+        "requireIdentification": {
+          "hint": "아이템이 식별되지 않은 경우 활동을 사용할 수 없습니다.",
+          "label": "식별 필요"
+        },
+        "requireMagic": {
+          "hint": "마법을 사용할 수 없는 환경에서는 활동을 사용할 수 없습니다.",
+          "label": "마법 필요"
+        }
+      }
+    },
+    "SECTIONS": {
+      "Activation": "활성화",
+      "Behavior": "행동 양식",
+      "Effect": "효과",
+      "Identity": "신원",
+      "Time": "시간"
+    },
+    "Warning": {
+      "UsageNotAllowed": "현재 이 활동을 사용할 수 없습니다."
+    }
+  },
+  
+"DND5E.ActiveEffectOverrideWarning": "이 값은 활성 효과에 의해 수정되었으므로 변경할 수 없습니다. 수정하려면 해당 효과를 비활성화하십시오.",
+"DND5E.Add": "생성",
+"DND5E.AdditionalControls": "추가 제어",
+"DND5E.AdditionalSettings": "추가 설정",
+"DND5E.AddEmbeddedItemPromptHint": "이 아이템들을 캐릭터 시트에 추가하시겠습니까?",
+"DND5E.Advanced": "고급",
+"DND5E.ADVANCEMENT": {
+  "AbilityScoreImprovement": {
+      "Title": "능력 향상",
+      "Hint": "플레이어가 하나 이상의 능력치를 올리거나 선택적 재주를 취득할 수 있게 합니다.",
+      "CapDisplay": {
+        "one": "최대 {points}점",
+        "other": "최대 {points}점"
+      },
+      "Feat": {
+        "Hint": "능력 향상 대신 선택할 재주를 여기에 놓으세요.",
+        "ASIName": "능력 향상 재주"
+      },
+      "FIELDS": {
+        "cap": {
+          "label": "점수 제한",
+          "hint": "플레이어가 단일 능력치에 할당할 수 있는 최대 점수입니다."
+        },
+        "locked": {
+          "label": "고정됨",
+          "hint": "이 능력치는 상승시킬 수 없습니다.",
+          "locked": "능력치를 상승시킬 수 없습니다.",
+          "unlocked": "능력치를 상승시킬 수 있습니다."
+        },
+        "fixed": {
+          "label": "고정 상승치",
+          "hint": "정해진 수치만큼 상승하며, 성장 과정에서 수동으로 수정할 수 없는 능력치입니다."
+        },
+        "points": {
+          "label": "포인트",
+          "hint": "해제된 능력치 점수에 할당할 수 있는 포인트 수입니다.",
+          "decrease": "포인트 감소",
+          "increase": "포인트 증가"
+        },
+        "max": {
+          "hint": "캐릭터에게 허용되는 최대 능력치 값을 증가시킵니다.",
+          "label": "최댓값"
+        },
+        "recommendation": {
+          "hint": "이 클래스에서 추천하는 장엄한 은혜입니다.",
+          "label": "추천"
+        }
+      },
+      "LockedHint": "재주가 선택된 상태에서는 능력 점수를 수정할 수 없습니다.",
+      "PointsRemaining": {
+        "one": "{points} 포인트 남음",
+        "other": "{points} 포인트 남음"
+      },
+      "Warning": {
+        "Type": "유형이 재주인 항목만 선택할 수 있습니다."
+      },
+      "Details": "상승 세부 사항",
+      "Journal": {
+        "DescriptionLegacy": "<p>{firstLevelOrdinal} 레벨에 도달할 때(그리고 {otherLevelsOrdinal} 레벨마다), 당신은 원하는 능력치 하나를 2 올리거나, 원하는 능력치 두 개를 각각 1씩 올릴 수 있습니다. 일반적인 규칙과 마찬가지로, 이 특징을 통해 능력치 점수를 {maxAbilityScore} 위로 올릴 수는 없습니다.</p><p>재주 선택 규칙을 사용하는 경우, 능력치 점수를 올리는 대신 재능 하나를 선택할 수 있습니다.</p>",
+        "DescriptionModern": "<p>당신은 능력 향상 재주나 당신이 선결 조건을 만족하는 다른 재주 하나를 받습니다. {class} 클래스의 {otherLevels} 레벨에서 이 특성을 다시 받습니다.</p>",
+        "Name": "능력 향상",
+        "DescriptionEpic": "<p>당신은 장엄한 은혜 재주나 당신이 선결 조건을 만족하는 다른 재주 하나를 받습니다.</p>",
+        "DescriptionEpicRecommendation": "<p>당신은 장엄한 은혜 재주나 당신이 선결 조건을 만족하는 다른 재주 하나를 받습니다. {recommendation} 재주를 추천합니다.</p>"
+      },
+      "Action": {
+        "Select": "재주 선택"
+      },
+      "TitleEpic": "장엄한 은혜"
+    },
+    "SPELLCONFIG": {
+      "FreeCasting": "무료 시전",
+      "FIELDS": {
+        "spell": {
+          "label": "주문 세부 사항",
+          "ability": {
+            "label": "능력치"
+          },
+          "uses": {
+            "max": {
+              "label": "사용 횟수"
+            },
+            "per": {
+              "label": "회복 주기"
+            },
+            "requireSlot": {
+              "label": "주문 슬롯 필요",
+              "hint": "횟수 제한이 있는 주문 사용 시 주문 슬롯을 소모하게 합니다. 체크를 해제하면 슬롯을 소모하지 않는 추가 무료 사용 횟수가 됩니다."
+            }
+          },
+          "method": {
+            "label": "시전 방식"
+          },
+          "prepared": {
+            "label": "준비 여부"
+          }
+        }
+      }
+    },
+    "Subclass": {
+      "Title": "서브클래스",
+      "Hint": "이 클래스가 서브클래스를 획득하는 레벨을 지정합니다.",
+      "Warning": {
+        "InvalidType": "서브클래스 유형만 선택할 수 있습니다."
+      },
+      "Action": {
+        "Select": "서브클래스 선택"
+      }
+    },
+"Config": {
+      "Details": "성장 세부 사항",
+      "AnyLevel": "모든 레벨"
+    },
+    "HitPoints": {
+      "Action": {
+        "Roll": "{die} 굴리기"
+      },
+      "Average": "평균값",
+      "MaxAtFirstLevel": "1레벨 최댓값: <strong>{max}</strong>",
+      "Roll": "{class} 히트 다이스 굴리기",
+      "Starting": "1레벨 HP",
+      "TakeAverage": "평균값 사용",
+      "Title": "HP",
+      "Warning": {
+        "Empty": "히트 다이스를 굴리거나 평균값을 선택해야 합니다.",
+        "Invalid": "HP는 유효한 정수여야 합니다."
+      },
+      "Hint": "클래스의 각 레벨별 플레이어 HP를 추적합니다."
+    },
+    "ItemGrant": {
+      "Details": "부여 세부 사항",
+      "DropHint": "여기에 아이템을 드래그 앤 드롭하여 이 성장 단계에서 부여할 목록에 추가하세요.",
+      "FIELDS": {
+        "items": {
+          "label": "아이템"
+        },
+        "optional": {
+          "label": "선택 사항",
+          "hint": "전체 성장 항목이 선택 사항으로 표시되면 플레이어는 다음 아이템 중 일부를 받지 않기로 결정할 수 있습니다. 그렇지 않으면 선택 사항이 아닌 모든 아이템이 부여됩니다."
+        }
+      },
+      "Title": "아이템 부여",
+      "Warning": {
+        "Container": "용기 내부의 콘텐츠는 용기와 함께 추가되지 않습니다.",
+        "Duplicate": "이 아이템은 이미 이 성장 단계에 존재합니다.",
+        "Recursive": "아이템 자신의 성장 단계에 자기 자신을 부여할 수 없습니다."
+      },
+      "Hint": "특정 레벨에 도달했을 때 캐릭터에게 아이템(장비, 특성, 주문 등)을 부여합니다."
+    },
+    "Manager": {
+      "Action": {
+        "Complete": "완료",
+        "NextStep": "다음",
+        "PreviousStep": "이전",
+        "Restart": "다시 시작"
+      },
+      "ClosePrompt": {
+        "Action": {
+          "Continue": "계속하기",
+          "Stop": "성장 중단"
+        },
+        "Title": "성장 중단",
+        "Message": "<p>성장 과정을 취소하면 지금까지 선택한 사항들이 폐기되며 캐릭터 데이터에 아무런 변경 사항도 적용되지 않습니다.</p>"
+      },
+      "RestartPrompt": {
+        "Message": "지금까지 선택한 모든 사항을 취소하고 처음부터 다시 시작하시겠습니까?",
+        "Title": "성장 선택 다시 시작"
+      },
+      "Title": {
+        "Default": "성장",
+        "LevelNewClass": "클래스 추가",
+        "ModifyChoices": "선택 사항 수정",
+        "LevelIncreased": "캐릭터 레벨 업"
+      },
+      "Steps": "{total}단계 중 {current}단계"
+    },
+    "ItemChoice": {
+      "Choose": "{count}개 선택",
+      "Chosen": "선택됨: {max}개 중 {current}개",
+      "Details": "선택 세부 사항",
+      "FIELDS": {
+        "allowDrops": {
+          "hint": "플레이어가 이 성장 단계에 자신의 선택 아이템을 직접 드래그 앤 드롭할 수 있도록 허용합니다.",
+          "label": "드롭 허용"
+        },
+        "choices": {
+          "hint": "각 레벨에서 허용되는 선택 횟수를 지정합니다.",
+          "label": "선택",
+          "FIELDS": {
+            "count": {
+              "label": "횟수"
+            },
+            "replacement": {
+              "label": "교체 허용"
+            }
+          }
+        },
+        "pool": {
+          "label": "아이템 옵션"
+        },
+        "restriction": {
+          "level": {
+            "Available": "사용 가능한 모든 레벨",
+            "label": "주문 레벨",
+            "hint": "이 레벨의 주문들 중에서만 선택을 허용합니다."
+          },
+          "type": {
+            "label": "유형"
+          },
+          "subtype": {
+            "label": "하위 유형"
+          },
+          "list": {
+            "hint": "이 목록에 포함된 주문들만 허용됩니다.",
+            "label": "주문 목록"
+          }
+        },
+        "type": {
+          "Any": "전체",
+          "hint": "선택할 수 있는 아이템의 유형을 제한합니다.",
+          "label": "아이템 유형"
+        }
+      },
+      "Hint": "플레이어에게 하나 이상의 레벨에서 캐릭터를 위해 선택할 수 있는 아이템(장비, 특성, 재주, 주문 등)의 선택지를 제공합니다.",
+      "Replacement": {
+        "None": "교체 없음",
+        "Title": "교체"
+      },
+      "Title": "아이템 선택",
+      "Warning": {
+        "InvalidType": "이 선택지에는 {type} 유형의 아이템만 선택할 수 있습니다.",
+        "NoOriginal": "이전에 선택한 항목을 더 이상 교체할 수 없습니다.",
+        "SpellLevelAvailable": "이 성장 단계에서는 {level}레벨 이하의 주문만 선택할 수 있습니다.",
+        "SpellLevelSpecific": "이 성장 단계에서는 {level}레벨 주문만 선택할 수 있습니다.",
+        "MaxSelected": "더 이상 아이템을 선택할 수 없습니다. 다른 항목을 선택하기 전에 기존 선택을 해제하세요.",
+        "SpellList": "이 성장 단계에서는 {lists} 주문 목록에 있는 주문만 선택할 수 있습니다."
+      },
+      "DropHint": "여기에 아이템을 드래그 앤 드롭하여 이 성장 단계에서 선택 가능한 목록에 추가하세요.",
+      "Action": {
+        "SelectGeneric": "아이템 선택",
+        "SelectSpecific": "{type} 선택"
+      }
+    },
+    "ScaleValue": {
+      "FIELDS": {
+        "distance": {
+          "units": {
+            "label": "거리 단위"
+          }
+        },
+        "identifier": {
+          "label": "식별자"
+        },
+        "scale": {
+          "label": "성장"
+        },
+        "type": {
+          "label": "성장 유형"
+        }
+      },
+      "Details": "성장 세부 사항",
+      "Hint": "클래스 레벨이 올라감에 따라 수치가 변화하며, 판정 공식에서 사용할 수 있는 고유한 값입니다(예: 수도사의 무예 주사위).",
+      "Title": "척도 값",
+      "Type": {
+        "CR": {
+          "FIELDS": {
+            "value": {
+              "label": "도전지수"
+            }
+          },
+          "Hint": "야수 형태와 같은 특성에서 크리처의 도전지수(CR) 제한을 나타낼 때 사용합니다.",
+          "Label": "위협 등급"
+        },
+        "Dice": {
+          "FIELDS": {
+            "face": {
+              "label": "면수"
+            },
+            "number": {
+              "label": "개수"
+            }
+          },
+          "Hint": "바드의 격려, 암습, 혹은 우월성 주사위와 같은 주사위 값에 사용합니다.",
+          "Identifier": "현재 레벨에 해당하는 척도 값은 다음 공식을 통해 사용할 수 있습니다:<br><copyable-text>@scale.{class}.{identifier}</copyable-text> - 전체 공식 (예: <code>4d6</code>)<br><copyable-text>@scale.{class}.{identifier}.die</copyable-text> - 주사위 규격 (예: <code>d6</code>)<br><copyable-text>@scale.{class}.{identifier}.number</copyable-text> - 주사위 개수 (예: <code>4</code>)<br><copyable-text>@scale.{class}.{identifier}.faces</copyable-text> - 주사위 면수 (예: <code>6</code>)",
+          "Label": "주사위"
+        },
+        "Distance": {
+          "Hint": "비무장 속도 증가나 보호의 오라 반경과 같이 거리를 나타내는 수치에 사용합니다.",
+          "Label": "거리"
+        },
+        "Number": {
+          "Hint": "격노 피해 보너스나 하루 사용 횟수와 같이 순수하게 숫자만 필요한 경우에 사용합니다.",
+          "Label": "숫자"
+        },
+      "String": {
+          "FIELDS": {
+            "value": {
+              "label": "값"
+            }
+          },
+          "Hint": "성장 수치의 유형을 확신할 수 없거나, 유형이 중요하지 않은 경우에 사용합니다.",
+          "Identifier": "현재 레벨에 해당하는 척도 값은 다음 공식을 통해 사용할 수 있습니다:<br><copyable-text>@scale.{class}.{identifier}</copyable-text>",
+          "Label": "전체"
+        }
+      },
+      "Action": {
+        "CopyFormula": "공식 복사"
+      }
+    },
+    "Size": {
+      "DefaultHint": {
+        "Multiple": "{sizes} 중에서 체격을 선택하세요.",
+        "Single": "당신의 체격은 {size}입니다."
+      },
+      "FIELDS": {
+        "sizes": {
+          "label": "크기 목록"
+        }
+      },
+      "Hint": "캐릭터의 크기를 설정합니다.",
+      "Title": "크기"
+    },
+    "Trait": {
+      "Action": {
+        "AddChoice": "선택지 추가",
+        "RemoveChoice": "선택지 제거"
+      },
+      "ChoicesRemaining": "{count}개의 {type}를 추가로 선택하세요.",
+      "Details": "특성 세부 사항",
+      "FIELDS": {
+        "allowReplacements": {
+          "hint": "캐릭터에게 이미 해당 특성이 있다면, 플레이어가 다른 특성을 대신 선택할 수 있도록 허용합니다.",
+          "label": "교체 허용"
+        },
+        "choices": {
+          "hint": "플레이어에게 다음 특성들이 선택지로 제공됩니다.",
+          "label": "선택",
+          "FIELDS": {
+            "count": {
+              "label": "개수"
+            },
+            "pool": {
+              "label": "특성 목록"
+            }
+          }
+        },
+        "grants": {
+          "hint": "캐릭터가 해당 특성을 아직 가지고 있지 않다면 다음 특성들이 확정적으로 부여됩니다.",
+          "label": "확정 부여"
+        },
+        "mode": {
+          "label": "모드"
+        }
+      },
+      "Hint": "캐릭터에게 특정 특성을 부여하거나 숙련, 기술, 언어 등을 선택할 수 있는 기회를 제공합니다.",
+      "Mode": {
+        "Default": {
+          "Hint": "특성이나 숙련을 획득합니다.",
+          "Label": "기본"
+        },
+        "Expertise": {
+          "Hint": "이미 숙련된 특성에서 통달을 획득합니다.",
+          "Label": "통달"
+        },
+        "Force": {
+          "Hint": "이전 숙련 레벨과 상관없이 해당 특성에서 통달을 획득합니다.",
+          "Label": "강제 통달"
+        },
+        "Mastery": {
+          "Hint": "이미 숙련된 무기의 무기 전문 속성을 획득합니다.",
+          "Label": "무기 전문화"
+        },
+        "Upgrade": {
+          "Hint": "특성 숙련을 획득합니다. 이미 숙련되어 있다면 대신 통달을 획득합니다.",
+          "Label": "업그레이드"
+        }
+      },
+      "TraitType": "특성 유형",
+      "Title": "특성"
+    },
+    "Action": {
+      "Create": "성장 단계 생성",
+      "Delete": "성장 단계 삭제",
+      "Duplicate": "성장 단계 복제",
+      "Edit": "성장 단계 편집",
+      "View": "성장 단계 보기"
+    },
+    "Migration": {
+      "Action": {
+        "Confirm": "마이그레이션 적용"
+      },
+      "Hint": "{name}에 추가될 다음 성장 단계들을 선택하세요.",
+      "Selection": "성장 단계 선택",
+      "Title": "성장 데이터 마이그레이션"
+    },
+    "Defaults": {
+      "BackgroundFeat": "배경 재주",
+      "BackgroundFeature": "배경 특성",
+      "BackgroundProficiencies": "배경 숙련",
+      "ChooseLanguages": "언어 선택"
+    }
+  },
+"DND5E.AdvancementChoices": "선택",
+  "DND5E.AdvancementClassRestriction": "클래스 제한",
+  "DND5E.AdvancementClassRestrictionNone": "모든 클래스",
+  "DND5E.AdvancementClassRestrictionPrimary": "주요 클래스 전용",
+  "DND5E.AdvancementClassRestrictionSecondary": "멀티클래스 전용",
+  "DND5E.AdvancementConfigurationActionDisable": "설정 비활성화",
+  "DND5E.AdvancementConfigurationActionEnable": "설정 활성화",
+  "DND5E.AdvancementConfigurationModeDisabled": "설정 비활성화됨",
+  "DND5E.AdvancementConfigurationModeEnabled": "설정 활성화됨",
+  "DND5E.AdvancementConfigureTitle": "{item}: 성장 설정",
+  "DND5E.AdvancementConfigureAllowDrops": "드롭 허용",
+  "DND5E.AdvancementConfigureAllowDropsHint": "플레이어가 이 성장 단계에 자신의 선택지를 직접 드래그 앤 드롭할 수 있어야 합니까?",
+  "DND5E.AdvancementConfigureDropAreaHint": "여기에 아이템을 드롭하여 플레이어가 선택할 수 있는 목록에 추가하세요.",
+  "DND5E.AdvancementConfiguredComplete": "설정 완료",
+  "DND5E.AdvancementConfiguredIncomplete": "미설정",
+  "DND5E.AdvancementCustomIcon": "사용자 정의 아이콘",
+  "DND5E.AdvancementCustomTitle": "사용자 정의 제목",
+  "DND5E.AdvancementDeleteConfirmationLabel": "성장 변경 사항 삭제",
+  "DND5E.AdvancementDeleteConfirmationMessage": "이 아이템을 삭제하면 해당 아이템에 대해 수행된 모든 성장 선택 사항도 삭제됩니다. 아래 확인란이 선택되어 있는 동안 이 변경 사항은 캐릭터 시트에서 제거됩니다.",
+  "DND5E.AdvancementDeleteConfirmationTitle": "삭제 확인",
+  "DND5E.AdvancementFlowDropAreaHint": "여기에 아이템을 드롭하여 선택하세요.",
+  "DND5E.AdvancementHint": "힌트",
+  "DND5E.AdvancementItemTypeInvalidWarning": "{type} 유형의 아이템은 이 성장 유형에 추가할 수 없습니다.",
+  "DND5E.AdvancementLevelHeader": "{level} 레벨",
+  "DND5E.AdvancementLevelAnyHeader": "모든 레벨",
+  "DND5E.AdvancementLevelNoneHeader": "레벨 없음",
+  "DND5E.AdvancementLevelDownConfirmationMessage": "이 클래스의 레벨을 낮추면 해당 레벨에서 이루어진 모든 성장 선택 사항도 취소됩니다. 아래 확인란이 선택되어 있는 동안 이 변경 사항은 캐릭터 시트에서 제거됩니다.",
+  "DND5E.AdvancementLevelDownConfirmationTitle": "레벨 감소 확인",
+  "DND5E.AdvancementModifyChoices": "선택 사항 수정",
+  "DND5E.AdvancementSaveButton": "성장 데이터 저장",
+  "DND5E.AdvancementSelectionCreateButton": "성장 단계 생성",
+  "DND5E.AdvancementSelectionTitle": "성장 유형 선택",
+  "DND5E.AdvancementTitle": "성장",
+  "DND5E.Advantage": "이점",
+  "DND5E.AdvantageMode": "이점 모드",
+  "DND5E.Age": "연령",
+  "DND5E.Alignment": "성향",
+  "DND5E.AlignmentCE": "혼돈 악",
+  "DND5E.AlignmentCG": "혼돈 선",
+  "DND5E.AlignmentCN": "혼돈 중립",
+  "DND5E.AlignmentLE": "질서 악",
+  "DND5E.AlignmentLG": "질서 선",
+  "DND5E.AlignmentLN": "질서 중립",
+  "DND5E.AlignmentNE": "중립 악",
+  "DND5E.AlignmentNG": "중립 선",
+  "DND5E.AlignmentTN": "중립",
+  "DND5E.Amount": "수량",
+  "DND5E.Appearance": "외형",
+  "DND5E.Apply": "적용",
+  "DND5E.Attunement": "조율",
+  "DND5E.AttunementMax": "최대 조율 아이템 수",
+  "DND5E.AttunementNone": "조율 필요 없음",
+  "DND5E.AttunementOptional": "조율 선택 사항",
+  "DND5E.AttunementRequired": "조율 필요",
+  "DND5E.AttunementAttuned": "조율됨",
+  "DND5E.AttunementOverride": "조율 무시",
+  "DND5E.Attuned": "조율됨",
+  "DND5E.AreaOfEffect": {
+    "Label": "효과 범위",
+    "Size": {
+      "Label": "크기",
+      "Height": "높이",
+      "Length": "길이",
+      "Radius": "반경",
+      "Thickness": "두께",
+      "Width": "너비"
+    }
+  },
+  "DND5E.Armor": "방어구",
+  "DND5E.ArmorClass": "방어 등급",
+  "DND5E.ArmorClassEquipment": "장착 중인 방어구",
+  "DND5E.ArmorClassFlat": "기본",
+  "DND5E.ArmorClassUnarmored": "비무장 방어",
+  "DND5E.ArmorClassNatural": "자연 갑옷",
+  "DND5E.ArmorClassMage": "마법사의 갑옷",
+  "DND5E.ArmorClassMotionless": "움직임 제한 시 AC",
+  "DND5E.ArmorClassDraconic": "드래곤 저항",
+  "DND5E.ArmorClassUnarmoredMonk": "비무장 방어 (몽크)",
+  "DND5E.ArmorClassUnarmoredBarbarian": "비무장 방어 (바바리안)",
+  "DND5E.ArmorClassUnarmoredBard": "비무장 방어 (바드)",
+  "DND5E.ArmorClassCustom": "사용자 정의 공식",
+  "DND5E.ArmorConfig": "방어구 설정",
+  "DND5E.ArmorConfigHint": "자동으로 계산되는 방어구 등급을 덮어쓰려면 위 항목을 입력하세요.",
+  "DND5E.ArmorClassCalculation": "계산 방식",
+  "DND5E.ArmorClassFormula": "공식",
+  "DND5E.ArmorHeavyProficiency": "중갑",
+  "DND5E.ArmorLightProficiency": "경갑",
+  "DND5E.ArmorMediumProficiency": "평갑",
+  "DND5E.AC": "AC",
+  "DND5E.ATTACK": {
+    "Title": {
+      "one": "공격하기",
+      "other": "공격"
+    },
+    "FIELDS": {
+      "attack": {
+        "label": "공격 세부 사항",
+        "ability": {
+          "label": "공격 능력치",
+          "hint": "공격 및 피해 결정에 사용되는 능력치입니다. 공식에서 @mod를 사용하여 참조할 수 있습니다."
+        },
+        "bonus": {
+          "label": "명중 보너스",
+          "hint": "명중 굴림에 추가되는 보너스입니다."
+        },
+        "critical": {
+          "threshold": {
+            "label": "치명타 임계치",
+            "hint": "치명타를 얻기 위해 d20 굴림에서 필요한 최솟값입니다."
+          }
+        },
+        "flat": {
+          "label": "고정 명중 보너스",
+          "hint": "능력 수정치, 숙련 보너스 및 캐릭터의 모든 다른 보너스를 무시하고 활동에 정의된 보너스만 계산에 사용합니다."
+        },
+        "type": {
+          "label": "공격 유형",
+          "value": {
+            "label": "공격 유형",
+            "hint": "근거리 공격입니까, 원거리 공격입니까?"
+          },
+          "classification": {
+            "label": "공격 분류",
+            "hint": "비무장 공격, 무기, 주문 중 무엇입니까?"
+          }
+        }
+      },
+      "damage": {
+        "label": "공격 피해",
+        "critical": {
+          "bonus": {
+            "label": "보너스 치명타 피해",
+            "hint": "치명타 발생 시 적용되는 추가 피해입니다. 기본 피해 또는 첫 번째 피해 항목에 추가됩니다."
+          }
+        },
+        "includeBase": {
+          "label": "기본 피해 포함",
+          "hint": "아이템의 기본 피해를 모든 피해 항목과 함께 포함합니다."
+        },
+        "parts": {
+          "label": "피해 항목",
+          "hint": "굴림에 포함할 개별 피해 항목들입니다."
+        }
+      }
+    },
+    "Attack": {
+      "mwak": "근거리 공격",
+      "rwak": "원거리 공격"
+    },
+    "Classification": {
+      "Spell": "주문",
+      "Unarmed": "비무장",
+      "Weapon": "무기"
+    },
+    "Mode": {
+      "Label": "공격 모드",
+      "Offhand": "보조 손",
+      "OneHanded": "한 손",
+      "Thrown": "투척",
+      "ThrownOffhand": "보조 손 투척",
+      "TwoHanded": "양손",
+      "Ranged": "원거리"
+    },
+    "Type": {
+      "Melee": "근거리",
+      "Ranged": "원거리"
+},
+    "Warning": {
+      "NoQuantity": "수량이 0인 무기로 공격을 시도했습니다."
+    },
+    "Weapon": {
+      "Melee": "근거리 무기",
+      "Ranged": "원거리 무기"
+    },
+    "Formatted": {
+      "2024": "{type}",
+      "2014": "{classification} {type} 공격"
+    },
+    "Hint": "명중 굴림을 수행하고 피해 주사위를 굴립니다."
+  },
+  "DND5E.Attack": "공격",
+  "DND5E.AttackPl": "공격",
+  "DND5E.AttackRoll": "명 굴림",
+  "DND5E.Attributes": "능력치",
+  "DND5E.AttrConcentration": {
+    "Limit": "한도"
+  },
+  "DND5E.Automatic": "자동",
+  "DND5E.AutomaticValue": "자동 ({value})",
+  "DND5E.Award": {
+    "Title": "보상 분배",
+    "Action": "보상",
+    "Distribution": {
+      "Split": "나누기",
+      "Each": "각각"
+    },
+    "Message": "{name}이(가) {award}을(를) 받았습니다.",
+    "NoDestinations": "보상을 보낼 대상이 없습니다.",
+    "NoPrimaryParty": "지정된 기본 파티가 없습니다. 대신 플레이어에게 할당된 캐릭터들을 표시합니다.",
+    "NotGMError": "/award 명령은 DM만 사용할 수 있습니다.",
+    "UnrecognizedWarning": "{commands}를 분석할 수 없습니다. /award 명령은 '/award 10gp 50xp'와 같이 경험치 및 통화 값과 함께 사용해야 합니다."
+  },
+  "DND5E.Background": "배경",
+  "DND5E.BackgroundAdd": "배경 추가",
+  "DND5E.BackgroundName": "배경 이름",
+  "DND5E.Biography": "전기",
+  "DND5E.BiographyPublic": "공개 프로필",
+  "DND5E.BiopgrahyPublicEdit": "공개 프로필 수정",
+  "DND5E.Bonds": "유대",
+  "DND5E.Bonus": "보너스",
+  "DND5E.BonusAction": "보조 행동",
+  "DND5E.BonusActionAbbr": "보행",
+  "DND5E.BonusAttack": "명중 보너스",
+  "DND5E.BonusDamage": "피해 보너스",
+  "DND5E.BonusSaveForm": "보너스 업데이트",
+  "DND5E.BonusTitle": "캐릭터 보너스 설정",
+  "DND5E.Casting": "시전",
+  "DND5E.Conditions": "상태",
+  "DND5E.Controls": {
+    "Hint": "마우스 및 키보드의 특정 명령에 대한 다양한 인터페이스 힌트를 활성화합니다.",
+    "LeftClick": "왼쪽 클릭",
+    "LockHint": "휠 클릭으로 고정",
+    "MiddleClick": "휠 클릭",
+    "Name": "조작 도움말 활성화",
+    "Activity": {
+      "FastForwardHint": "이 대화창을 건너뛰려면 아이템을 <kbd>Shift</kbd> + <left-click> 하세요."
+    }
+  },
+"DND5E.ChallengeRating": "도전지수",
+  "DND5E.Charged": "충전됨",
+  "DND5E.Charges": "충전 횟수",
+  "DND5E.ChatContextDamage": "피해로 적용",
+  "DND5E.ChatContextHealing": "치유로 적용",
+  "DND5E.ChatContextTempHP": "임시 HP로 적용",
+  "DND5E.ChatContextDoubleDamage": "두 배 피해로 적용",
+  "DND5E.ChatContextHalfDamage": "절반 피해로 적용",
+  "DND5E.ChatContextSelectHit": "명중한 대상 선택",
+  "DND5E.ChatContextSelectMiss": "빗나간 대상 선택",
+  "DND5E.ChatFlavor": "대화창 추가 문구",
+  "DND5E.CHECK": {
+    "Title": "d20 판정",
+    "FIELDS": {
+      "check": {
+        "label": "판정 세부 사항",
+        "ability": {
+          "label": "판정 능력치",
+          "hint": "판정에 사용할 능력치입니다."
+        },
+        "associated": {
+          "label": "관련 기술 또는 도구",
+          "hint": "이 능력 판정은 해당 기술이나 도구의 숙련 및 보너스를 사용합니다."
+        },
+        "dc": {
+          "label": "난이도",
+          "calculation": {
+            "label": "난이도 계산",
+            "hint": "난이도를 계산하는 데 사용되는 방식이나 능력치입니다."
+          },
+          "formula": {
+            "label": "난이도 공식",
+            "hint": "내성 난이도를 설정하기 위한 사용자 정의 공식이나 고정값입니다."
+          }
+        }
+      }
+    },
+    "ThisTool": "이 도구",
+    "Hint": "기술이나 도구의 도움을 받을 수 있는 능력 판정을 요청합니다."
+  },
+  "DND5E.CheckBonus": "추가 판정 굴림",
+  "DND5E.CLASS": {
+    "Multiclass": {
+      "Title": "멀티클래스"
+    },
+    "FIELDS": {
+      "levels": {
+        "label": "클래스 레벨"
+      },
+      "primaryAbility": {
+        "all": {
+          "label": "전부 필요",
+          "hint": "멀티클래스를 하려면 모든 주요 능력치가 최소 요구치를 충족해야 합니다."
+        },
+        "value": {
+          "label": "주요 능력치",
+          "hint": "이 클래스에서 가장 많이 사용하는 능력치입니다. 멀티클래스 제한을 결정하는 데 사용됩니다."
+        }
+      },
+      "hd": {
+        "additional": {
+          "label": "추가 히트 다이스",
+          "hint": "정상적인 개수 외에 이 클래스에서 사용할 수 있는 히트 다이스 공식입니다."
+        },
+        "label": "히트 다이스",
+        "spent": {
+          "label": "히트 다이스"
+        }
+      },
+      "properties": {
+        "label": "클래스 속성"
+      }
+    }
+  },
+"DND5E.ClassAdd": "클래스 추가",
+  "DND5E.ClassIdentifier": "클래스 식별자",
+  "DND5E.ClassIdentifierHint": "이 클래스의 데이터는 판정 공식에서 <strong>@classes.{identifier}</strong>을 사용하여 참조할 수 있습니다.",
+  "DND5E.ClassLevels": "클래스 레벨",
+  "DND5E.ClassMakeOriginal": "시작 클래스로 설정",
+  "DND5E.ClassMakeOriginalHint": "캐릭터가 처음으로 선택한 클래스는 멀티클래스 시 특정 클래스 특성을 결정하는 데 사용됩니다.",
+  "DND5E.ClassName": "클래스 이름",
+  "DND5E.ClassOriginal": "시작 클래스",
+  "DND5E.ClassSaves": "내성 굴림",
+  "DND5E.Confirm": "확인",
+  "DND5E.CompendiumBrowser": {
+    "Title": "컴펜디엄 브라우저",
+    "Action": {
+      "Open": "컴펜디엄 브라우저 열기"
+    },
+    "Column": {
+      "Icon": "아이콘",
+      "Name": "이름",
+      "Results": "결과",
+      "Source": "출처"
+    },
+    "Filters": {
+      "Label": "필터",
+      "HasDarkvision": "암시야 보유",
+      "HasSpellcasting": "주문시전 능력 보유",
+      "SearchResults": "검색 결과",
+      "Grouped": "{type} ({group})"
+    },
+    "Selection": {
+      "Label": "선택됨: {summary}",
+      "Select": "선택",
+      "Summary": {
+        "Max": "최대 {max}개 중 <span class=\"value\">{value}</span>개",
+        "Min": "최소 {min}개 중 <span class=\"value\">{value}</span>개",
+        "Range": "{min}~{max}개 중 <span class=\"value\">{value}</span>개",
+        "Single": "{max}개 중 <span class=\"value\">{value}</span>개"
+      },
+      "Warning": {
+        "Document": {
+          "one": "개",
+          "other": "개"
+        },
+        "Max": "최대 {max}{document}를 선택해야 합니다. 현재 {value}개 선택됨.",
+        "Min": "최소 {min}{document}를 선택해야 합니다. 현재 {value}개 선택됨.",
+        "Range": "{min}개에서 {max}개 사이의 {document}를 선택해야 합니다. 현재 {value}개 선택됨.",
+        "Single": "{max}{document}를 선택해야 합니다. 현재 {value}개 선택됨."
+      }
+    },
+    "Sources": {
+      "Name": "컴펜디엄 브라우저 소스",
+      "Label": "소스 설정",
+      "FilterPackages": "팩 필터링",
+      "Hint": "컴펜디엄 브라우저에서 사용할 수 있는 컴펜디엄 팩을 설정합니다."
+    },
+    "Tabs": {
+      "Feat.other": "재주",
+      "Item.other": "아이템",
+      "Monster.other": "몬스터"
+    },
+    "Types": {
+      "Label": "유형"
+    },
+    "Locked": "잠김"
+  },
+"DND5E.ComponentMaterial": "재료",
+  "DND5E.ComponentMaterialAbbr": "M",
+  "DND5E.ComponentSomatic": "동작",
+  "DND5E.ComponentSomaticAbbr": "S",
+  "DND5E.ComponentVerbal": "음성",
+  "DND5E.ComponentVerbalAbbr": "V",
+  "DND5E.Components": "구성요소",
+  "DND5E.Container": "용기",
+  "DND5E.ContainerDeleteMessage": "이 용기는 영구적으로 삭제되어 복구할 수 없으며, 포함된 {count}개의 아이템은 외부로 이동됩니다.",
+  "DND5E.ContainerDeleteContents": "용기 내부의 모든 아이템도 함께 삭제합니다.",
+  "DND5E.ContainerMaxDepth": "용기는 {depth}단계보다 깊게 중첩하여 보관할 수 없습니다.",
+  "DND5E.ContainerRecursiveError": "용기는 자기 자신을 포함할 수 없습니다.",
+  "DND5E.Contents": "내용물",
+  "DND5E.ContextMenuActionEdit": "편집",
+  "DND5E.ContextMenuActionDuplicate": "복제",
+  "DND5E.ContextMenuActionDelete": "삭제",
+  "DND5E.ContextMenuActionEquip": "장착",
+  "DND5E.ContextMenuActionUnequip": "장착 해제",
+  "DND5E.ContextMenuActionPrepare": "준비",
+  "DND5E.ContextMenuActionExpendCharge": "충전 소비",
+  "DND5E.ContextMenuActionCharge": "충전",
+  "DND5E.ContextMenuActionUnprepare": "준비 해제",
+  "DND5E.ContextMenuActionAttune": "조율",
+  "DND5E.ContextMenuActionUnattune": "조율 해제",
+  "DND5E.ContextMenuActionEnable": "활성화",
+  "DND5E.ContextMenuActionDisable": "비활성화",
+  "DND5E.ContextMenuActionView": "보기",
+  "DND5E.Contiguous": "인접함",
+  "DND5E.ConBlinded": "실명",
+  "DND5E.ConCharmed": "매혹",
+  "DND5E.ConDeafened": "실청",
+  "DND5E.ConDiseased": "질병",
+  "DND5E.ConExhaustion": "탈진",
+  "DND5E.ConFrightened": "공포",
+  "DND5E.ConGrappled": "붙잡힘",
+  "DND5E.ConImm": "상태 면역",
+  "DND5E.ConIncapacitated": "행동불능",
+  "DND5E.ConInvisible": "투명",
+  "DND5E.ConParalyzed": "마비",
+  "DND5E.ConPetrified": "석화",
+  "DND5E.ConPoisoned": "중독",
+  "DND5E.ConProne": "넘어짐",
+  "DND5E.ConRestrained": "포박",
+  "DND5E.ConStunned": "기절",
+  "DND5E.ConUnconscious": "무의식",
+  "DND5E.Concentration": "집중",
+  "DND5E.ConcentrationAbbr": "집",
+  "DND5E.ConcentrationBreak": "집중 깨뜨리기",
+  "DND5E.ConcentrationBreakWarning": "다른 크리처에게 활성화된 효과의 집중을 깨뜨리려면 활성화된 DM이 필요합니다.",
+  "DND5E.ConcentrationBonus": "집중 보너스",
+  "DND5E.ConcentrationDuration": "집중, 최대 {duration}",
+  "DND5E.ConcentratingOn": "당신은 현재 {type} '{name}'의 효과에 집중하고 있습니다.",
+  "DND5E.ConcentratingEndChoice": "당신은 여러 소스의 효과에 집중하고 있습니다. 종료할 효과를 선택하세요.",
+  "DND5E.ConcentratingMissingItem": "교체하려는 집중 효과 아이템이 존재하지 않습니다.",
+  "DND5E.ConcentratingLimited": "추가 효과에 대한 집중을 시작할 수 없습니다.",
+  "DND5E.ConcentrationLimit": "집중 한도",
+  "DND5E.ConcentratingEnd": "집중 종료",
+  "DND5E.ConcentratingItemless": "출처 없는 집중",
+  "DND5E.ConcentratingWarnLimit": "더 이상의 효과에 집중할 수 없습니다!",
+  "DND5E.ConcentratingWarnLimitOptional": "이 아이템을 사용하기 위해 현재 유지 중인 집중 효과 중 하나를 종료할 수 있습니다.",
+  "DND5E.ConcentratingWarnLimitZero": "당신은 어떤 효과에도 집중할 수 없는 상태입니다!",
+  "DND5E.ConcentrationConfigurationHint": "이 생명체에게 적용되는 집중 수정치 및 보너스를 설정합니다.",
+  "DND5E.ConsumeTitle": "자원 소모",
+  "DND5E.ConsumeAmount": "소모 비용",
+  "DND5E.ConsumeHint": {
+    "Attribute": "소모할 속성 (예: currency.gp)",
+    "Item": "컴펜디엄 내 대상의 UUID"
+  },
+  "DND5E.ConsumeTarget": "소모 대상",
+  "DND5E.ConsumeType": "카테고리",
+  "DND5E.ConsumeAmmunition": "탄환",
+  "DND5E.ConsumeAttribute": "능력",
+  "DND5E.ConsumeHitDice": "히트 다이스",
+  "DND5E.ConsumeHitDiceLargest": "가장 큰 주사위 사용",
+  "DND5E.ConsumeHitDiceLargestLong": "사용 가능한 가장 큰 히트 다이스",
+  "DND5E.ConsumeHitDiceSmallest": "가장 작은 주사위 사용",
+  "DND5E.ConsumeHitDiceSmallestLong": "사용 가능한 가장 작은 히트 다이스",
+  "DND5E.ConsumeMaterial": "재료",
+  "DND5E.ConsumeCharges": "충전",
+  "DND5E.ConsumeResource": "자원을 소모하시겠습니까?",
+  "DND5E.ConsumeRecharge": "재충전 자원을 소모하시겠습니까?",
+  "DND5E.ConsumeScaling": "자원 성장",
+  "DND5E.ConsumeScalingLabel": "자원 추가 소모",
+  "DND5E.ConsumeScalingTooltip": "체크 시, 추가 자원을 소모하여 주문시전 레벨을 높입니다.",
+  "DND5E.CONSUMABLE": {
+    "FIELDS": {
+      "damage": {
+        "label": "탄환 피해",
+        "replace": {
+          "label": "무기 피해 대체",
+          "hint": "무기의 기본 피해를 증가시키는 대신 이 피해로 대체합니다."
+        }
+      },
+      "magicalBonus": {
+        "label": "마법 보너스"
+      },
+      "properties": {
+        "label": "소모품 속성"
+      },
+      "uses": {
+        "autoDestroy": {
+          "label": "소진 시 파괴",
+          "hint": "모든 사용 횟수를 소모할 때마다 아이템의 수량을 1씩 감소시킵니다."
+        }
+      }
+    },
+    "Category": {
+      "Poison": "독"
+    },
+    "Type": {
+      "Ammunition": {
+        "Label": "탄환",
+        "Arrow": "화살",
+        "Bolt": "볼트",
+        "BulletFirearm": "총화기 탄환",
+        "BulletSling": "무릿매 탄환",
+        "Needle": "바늘",
+        "EnergyCell": "에너지 셀"
+      },
+      "Food": {
+        "Label": "음식"
+      },
+      "Poison": {
+        "Label": "독",
+        "Contact": "접촉",
+        "Ingested": "섭취",
+        "Inhaled": "흡입",
+        "Injury": "부상"
+      },
+      "Potion": {
+        "Label": "물약"
+      },
+      "Rod": {
+        "Label": "막대"
+      },
+      "Scroll": {
+        "Label": "두루마리"
+      },
+      "Trinket": {
+        "Label": "잡동사니"
+      },
+      "Wand": {
+        "Label": "마법봉"
+      },
+      "Wondrous": {
+        "Label": "경이 물품"
+      }
+    }
+  },
+  "DND5E.ConsumableUseWarnStart": "이 소모품은",
+  "DND5E.ConsumableUseWarnEnd": "현재 단위 중",
+  "DND5E.ConsumableUnitWarn": "단위 남음",
+  "DND5E.ConsumableLastChargeWarn": "이 단위의 마지막 충전이며, 소모 시 아이템 수량이 1 감소합니다.",
+  "DND5E.ConsumableWithoutCharges": "사용 가능한 단위",
+  "DND5E.CONSUMPTION": {
+    "FIELDS": {
+      "consumption": {
+        "label": "소모",
+        "scaling": {
+          "abbr": "성장",
+          "label": "소모 성장",
+          "allowed": {
+            "label": "성장 허용",
+            "hint": "주문이 아닌 활동을 상위 레벨에서 활성화할 수 있도록 허용하시겠습니까?"
+          },
+          "max": {
+            "label": "최대 성장",
+            "hint": "기본 레벨을 포함하여 이 아이템이 성장할 수 있는 최대 레벨 수입니다."
+          }
+        },
+        "spellSlot": {
+          "label": "주문 슬롯",
+          "hint": "이 활동을 사용하면 해당 주문의 슬롯을 소모합니까?"
+        },
+        "targets": {
+          "label": "소모 대상",
+          "hint": "이 활동이 활성화될 때 소모될 수 있는 잠재적 대상들입니다.",
+          "FIELDS": {
+            "type": {
+              "label": "소모 유형",
+              "hint": "소모 대상의 유형입니다."
+            },
+            "target": {
+              "label": "소모 대상",
+              "hint": "소모할 특정 대상입니다."
+            },
+            "value": {
+              "label": "소모량",
+              "hint": "소모 대신 회복하려면 음수 값을 입력하세요."
+            },
+            "scaling": {
+              "label": "소모 성장",
+              "mode": {
+                "label": "성장 모드",
+                "hint": "소모량이 성장하는 방식입니다."
+              },
+              "formula": {
+                "label": "성장 공식",
+                "hint": "레벨당 소모량에 대한 사용자 정의 성장 공식입니다."
+              }
+            }
+          }
+        }
+      }
+    },
+    "Action": {
+      "ConsumeResource": "자원 소모",
+      "Create": "소모 항목 생성",
+      "Delete": "소모 프로필 삭제",
+      "RefundResource": "자원 복구"
+    },
+    "Scaling": {
+      "Amount": "수량",
+      "Automatic": "자동",
+      "None": "성장 없음",
+      "SlotLevel": "주문 슬롯 레벨"
+    },
+    "Target": {
+      "ThisItem": "이 아이템",
+      "UnknownItem": "알 수 없는 아이템"
+    },
+    "Type": {
+      "ActivityUses": {
+        "Label": "활동 사용 횟수",
+        "PromptDecrease": "활동 사용 횟수를 소모하시겠습니까?",
+        "PromptIncrease": "활동 사용 횟수를 회복하시겠습니까?",
+        "PromptHintDecrease": "이 활동의 사용 횟수를 <strong>{cost}</strong>{use} 소모합니다(현재 <strong>{available}</strong>{availableUse} 가능).",
+        "PromptHintIncrease": "이 활동의 사용 횟수를 <strong>{cost}</strong>{use} 회복합니다.",
+        "Warning": "{item} 아이템의 {activity} 활동 사용 횟수"
+      },
+      "Attribute": {
+        "Label": "속성",
+        "PromptDecrease": "속성을 소모하시겠습니까?",
+        "PromptIncrease": "속성을 회복하시겠습니까?",
+        "PromptHintDecrease": "<code>{attribute}</code>를 <strong>{cost}</strong>만큼 감소시킵니다(현재 {current}).",
+        "PromptHintIncrease": "<code>{attribute}</code>를 <strong>{cost}</strong>만큼 증가시킵니다(현재 {current}).",
+        "Warning": "{attribute}의 수량",
+        "NonEmbeddedHint": "소모할 속성의 데이터 경로입니다(예: attributes.exhaustion, spells.pact.value)."
+      },
+      "HitDice": {
+        "Label": "히트 다이스",
+        "PromptDecrease": "히트 다이스를 소모하시겠습니까?",
+        "PromptIncrease": "히트 다이스를 복구하시겠습니까?",
+        "PromptHintDecrease": "{denomination} {die}를 <strong>{cost}</strong>만큼 소모합니다(<strong>{available}</strong>개 남음).",
+        "PromptHintIncrease": "{denomination} {die}를 <strong>{cost}</strong>만큼 복구합니다.",
+        "Warning": "{denomination} 히트 다이스"
+      },
+      "HitDie": {
+        "one": "히트 다이스",
+        "other": "히트 다이스"
+      },
+      "ItemUses": {
+        "Label": "아이템 사용 횟수",
+        "PromptDecrease": "아이템 충전량을 소모하시겠습니까?",
+        "PromptIncrease": "아이템 사용 횟수를 회복하시겠습니까?",
+        "PromptHintDecrease": "{item}의 사용 횟수를 <strong>{cost}</strong>{use} 소모합니다(현재 <strong>{available}</strong>{availableUse} 가능).",
+        "PromptHintIncrease": "{item}의 사용 횟수를 <strong>{cost}</strong>{use} 회복합니다.",
+        "Warning": "{name}의 사용 횟수",
+        "NonEmbeddedHint": "캐릭터 시트의 해당 아이템과 자동으로 연결될 컴펜디엄 내 아이템의 식별자 또는 UUID입니다."
+      },
+      "Material": {
+        "Label": "재료",
+        "PromptDecrease": "재료를 소모하시겠습니까?",
+        "PromptIncrease": "재료를 회복하시겠습니까?",
+        "PromptHintDecrease": "{item}의 수량을 <strong>{cost}</strong>만큼 감소시킵니다(<strong>{quantity}</strong>개 남음).",
+        "PromptHintIncrease": "{item}의 수량을 <strong>{cost}</strong>만큼 증가시킵니다.",
+        "Warning": "{name}의 수량",
+        "NonEmbeddedHint": "캐릭터 시트의 해당 아이템과 자동으로 연결될 컴펜디엄 내 아이템의 식별자 또는 UUID입니다."
+      },
+      "SpellSlot": {
+        "one": "{level} 슬롯",
+        "other": "{level} 슬롯"
+      },
+      "SpellSlots": {
+        "Label": "주문 슬롯",
+        "PromptDecrease": "주문 슬롯을 소모하시겠습니까?",
+        "PromptIncrease": "주문 슬롯을 복구하시겠습니까?",
+        "PromptHintDecrease": "{slot}을 <strong>{cost}</strong>만큼 소모합니다(<strong>{available}</strong>개 남음).",
+        "PromptHintIncrease": "{slot}을 <strong>{cost}</strong>만큼 복구합니다.",
+        "Warning": "{level} 슬롯"
+      },
+      "Use": {
+        "one": "회",
+        "other": "회"
+      },
+      "Action": {
+        "Prompt": "{type}을(를) 소모하시겠습니까?",
+        "PromptHint": "{cost}을(를) 소모합니다({available} 가능)."
+      }
+    },
+    "Warning": {
+      "MissingAttribute": "{item}의 {activity} 활동에서 소모하도록 설정된 {attribute} 속성을 찾을 수 없습니다.",
+      "MissingHitDice": "캐릭터에게 {denomination} 유형의 히트 다이스를 가진 클래스가 없습니다.",
+      "MissingItem": "{item}의 {activity} 활동에서 소모하도록 설정된 아이템을 찾을 수 없습니다.",
+      "MissingSpellSlot": "사용 가능한 {level}레벨 주문 슬롯이 없습니다.",
+      "None": "소모할 수 있는 {type}이 없습니다. ({cost} 필요)",
+      "NotEnough": "{type}이 부족합니다. {cost}만큼 필요하지만 현재 {available}만 가능합니다.",
+      "WillDestroy": "{item}을 소모하면 마지막 사용 횟수를 소진하며 아이템이 파괴됩니다."
+    }
+  },
+  "DND5E.Consumed": "소모됨",
+  "DND5E.Copy": "텍스트 복사",
+  "DND5E.Copied": "{value} 복사됨",
+  "DND5E.Cover": "엄폐",
+  "DND5E.CoverHalf": "절반 엄폐",
+  "DND5E.CoverThreeQuarters": "3/4 엄폐",
+  "DND5E.CoverTotal": "완전 엄폐",
+  "DND5E.Cost": "비용",
+  "DND5E.CostGP": "비용 (gp)",
+  "DND5E.CreatureAberration": "이형체",
+  "DND5E.CreatureAberrationPl": "이형체",
+  "DND5E.CreatureBeast": "야수",
+  "DND5E.CreatureBeastPl": "야수",
+  "DND5E.CreatureCelestial": "천족",
+  "DND5E.CreatureCelestialPl": "천족",
+  "DND5E.CreatureConstruct": "인공물",
+  "DND5E.CreatureConstructPl": "인공물",
+  "DND5E.CreatureDragon": "드래곤",
+  "DND5E.CreatureDragonPl": "드래곤",
+  "DND5E.CreatureElemental": "정령",
+  "DND5E.CreatureElementalPl": "정령",
+  "DND5E.CreatureFey": "요정",
+  "DND5E.CreatureFeyPl": "요정",
+  "DND5E.CreatureFiend": "마족",
+  "DND5E.CreatureFiendPl": "마족",
+  "DND5E.CreatureGiant": "거인",
+  "DND5E.CreatureGiantPl": "거인",
+  "DND5E.CreatureHumanoid": "인간형",
+  "DND5E.CreatureHumanoidPl": "인간형",
+  "DND5E.CreatureMonstrosity": "괴물",
+  "DND5E.CreatureMonstrosityPl": "괴물",
+  "DND5E.CreatureOoze": "점액",
+  "DND5E.CreatureOozePl": "점액",
+  "DND5E.CreaturePlant": "식물",
+  "DND5E.CreaturePlantPl": "식물",
+  "DND5E.CreatureType": " 유형",
+  "DND5E.CreatureTypeTitle": "크리처 유형",
+  "DND5E.CreatureSwarm": "무리",
+  "DND5E.CreatureSwarmSize": "무리 크기",
+  "DND5E.CreatureSwarmPhrase": "{type}의 {size} 무리",
+  "DND5E.CreatureTypeConfig": "크리처 유형 설정",
+  "DND5E.CreatureTypeSelectorCustom": "사용자 정의 유형",
+  "DND5E.CreatureTypeSelectorSubtype": "하위 유형",
+  "DND5E.CreatureUndead": "언데드",
+  "DND5E.CreatureUndeadPl": "언데드",
+  "DND5E.Crewed": "승무원 탑승",
+  "DND5E.Critical": "치명타",
+  "DND5E.CriticalHit": "치명타",
+  "DND5E.PowerfulCritical": "강력한 치명타",
+  "DND5E.CRLabel": "도전지수 {cr}",
+  "DND5E.Currency": "화폐",
+  "DND5E.CurrencyAbbrCP": "cp",
+  "DND5E.CurrencyAbbrEP": "ep",
+  "DND5E.CurrencyAbbrGP": "gp",
+  "DND5E.CurrencyAbbrPP": "pp",
+  "DND5E.CurrencyAbbrSP": "sp",
+  "DND5E.CurrencyCP": "동화",
+  "DND5E.CurrencyEP": "호박금화",
+  "DND5E.CurrencyGP": "금화",
+  "DND5E.CurrencyPP": "백금화",
+  "DND5E.CurrencySP": "은화",
+  "DND5E.CurrencyManager": {
+    "Title": "화폐 관리",
+    "Convert": {
+      "Label": "환전",
+      "Action": "모든 화폐 환전",
+      "Hint": "소지한 모든 화폐를 가치가 가장 높은 단위로 환전하여 무게를 줄입니다. 주의: 이 작업은 취소할 수 없습니다."
+    },
+    "Transfer": {
+      "Label": "이동",
+      "Action": "선택 항목 이동",
+      "All": "전체",
+      "Half": "절반"
+    },
+    "Error": {
+      "InsufficientFunds": "{name}에게서 {amount}{denomination}을 차감하지 못했습니다. 자금이 부족합니다."
+    }
+  },
+  "DND5E.Current": "현재",
+  "DND5E.DAMAGE": {
+    "Title": "피해",
+    "FIELDS": {
+      "damage": {
+        "label": "피해",
+        "critical": {
+          "allow": {
+            "label": "치명타 허용",
+            "hint": "이 크리처가 치명타 피해를 입힐 수 있습니까?"
+          },
+          "bonus": {
+            "label": "보너스 치명타 피해",
+            "hint": "치명타 발생 시 첫 번째 피해 항목에 추가되는 추가 피해입니다."
+          }
+        },
+        "parts": {
+          "label": "피해 항목",
+          "hint": "굴림에 포함할 개별 피해 항목들입니다.",
+          "FIELDS": {
+            "bonus": {
+              "label": "피해 보너스",
+              "hint": "피해 굴림에 추가되는 보너스입니다."
+            },
+            "custom": {
+              "label": "사용자 정의 피해 공식",
+              "enabled": {
+                "label": "사용자 정의 공식 활성화",
+                "hint": "기본 주사위 대신 사용자 정의 공식을 사용합니다."
+              },
+              "formula": {
+                "label": "피해 공식",
+                "hint": "사용자 정의 피해 공식입니다."
+              }
+            },
+            "denomination": {
+              "label": "주사위 규격",
+              "hint": "굴릴 주사위의 종류입니다."
+            },
+            "number": {
+              "label": "주사위 개수",
+              "hint": "굴릴 주사위의 개수입니다."
+            },
+            "scaling": {
+              "label": "피해 성장",
+              "abbr": "성장",
+              "mode": {
+                "label": "성장 모드",
+                "abbr": "모드",
+                "hint": "성장 증분치가 계산되는 방식입니다."
+              },
+              "number": {
+                "label": "주사위 성장",
+                "abbr": "주사위",
+                "hint": "성장 단계마다 증가할 주사위 개수입니다. 피해 공식에 여러 주사위가 있다면 첫 번째 주사위에 적용됩니다."
+              },
+              "formula": {
+                "label": "성장 공식",
+                "hint": "각 성장 단계마다 곱해져 기본 공식에 추가될 임의의 성장 공식입니다."
+              }
+            },
+            "types": {
+              "label": "피해 유형",
+              "hint": "가하는 피해의 유형이며, 사용자가 여러 유형 중 선택할 수도 있습니다."
+            }
+          }
+        }
+      }
+    },
+    "Part": {
+      "Action": {
+        "Create": "피해 항목 생성",
+        "Delete": "피해 항목 삭제"
+      }
+    },
+    "Scaling": {
+      "Half": "2레벨마다",
+      "None": "성장 없음",
+      "Whole": "레벨마다",
+      "HalfCantrip": "소마법 성장 (절반)",
+      "WholeCantrip": "소마법 성장"
+    },
+    "Hint": "공격이나 내성 없이 크리처에게 가해지는 피해입니다."
+  },
+  "DND5E.DamImm": "피해 면역",
+  "DND5E.DamMod": "피해 수정",
+  "DND5E.DamRes": "피해 저항",
+  "DND5E.DamVuln": "피해 취약",
+  "DND5E.Damage": "피해",
+  "DND5E.DamageAcid": "산성",
+  "DND5E.DamageAll": "모든 피해",
+  "DND5E.DamageApplication": {
+    "Change": {
+      "Modification": "{type} 수정",
+      "Immunity": "{type} 면역",
+      "Resistance": "{type} 저항",
+      "Vulnerability": "{type} 취약",
+      "Threshold": "피해 한도"
+    },
+    "Downgrading": "{source}를 저항으로 강등",
+    "Ignoring": "{source} 무시"
+  },
+"DND5E.DamageBludgeoning": "타격",
+  "DND5E.DamageCold": "냉기",
+  "DND5E.DamageFire": "화염",
+  "DND5E.DamageForce": "역장",
+  "DND5E.DamageLightning": "번개",
+  "DND5E.DamageModification": {
+    "Label": "피해 수정",
+    "Hint": "이 캐릭터에게 적용되는 특정 유형의 피해에 가감될 공식입니다. 음수 값은 받는 피해를 줄입니다.",
+    "BypassHint": "이 무기 속성들은 물리 피해에 대한 피해 수정을 무시합니다."
+  },
+  "DND5E.DamageNecrotic": "사령",
+  "DND5E.DamagePiercing": "관통",
+  "DND5E.DamagePhysical": "비마법적 물리",
+  "DND5E.DamagePhysicalBypass": "물리 피해 우회",
+  "DND5E.DamagePhysicalBypassHint": "이 무기들의 속성은 물리 피해에 대한 피해 저항을 우회할 수 있게 합니다.",
+  "DND5E.DamagePhysicalBypasses": "{bypassTypes} 속성이 없는 공격에 의한 {damageTypes} 피해",
+  "DND5E.DamagePhysicalBypassesShort": "{type} 유형에 의해 우회됨",
+  "DND5E.DamagePoison": "독성",
+  "DND5E.DamagePsychic": "정신",
+  "DND5E.DamageRadiant": "광휘",
+  "DND5E.DamageRoll": "피해 굴림",
+  "DND5E.DamageSlashing": "참격",
+  "DND5E.DamageThreshold": "피해 한도",
+  "DND5E.DamageThunder": "천둥",
+  "DND5E.DamageType": "피해 유형",
+  "DND5E.DamageTypes": "피해 유형",
+  "DND5E.Dawn": "새벽",
+  "DND5E.Day": "일",
+  "DND5E.DeathSave": "죽음 내성 굴림",
+  "DND5E.DeathSaveCriticalSuccess": "{name}이(가) 죽음 내성 굴림에서 치명적 성공을 거두었습니다. HP +1!",
+  "DND5E.DeathSaveHide": "죽음 내성 굴림 숨기기",
+  "DND5E.DeathSaveShow": "죽음 내성 굴림 표시",
+  "DND5E.DeathSaveSuccess": "{name}의 상태가 안정되었습니다. 죽음 내성 굴림 3회 성공!",
+  "DND5E.DeathSaveSuccessLabel": "죽음 내성 굴림 성공",
+  "DND5E.DeathSaveSuccessLabelN.one": "죽음 내성 굴림 1차 성공",
+  "DND5E.DeathSaveSuccessLabelN.two": "죽음 내성 굴림 2차 성공",
+  "DND5E.DeathSaveSuccessLabelN.few": "죽음 내성 굴림 3차 성공",
+  "DND5E.DeathSaveSuccesses": "성공",
+  "DND5E.DeathSaveFailure": "{name}이(가) 사망했습니다. 죽음 내성 굴림 3회 실패!",
+  "DND5E.DeathSaveFailureLabel": "죽음 내성 굴림 실패",
+  "DND5E.DeathSaveFailureLabelN.one": "죽음 내성 굴림 1차 실패",
+  "DND5E.DeathSaveFailureLabelN.two": "죽음 내성 굴림 2차 실패",
+  "DND5E.DeathSaveFailureLabelN.few": "죽음 내성 굴림 3차 실패",
+  "DND5E.DeathSaveFailures": "실패",
+  "DND5E.DeathSaveRoll": "죽음 내성 굴림 수행",
+  "DND5E.DeathSavingThrow": "죽음 내성 굴림 하기",
+  "DND5E.DeathSaveUnnecessary": "죽음 내성 굴림을 할 필요가 없습니다. HP가 양수이거나 이미 성공/실패 횟수가 3회에 도달했습니다.",
+  "DND5E.Default": "기본",
+  "DND5E.DefaultSpecific": "기본 ({default})",
+  "DND5E.DefaultAbilityCheck": "기본 능력 판정",
+  "DND5E.Denomination": "주사위 규격",
+  "DND5E.Description": "설명",
+  "DND5E.DescriptionChat": "대화창 설명",
+  "DND5E.DescriptionEdit": "{description} 편집",
+  "DND5E.DescriptionSummary": "요약 설명",
+  "DND5E.DescriptionUnidentified": "미식별 설명",
+  "DND5E.Details": "세부 사항",
+  "DND5E.DetailsEdit": "세부 사항 수정",
+  "DND5E.Die": "주사위",
+  "DND5E.Dimensions": "크기/치수",
+  "DND5E.Disadvantage": "불리",
+  "DND5E.Discord": "디스코드",
+  "DND5E.Disclaimer": "면책 조항",
+  "DND5E.DistAny": "전체",
+  "DND5E.DistFt": "피트",
+  "DND5E.DistFtAbbr": "ft",
+  "DND5E.DistKm": "킬로미터",
+  "DND5E.DistKmAbbr": "km",
+  "DND5E.DistM": "미터",
+  "DND5E.DistMAbbr": "m",
+  "DND5E.DistMi": "마일",
+  "DND5E.DistMiAbbr": "mi",
+  "DND5E.DistSelf": "자신",
+  "DND5E.DistTouch": "접촉",
+  "DND5E.DocumentUseWarn": "이 문서의 아이템을 사용할 권한이 없습니다.",
+  "DND5E.DocumentViewWarn": "이 문서를 볼 권한이 없습니다.",
+  "DND5E.DURATION": {
+    "FIELDS": {
+      "duration": {
+        "label": "지속시간",
+        "concentration": {
+          "label": "집중",
+          "hint": "활동이 활성화된 동안 크리처가 집중을 유지해야 합니다."
+        },
+        "override": {
+          "label": "지속시간 덮어쓰기",
+          "hint": "이 활동을 사용할 때 아이템에 설정된 값 대신 여기서 설정한 지속시간 값을 사용합니다."
+        },
+        "special": {
+          "label": "특수 지속시간",
+          "hint": "특수 지속시간과 관련된 구체적인 상세 설명입니다."
+        },
+        "units": {
+          "label": "지속시간 단위",
+          "hint": "지속시간을 측정하는 데 사용되는 단위입니다."
+        },
+        "value": {
+          "label": "지속시간 수치",
+          "hint": "해당 단위에 따른 지속시간의 수치 값입니다."
+        }
+      }
+    }
+  },
+  "DND5E.Duration": "지속시간",
+  "DND5E.DurationPermanent": "영구적",
+  "DND5E.DurationTime": "지속시간",
+  "DND5E.DurationType": "지속시간 유형",
+  "DND5E.DurationUnits": "지속시간 단위",
+  "DND5E.DurationValue": "지속시간 수치",
+  "DND5E.Dusk": "해 질 녘",
+  "DND5E.Effect": "효과",
+  "DND5E.Effects": "효과",
+  "DND5E.EFFECT": {
+    "Action": {
+      "Create": "효과 생성",
+      "Delete": "효과 삭제",
+      "Dissociate": "효과 분리"
+    },
+    "Empty": "연결된 효과가 없습니다. 위의 <i class=\"fas fa-plus\"></i> 버튼을 사용하여 새로 만들거나, 드롭다운 목록에서 기존 효과를 선택하세요.",
+    "Label": "사용 가능한 효과",
+    "RIDER": {
+      "Activity": "부여 마법 추가 활동",
+      "Effect": "부여 마법 추가 효과"
+    }
+  },
+  "DND5E.EffectsApplyTokens": "선택한 토큰에 적용",
+  "DND5E.EffectApplyWarningConcentration": "다른 캐릭터가 집중 중인 효과를 적용하려면 DM의 권한이 필요합니다.",
+  "DND5E.EffectApplyWarningOwnership": "소유권이 없는 토큰에는 효과를 적용할 수 없습니다.",
+  "DND5E.EffectsSearch": "효과 검색",
+  "DND5E.ENCHANT": {
+    "Title": "마법 부여",
+    "FIELDS": {
+      "enchant": {
+        "label": "부여 마법 설정",
+        "identifier": {
+          "label": "클래스 식별자",
+          "hint": "부여 마법의 레벨 제한을 판정할 때 캐릭터 레벨을 사용할지, 아니면 특정 클래스 레벨을 사용할지 결정하는 데 쓰이는 식별자입니다."
+        },
+        "self": {
+          "label": "자신에게 자동 부여",
+          "hint": "이 활동이 포함된 아이템을 사용할 때 선택한 부여 마법을 자동으로 적용하고, 활동을 다시 사용하면 제거합니다."
+        }
+      },
+      "restrictions": {
+        "label": "제한 사항",
+        "hint": "이 부여 마법을 적용할 수 있는 아이템 유형에 대한 제한입니다.",
+        "allowMagical": {
+          "label": "마법 아이템 허용",
+          "hint": "이미 마법적인 물리적 아이템에도 마법을 부여할 수 있도록 허용합니다."
+        },
+        "categories": {
+          "label": "유효한 카테고리",
+          "hint": "이 부여 마법을 적용할 수 있는 아이템 카테고리입니다."
+        },
+        "properties": {
+          "label": "유효한 속성",
+          "hint": "이 부여 마법이 적용되려면 해당 아이템이 반드시 가지고 있어야 하는 속성입니다."
+        },
+        "type": {
+          "label": "아이템 유형",
+          "hint": "이 부여 마법을 적용할 수 있는 아이템 유형입니다.",
+          "Any": "모든 부여 마법 유형"
+        }
+      },
+      "effects.element": {
+        "level": {
+          "max": {
+            "label": "최대 레벨"
+          },
+          "min": {
+            "label": "최소 레벨"
+          },
+          "label": "레벨 제한",
+          "hint": "이 부여 마법을 사용하는 데 필요한 레벨 범위입니다."
+        },
+        "riders": {
+          "label": "부속 항목",
+          "activity": {
+            "label": "추가 활동",
+            "hint": "부여 마법이 적용될 때 대상 아이템에 추가되고, 마법이 해제될 때 함께 제거되는 추가 활동들입니다."
+          },
+          "effect": {
+            "label": "추가 효과",
+            "hint": "부여 마법이 적용될 때 대상 아이템에 추가되고, 마법이 해제될 때 함께 제거되는 추가 효과들입니다."
+          },
+          "item": {
+            "label": "추가 아이템",
+            "hint": "크리처의 아이템에 마법이 부여될 때 해당 크리처에게 추가되고, 마법이 해제될 때 함께 제거되는 추가 아이템들입니다."
+          }
+        }
+      }
+    },
+    "SECTIONS": {
+      "Enchanting": "마법 부여",
+      "Enchantments": "부여 마법 목록",
+      "Restrictions": "제한 사항"
+    },
+    "DropArea": "마법을 부여할 아이템을 여기에 놓으세요...",
+    "Enchanted": "{current} / {max} 부여됨",
+    "Enchantment": {
+      "Action": {
+        "Create": "부여 마법 생성",
+        "Delete": "부여 마법 삭제"
+      },
+      "Empty": "연결된 부여 마법이 없습니다. 위의 <i class=\"fas fa-plus\"></i> 버튼을 사용하여 새로 만들거나, 드롭다운 목록에서 기존 마법을 선택하세요.",
+      "Active": "{name} (활성)"
+    },
+    "Warning": {
+      "ConcentrationEnded": "집중이 종료되어 이 부여 마법을 적용할 수 없습니다.",
+      "MissingProperty": "마법을 부여하려면 아이템이 다음 속성 중 하나를 가지고 있어야 합니다: {validProperties}.",
+      "NoMagicalItems": "이미 마법적인 아이템에는 마법을 부여할 수 없습니다.",
+      "NoSubtype": "이 부여 마법은 {allowedType} 아이템에만 적용 가능하지만, 이 아이템은 하위 유형이 없습니다.",
+      "WrongType": "{incorrectType} 아이템에는 이 부여 마법을 적용할 수 없습니다. {allowedType} 아이템만 허용됩니다.",
+      "NoTargetActor": "컴펜디엄에서 마법을 부여하려면 할당된 캐릭터나 선택된 토큰이 있어야 합니다."
+    },
+    "Hint": "아이템에 부여 마법을 적용하여 능력치나 기능을 수정합니다."
+  },
+  "DND5E.ENCHANTMENT": {
+    "Action": {
+      "Apply": "부여 마법 적용",
+      "Disable": "부여 마법 비활성화",
+      "Edit": "부여 마법 수정",
+      "Enable": "부여 마법 활성화",
+      "Remove": "부여 마법 제거"
+    },
+    "Category": {
+      "Active": "활성 부여 마법",
+      "General": "부여 마법",
+      "Inactive": "비활성 부여 마법"
+    },
+    "FIELDS": {
+      "enchantment": {
+        "label": "부여 마법 설정",
+        "items": {
+          "max": {
+            "label": "아이템 제한",
+            "hint": "동시에 활성화될 수 있는 이 유형의 부여 마법 최대 개수에 대한 공식입니다."
+          },
+          "period": {
+            "label": "교체 빈도",
+            "hint": "이 유형의 부여 마법을 다른 아이템으로 다시 연결할 수 있는 빈도입니다."
+          }
+        }
+      }
+    },
+    "Items": {
+      "Entry": "<em>{actor}</em>의 {item}"
+    },
+    "Label": "부여 마법",
+    "Warning": {
+      "NotOnActor": "부여 마법은 아이템에만 추가할 수 있으며, 캐릭터에게 직접 추가할 수 없습니다.",
+      "Override": "이 값은 부여 마법에 의해 수정되었으므로 편집할 수 없습니다. 편집하려면 효과 탭에서 부여 마법을 제거하세요."
+    },
+    "Period": {
+      "AtWill": "의지대로",
+      "LongRest": "긴 휴식",
+      "Never": "없음",
+      "ShortRest": "짧은 휴식"
+    }
+  },
+  "DND5E.Environment": "환경",
+  "DND5E.EquipmentBonus": "마법 보너스",
+  "DND5E.EquipmentHeavy": "중갑",
+  "DND5E.EquipmentLight": "경갑",
+  "DND5E.EquipmentMedium": "평갑",
+  "DND5E.EquipmentNatural": "자연 방어구",
+  "DND5E.EquipmentShield": "방패",
+  "DND5E.EquipmentShieldProficiency": "방패",
+  "DND5E.Equipped": "장착됨",
+  "DND5E.Exhaustion": "탈진",
+  "DND5E.ExhaustionLevel": "탈진 {n}단계",
+  "DND5E.Expertise": "전문성",
+  "DND5E.Favorite": "즐겨찾기",
+  "DND5E.FavoriteDrop": "즐겨찾기에서 제거",
+  "DND5E.FavoriteRemove": "즐겨찾기 해제",
+  "DND5E.Favorites": "즐겨찾기",
+  "DND5E.FeatureActionRecharge": "재충전 행동",
+  "DND5E.Feature": {
+    "Background": "배경 특징",
+    "Class": {
+      "Label": "클래스 특징",
+      "ArcaneShot": "비전 사격",
+      "ArtificerInfusion": "아티피서의 주입",
+      "ChannelDivinity": "신성한 권능",
+      "DefensiveTactic": "방어 전술",
+      "EldritchInvocation": "섬뜩한 기원",
+      "ElementalDiscipline": "원소 규율",
+      "FightingStyle": "전투 기법",
+      "HuntersPrey": "사냥꾼의 먹잇감",
+      "Ki": "몽크의 몰입 능력",
+      "Maneuver": "기교",
+      "Metamagic": "변형 마법 옵션",
+      "Multiattack": "다중공격",
+      "PactBoon": "계약의 은혜",
+      "PsionicPower": "초능력",
+      "Rune": "룬",
+      "SuperiorHuntersDefense": "상급 사냥꾼의 방어",
+      "ArtificerPlan": "아티피서의 설계"
+    },
+    "Feat": {
+      "Label": "재주",
+      "EpicBoon": "장엄한 은혜 재주",
+      "FightingStyle": "전투 기법 재주",
+      "General": "일반 재주",
+      "Origin": "기원 재주"
+    },
+    "Monster": "몬스터 특성",
+    "Species": "종족 특성",
+    "SupernaturalGift": {
+      "Label": "초자연적 선물",
+      "Blessing": "축복",
+      "Charm": "마력",
+      "EpicBoon": "장엄한 은혜"
+    },
+    "SpeciesLegacy": "종족 특성 (레거시)",
+    "Vehicle": {
+      "Label": "탈것 특징"
+    }
+  },
+"DND5E.Focus": {
+    "Label": "주문 시전 매개체",
+    "Arcane": "비전 매개체",
+    "Druidic": "드루이드 매개체",
+    "Holy": "성기물"
+  },
+  "DND5E.Loot.Art": "예술품",
+  "DND5E.Loot.Gear": "모험가 장비",
+  "DND5E.Loot.Gem": "보석",
+  "DND5E.Loot.Junk": "잡동사니",
+  "DND5E.Loot.Material": "재료",
+  "DND5E.Loot.Resource": "자원",
+  "DND5E.Loot.Treasure": "보물",
+  "DND5E.Flaws": "결함",
+  "DND5E.FormulaCannotContainDiceError": "{name} 공식에는 주사위 공식을 포함할 수 없습니다.",
+  "DND5E.EffectCreate": "효과 생성",
+  "DND5E.EffectToggle": "효과 상태 전환",
+  "DND5E.EffectEdit": "효과 편집",
+  "DND5E.EffectEnable": "효과 활성화",
+  "DND5E.EffectDelete": "효과 삭제",
+  "DND5E.EffectDisable": "효과 비활성화",
+  "DND5E.EffectTemporary": "일시적 효과",
+  "DND5E.EffectPassive": "지속적 효과",
+  "DND5E.EffectInactive": "비활성 효과",
+  "DND5E.EffectNew": "새 효과",
+  "DND5E.EffectType": {
+    "Inactive": "비활성",
+    "Passive": "지속적",
+    "Temporary": "일시적",
+    "Unavailable": "사용 불가"
+  },
+  "DND5E.EffectUnavailable": "사용 불가능한 효과",
+  "DND5E.EffectUnavailableInfo": "이 항목들을 활성화하려면 아이템을 장착하거나 조율해야 합니다.",
+  "DND5E.Encumbrance": "하중",
+  "DND5E.ItemRarityCommon": "일반",
+  "DND5E.ItemRarityMundane": "평범",
+  "DND5E.ItemRarityUncommon": "우수",
+  "DND5E.ItemRarityRare": "희귀",
+  "DND5E.ItemRarityVeryRare": "매우 희귀",
+  "DND5E.ItemRarityLegendary": "전설",
+  "DND5E.ItemRarityArtifact": "유물",
+  "DND5E.Eyes": "눈 색깔",
+  "DND5E.Faith": "신앙",
+  "DND5E.FeatureActive": "활성 특징",
+  "DND5E.FeatureAdd": "특징 추가",
+  "DND5E.FeatureAttack": "공격 특징",
+  "DND5E.FeaturePassive": "지속 특징",
+  "DND5E.FeatureRechargeOn": "재충전 기준",
+  "DND5E.FeatureRechargeResult": "1d6 결과",
+  "DND5E.FeatureSearch": "특징 검색",
+  "DND5E.FeatureUsage": "특징 사용",
+  "DND5E.Features": "특징",
+  "DND5E.FeaturesBackground": "배경 특징",
+  "DND5E.FeaturesClass": "{class} 특징",
+  "DND5E.FeaturesOther": "기타 특징",
+  "DND5E.Feats": "재능",
+  "DND5E.FeetAbbr": "ft.",
+  "DND5E.Filter": "필터",
+  "DND5E.FilterClear": "필터 초기화",
+  "DND5E.FilterGroupCategory": "카테고리별로 그룹화",
+  "DND5E.FilterGroupOrigin": "출처별로 그룹화",
+  "DND5E.FilterGroupAction": "행동별로 그룹화",
+  "DND5E.FilterNoSpells": "이 필터에 해당하는 주문을 찾을 수 없습니다.",
+  "DND5E.NoSpellLevels": "이 캐릭터는 주문 시전 레벨이 없지만, 수동으로 주문을 추가할 수 있습니다.",
+  "DND5E.FLAGS": {
+    "EnhancedDualWielding": {
+      "Name": "강화된 두 무기 전투",
+      "Hint": "양손 속성이 없는 근접 무기를 사용할 때 보너스 행동으로 추가 공격을 허용합니다."
+    }
+  },
+  "DND5E.FlagsInstructions": "D&D 5판 시스템의 작동 방식을 조정하는 캐릭터의 특성 및 특징들을 설정합니다.",
+  "DND5E.FlagsSave": "특수 특성 업데이트",
+  "DND5E.FlagsTitle": "특수 특성 설정",
+  "DND5E.FlagsDiamondSoul": "금강혼",
+  "DND5E.FlagsDiamondSoulHint": "모든 내성 굴림에 숙련을 부여합니다.",
+  "DND5E.FlagsPowerfulBuild": "건장한 체격",
+  "DND5E.FlagsPowerfulBuildHint": "운반 중량을 두 배로 늘립니다.",
+  "DND5E.FlagsElvenAccuracy": "엘프의 정밀함",
+  "DND5E.FlagsElvenAccuracyHint": "민첩, 지능, 지혜, 매력 판정에 이점이 있을 때 주사위 하나를 다시 굴릴 수 있습니다.",
+  "DND5E.FlagsHalflingLucky": "하플링의 행운",
+  "DND5E.FlagsHalflingLuckyHint": "명중 굴림, 능력 판정, 내성 굴림에서 1이 나오면 다시 굴릴 수 있습니다.",
+  "DND5E.FlagsAlert": "경계 (재주)",
+  "DND5E.FlagsAlertHint": "선제권 굴림에 숙련을 부여합니다.",
+  "DND5E.FlagsJOAT": "팔방미인",
+  "DND5E.FlagsJOATHint": "숙련 보너스가 없는 모든 능력 판정에 숙련 보너스의 절반을 더합니다.",
+  "DND5E.FlagsObservant": "관찰력 (재주)",
+  "DND5E.FlagsObservantHint": "상시 지혜(포착) 및 상시 지능(조사)에 +5 보너스를 부여합니다.",
+  "DND5E.FlagsTavernBrawler": "술집 싸움꾼 (재주)",
+  "DND5E.FlagsTavernBrawlerHint": "임시 무기에 숙련을 부여합니다.",
+  "DND5E.FlagsReliableTalent": "믿음직한 재능",
+  "DND5E.FlagsReliableTalentHint": "숙련된 기술 판정에서 9 이하의 결과는 10으로 간주합니다.",
+  "DND5E.FlagsRemarkableAthlete": "탁월한 운동선수",
+  "DND5E.FlagsRemarkableAthleteHint": "숙련되지 않은 모든 신체 능력 판정 및 우선권 굴림에 숙련 보너스의 절반을 더합니다.",
+  "DND5E.FlagsWeaponCritThreshold": "무기 치명타 임계치",
+  "DND5E.FlagsWeaponCritThresholdHint": "치명타 범위를 확장합니다 (예: 치명타 강화 등).",
+  "DND5E.FlagsSpellCritThreshold": "주문 치명타 임계치",
+  "DND5E.FlagsSpellCritThresholdHint": "공격 주문의 치명타 범위를 확장합니다.",
+  "DND5E.FlagsMeleeCriticalDice": "근거리 치명타 피해 주사위",
+  "DND5E.FlagsMeleeCriticalDiceHint": "근거리 무기 치명타 시 추가되는 피해 주사위 개수입니다.",
+  "DND5E.Flat": "고정값",
+  "DND5E.Formula": "공식",
+  "DND5E.FormulaMalformedError": "{name}의 {property} 공식을 준비하는 중 문제가 발생했습니다.",
+  "DND5E.FormulaMissingReferenceWarn": "{name}의 {property} 공식에 누락된 데이터 참조가 포함되어 있습니다: {references}",
+  "DND5E.Gender": "젠더",
+  "DND5E.GrantedAbilities": "부여된 능력",
+  "DND5E.GroupInventory": "소지품",
+  "DND5E.GroupHP": "누적 HP",
+  "DND5E.GroupSummary": "{members}의 그룹",
+  "DND5E.GroupSummaryEmpty": "빈 그룹",
+  "DND5E.GroupControls": "제어",
+"DND5E.Group": {
+    "Challenge": "위협 등급",
+    "Member": {
+      "one": "구성원",
+      "other": "구성원"
+    },
+    "PlaceMembers": "구성원 배치",
+    "Primary": {
+      "Remove": "기본 그룹에서 해제",
+      "Set": "기본 그룹으로 설정"
+    },
+    "Type": "그룹 유형",
+    "TypeEncounter": "조우",
+    "TypeGeneric": "그룹",
+    "TypeParty": "파티",
+    "Action": {
+      "Remove": "구성원 제거",
+      "View": "구성원 보기",
+      "ChangePace": "이동 속도 변경",
+      "Inventory": {
+        "Group": "그룹 인벤토리 보기",
+        "Vehicle": "탈것 인벤토리 보기"
+      },
+      "SetPrimaryVehicle": "주요 탈것으로 설정",
+      "UnsetPrimaryVehicle": "주요 탈것 설정 해제"
+    },
+    "Config": {
+      "Art": {
+        "Label": "구성원 일러스트",
+        "portraits": "초상화",
+        "tokens": "토큰"
+      },
+      "Legend": "그룹 시트 옵션"
+    },
+    "Distribute": {
+      "noxp": "공동 자금 분배",
+      "xp": "경험치 및 공동 자금 분배"
+    },
+    "Warning": {
+      "PhysicalItemOnly": "물리적 아이템만 지원됩니다.",
+      "PlaceMembers": "장면에 토큰을 배치하는 중 오류가 발생했습니다."
+    },
+    "Vehicle": {
+      "Count": {
+        "one": "탈것",
+        "other": "탈것"
+      },
+      "Primary": {
+        "label": "주요 탈것"
+      }
+    }
+  },
+  "DND5E.Hair": "머리카락",
+  "DND5E.HalfProficient": "반숙련",
+  "DND5E.HEAL": {
+    "Title": "치유",
+    "FIELDS": {
+      "healing": {
+        "label": "치유",
+        "bonus": {
+          "label": "치유 보너스",
+          "hint": "치유 굴림에 추가되는 보너스입니다."
+        },
+        "custom": {
+          "label": "사용자 정의 치유 공식",
+          "enabled": {
+            "label": "사용자 정의 공식 활성화",
+            "hint": "기본 주사위 대신 사용자 정의 공식을 사용합니다."
+          },
+          "formula": {
+            "label": "치유 공식",
+            "hint": "사용자 정의 치유 공식입니다."
+          }
+        },
+        "denomination": {
+          "label": "주사위 규격",
+          "hint": "굴릴 주사위의 종류입니다."
+        },
+        "number": {
+          "label": "주사위 개수",
+          "hint": "굴릴 주사위의 개수입니다."
+        },
+        "scaling": {
+          "label": "치유 성장",
+          "mode": {
+            "label": "성장 모드",
+            "hint": "성장 증분치가 계산되는 방식입니다."
+          },
+          "number": {
+            "label": "주사위 성장",
+            "hint": "성장 단계마다 추가할 주사위 개수입니다. 치유 공식에 여러 주사위가 있다면 첫 번째 주사위에 적용됩니다."
+          },
+          "formula": {
+            "label": "성장 공식",
+            "hint": "각 성장 단계마다 곱해져 기본 공식에 추가될 임의의 성장 공식입니다."
+          }
+        },
+        "types": {
+          "label": "치유 유형",
+          "hint": "적용될 치유의 유형입니다. 사용자가 여러 유형 중 선택할 수도 있습니다."
+        }
+      }
+    },
+    "Hint": "크리처를 치유합니다."
+  },
+"DND5E.Healing": "HP 회복",
+  "DND5E.HealingRoll": "치유 굴림",
+  "DND5E.HealingTemp": "임시 HP 회복",
+  "DND5E.Height": "신장",
+  "DND5E.HitPoints": "HP",
+  "DND5E.HitPointsBonusLevel": "레벨당 보너스",
+  "DND5E.HitPointsBonusOverall": "전체 보너스",
+  "DND5E.HitPointsConfig": "HP 설정",
+  "DND5E.HitPointsCurrent": "현재 HP",
+  "DND5E.HitPointsMax": "최대 HP",
+  "DND5E.HitPointsMin": "최소 HP",
+  "DND5E.HitPointsOverride": "최대 HP 덮어쓰기",
+  "DND5E.HitPointsTemp": "임시 HP",
+  "DND5E.HitPointsTempShort": "임시 HP",
+  "DND5E.HitPointsTempMax": "임시 최대 HP",
+  "DND5E.HitPointsTempMaxShort": "임시 최대 HP",
+  "DND5E.HP": "HP",
+  "DND5E.HPFormula": "HP 계산식",
+  "DND5E.HPFormulaError": "입력된 HP 공식을 계산할 수 없습니다.",
+  "DND5E.HPFormulaRollMessage": "HP 계산 공식",
+  "DND5E.HitDie": "히트 다이스",
+  "DND5E.HitDice": "히트 다이스",
+  "DND5E.HitDiceConfig": "히트 다이스 조정",
+  "DND5E.HitDiceConfigHint": "각 클래스별 히트 다이스 레벨을 조정합니다.",
+  "DND5E.HitDiceMax": "히트 다이스 주사위",
+  "DND5E.HitDiceRemaining": "남은 히트 다이스",
+  "DND5E.HitDiceRoll": "히트 다이스 굴리기",
+  "DND5E.HitDiceWarn": "{name}에게 남은 {formula} 히트 다이스가 없습니다!",
+  "DND5E.HitDiceNPCWarn": "{name}에게 더 이상 사용할 수 있는 히트 다이스가 없습니다!",
+  "DND5E.Ideals": "이상",
+  "DND5E.Identified": "식별됨",
+  "DND5E.Identifier": "식별자",
+  "DND5E.IdentifierError": "식별자에는 영문자(a-z), 숫자(0-9), 하이픈(-), 밑줄(_)만 포함할 수 있습니다.",
+  "DND5E.Identify": "식별",
+  "DND5E.Immunities": "면역",
+  "DND5E.Initiative": "선제권",
+  "DND5E.InitiativeAbbr": "선제권",
+  "DND5E.InitiativeBonus": "선제권 보너스",
+  "DND5E.InitiativeRoll": "선제권 굴림",
+  "DND5E.InitiativeConfig": "선제권 설정",
+  "DND5E.InitiativeConfigHint": "이 캐릭터에게 적용되는 선제권 수정치 및 보너스를 설정합니다.",
+  "DND5E.Inspiration": "영감",
+  "DND5E.Inventory": "소지품",
+  "DND5E.InventorySearch": "소지품 검색",
+  "DND5E.Issues": "문제 항목",
+  "DND5E.ItemActionType": "행동 유형",
+  "DND5E.ItemActivation": "활성화",
+  "DND5E.ItemActivationCondition": "활성화 조건",
+  "DND5E.ItemActivationCost": "활성화 비용",
+  "DND5E.ItemActivationType": "활성화 유형",
+  "DND5E.ItemAmmoProperties": "탄환 속성",
+  "DND5E.ItemAttackBonus": "명중 보너스",
+  "DND5E.ItemAttackFlat": "고정 보너스",
+  "DND5E.ItemAttackFlatHint": "체크 시, 여기에 포함된 것 외에는 숙련 보너스, 능력 수정치 또는 기타 보너스를 명중 굴림에 추가하지 않습니다.",
+  "DND5E.ItemBackgroundDetails": "배경 세부 사항",
+  "DND5E.ItemClassDetails": "클래스 세부 사항",
+  "DND5E.ItemConsumableActivation": "소모품 활성화",
+  "DND5E.ItemConsumableUsage": "소모 방식",
+  "DND5E.ItemConsumableDetails": "소모품 세부 사항",
+  "DND5E.ItemConsumableProperties": "소모품 속성",
+  "DND5E.ItemConsumableStatus": "소모품 상태",
+  "DND5E.ItemConsumableSubtype": "{category} 유형",
+  "DND5E.ItemConsumableType": "소모품 유형",
+  "DND5E.ItemCreate": "아이템 생성",
+  "DND5E.ItemCritThreshold": "치명타 임계치",
+  "DND5E.ItemCritExtraDamage": "치명타 추가 피해",
+  "DND5E.ItemDelete": "아이템 삭제",
+  "DND5E.ItemEdit": "아이템 편집",
+  "DND5E.ItemEquipmentAction": "장비 행동",
+  "DND5E.ItemEquipmentBase": "기본 장비",
+  "DND5E.ItemEquipmentDetails": "장비 세부 사항",
+  "DND5E.ItemEquipmentDexMod": "최대 민첩 수정치",
+  "DND5E.ItemEquipmentDexModAbbr": "최대 민첩",
+  "DND5E.ItemEquipmentProperties": "장비 속성",
+  "DND5E.ItemEquipmentStatus": "장비 상태",
+  "DND5E.ItemEquipmentStealthDisav": "은신 판정 불리",
+  "DND5E.ItemEquipmentType": "장비 유형",
+  "DND5E.ItemEquipmentUsage": "장비 용도",
+  "DND5E.ItemFeatureDetails": "특성 세부 사항",
+  "DND5E.ItemFeatureProperties": "특성 속성",
+  "DND5E.ItemFeatureSubtype": "{category} 유형",
+  "DND5E.ItemFeatureType": "특성 유형",
+  "DND5E.ItemLootDetails": "전리품 세부 사항",
+  "DND5E.ItemLootProperties": "전리품 속성",
+  "DND5E.ItemLootSubtype": "{category}",
+  "DND5E.ItemLootType": "전리품 유형",
+  "DND5E.ItemName": "아이템 이름",
+  "DND5E.ItemNew": "{type} 추가",
+  "DND5E.ItemRechargeCheck": "{name} 재충전 확인 - {result}",
+  "DND5E.ItemRechargeFailure": "실패!",
+  "DND5E.ItemRechargeSuccess": "성공!",
+  "DND5E.ItemRecoveryRoll": "{name}이(가) {count}개의 충전을 회복함",
+  "DND5E.ItemLossRoll": "{name}이(가) {count}개의 충전을 잃음",
+  "DND5E.ItemRecoveryRollMax": "{name}이(가) 모든 충전을 회복함",
+  "DND5E.ItemRecoveryFormulaWarning": "{name}의 사용 횟수를 회복할 수 없습니다. 회복 공식 {formula}가 유효하지 않습니다({uuid}).",
+  "DND5E.ItemRequiredStr": "필요 근력",
+  "DND5E.ItemSiegeProperties": "공성 속성",
+  "DND5E.ItemSpeciesDetails": "종족 세부 사항",
+  "DND5E.ItemSubclassDetails": "서브클래스 세부 사항",
+  "DND5E.ItemToolBase": "기본 도구",
+  "DND5E.ItemToolBonus": "도구 보너스",
+  "DND5E.ItemToolDetails": "도구 세부 사항",
+  "DND5E.ItemToolProficiency": "도구 숙련",
+  "DND5E.ItemToolProperties": "도구 속성",
+  "DND5E.ItemToolStatus": "도구 상태",
+  "DND5E.ItemToolType": "도구 카테고리",
+  "DND5E.ItemToolUsage": "도구 용도",
+  "DND5E.ItemVehicleProperties": "탈것 속성",
+  "DND5E.ItemView": "아이템 보기",
+  "DND5E.ItemWeaponAttack": "무기 공격 속성",
+  "DND5E.ItemWeaponBase": "기본 무기",
+  "DND5E.ItemWeaponDetails": "무기 세부 사항",
+  "DND5E.ItemWeaponProperties": "무기 속성",
+  "DND5E.ItemWeaponStatus": "무기 상태",
+  "DND5E.ItemWeaponType": "무기 유형",
+  "DND5E.ItemWeaponUsage": "무기 용도",
+  "DND5E.JackOfAllTrades": "팔방미인",
+  "DND5E.Languages": "언어",
+  "DND5E.Level": "레벨",
+  "DND5E.LevelPl": "레벨",
+  "DND5E.LevelActionDecrease": "레벨 낮추기",
+  "DND5E.LevelActionIncrease": "레벨 올리기",
+  "DND5E.LevelCount": "{ordinal} 레벨",
+  "DND5E.LevelLimit": {
+    "Label": "레벨 제한",
+    "Max": "최대 레벨",
+    "Min": "최소 레벨"
+  },
+  "DND5E.LevelNumber": "{level} 레벨",
+  "DND5E.LevelScaling": "레벨 성장",
+  "DND5E.LimitedUses": "횟수 제한",
+  "DND5E.LimitedUsesAvailable": "남은 횟수",
+  "DND5E.LimitedUsesMax": "최대 횟수",
+  "DND5E.LimitedUsesPer": "회복 방식",
+  "DND5E.LimitedUsesPrompt": "소모 제안 표시",
+  "DND5E.LimitedUsesPromptTooltip": "체크를 해제하면, 사용 가능한 횟수 소모를 묻는 제안창이 표시되지 않습니다.",
+  "DND5E.Long": "장기",
+  "DND5E.MagicalBonus": "마법 보너스",
+  "DND5E.Materials": "재료",
+  "DND5E.Max": "최대",
+  "DND5E.MaxCharacterLevelExceededWarn": "캐릭터 레벨을 {max} 이상으로 올릴 수 없습니다.",
+  "DND5E.MaxClassLevelExceededWarn": "클래스 레벨을 {max} 이상으로 올릴 수 없습니다.",
+  "DND5E.MaxClassLevelMinimumWarn": "클래스는 적어도 1레벨 이상이어야 합니다.",
+  "DND5E.Maximum": "최대",
+  "DND5E.Minimum": "최소",
+  "DND5E.Modifier": "수정치",
+  "DND5E.ModuleArtConfigH": "모듈에서 제공하는 아트 중 사용할 항목을 설정합니다.",
+  "DND5E.ModuleArtConfigL": "아트 설정",
+  "DND5E.ModuleArtConfigN": "모듈 제공 아트",
+  "DND5E.ModuleArtConfigPortraits": "초상화",
+  "DND5E.ModuleArtConfigTokens": "토큰",
+  "DND5E.ModuleArtPriorityDecrease": "우선순위 낮추기",
+  "DND5E.ModuleArtPriorityHint": "화살표를 사용하여 아트 소스의 우선순위를 조정합니다. 단일 캐릭터가 여러 소스의 아트를 가지고 있을 경우, 우선순위가 가장 높은 것이 사용됩니다.",
+  "DND5E.ModuleArtPriorityIncrease": "우선순위 높이기",
+  "DND5E.Multiple": "다중",
+  "DND5E.Multiplier": "배수",
+  "DND5E.MythicActionLabel": "신화적 행동",
+  "DND5E.Name": "캐릭터 이름",
+  "DND5E.NameUnidentified": "미식별 이름",
+  "DND5E.NoCharges": "충전 없음",
+  "DND5E.None": "없음",
+  "DND5E.NoneActionLabel": "없음",
+  "DND5E.Normal": "일반",
+  "DND5E.NotProficient": "숙련 없음",
+  "DND5E.Notes": "노트",
+  "DND5E.Number": "숫자",
+  "DND5E.OtherFormula": "기타 공식",
+  "DND5E.PactMagic": "계약 마법",
+  "DND5E.Passive": "지속",
+  "DND5E.PassivePerception": "상시 지혜(포착)",
+  "DND5E.Period": "기간",
+  "DND5E.PersonalityTraits": "성격적 특성",
+  "DND5E.Portrait": "초상화",
+  "DND5E.Prepared": "준비됨",
+  "DND5E.Prerequisites": {
+  "Header": "특성 요구사항",
+    "FIELDS": {
+      "prerequisites": {
+        "level": {
+          "label": "필요 레벨",
+          "hint": "레벨 업 시 이 특성을 선택하기 위해 필요한 캐릭터 또는 클래스 레벨입니다."
+        },
+        "label": "요구사항",
+        "repeatable": {
+          "hint": "이 특성은 여러 번 선택할 수 있습니다.",
+          "label": "반복 가능"
+        },
+        "items": {
+          "hint": "이 항목을 선택하기 위해 캐릭터가 사전에 소지해야 하는 아이템의 식별자입니다.",
+          "label": "필요 아이템"
+        }
+      }
+    },
+    "Warning": {
+      "InvalidLevel": "적어도 {level} 레벨이어야 합니다.",
+      "Message": "{actor}은(는) 이 {type}을(를) 취득하기 위해 {requirements} 조건을 만족해야 합니다.",
+      "MissingItem": "사전에 {items}을(를) 보유하고 있어야 합니다.",
+      "NotRepeatable": "이미 이전에 취득한 항목입니다."
+    }
+  },
+  "DND5E.Price": "가격",
+  "DND5E.Proficiency": "숙련",
+  "DND5E.ProficiencyBonus": "숙련 보너스",
+  "DND5E.ProficiencyConfigurationHint": "숙련 및 보너스를 설정합니다.",
+  "DND5E.ProficiencyConfigureTitle": "{label} 설정",
+  "DND5E.ProficiencyLevel": "숙련 등급",
+  "DND5E.Proficient": "숙련됨",
+  "DND5E.Properties": "속성",
+  "DND5E.PropertyBase": "기본",
+  "DND5E.PropertyTotal": "합계",
+  "DND5E.Public": "공개",
+  "DND5E.Quantity": "수량",
+  "DND5E.QuantityAbbr": "수량",
+  "DND5E.QuantityFormula": "수량 공식",
+  "DND5E.QuantityRoll": "수량 굴리기",
+  "DND5E.RacialTraits": "종족 특성",
+  "DND5E.RANGE": {
+    "FIELDS": {
+      "range": {
+        "label": "사거리",
+        "long": {
+          "label": "최대 사거리",
+          "hint": "무기에 설정된 원거리 공격의 최대 사거리입니다."
+        },
+        "override": {
+          "label": "사거리 대체",
+          "hint": "이 활동을 사용할 때 아이템에 설정된 값 대신 여기서 설정한 사거리 값을 사용합니다."
+        },
+        "reach": {
+          "label": "간격"
+        },
+        "special": {
+          "label": "특수 사거리",
+          "hint": "사거리와 관련된 구체적인 상세 설명입니다."
+        },
+        "units": {
+          "label": "사거리 단위",
+          "hint": "사거리를 측정하는 데 사용되는 단위입니다."
+        },
+        "value": {
+          "label": "사거리 수치",
+          "hint": "해당 단위에 따른 사거리의 수치 값입니다."
+        }
+      }
+    },
+    "Formatted": {
+      "Range": "사거리 {range}",
+      "Reach": "간격 {reach}"
+    }
+  },
+  "DND5E.Range": "사거리",
+  "DND5E.RangeDistance": "거리",
+  "DND5E.RangeLong": "최대 사거리",
+  "DND5E.RangeNormal": "일반 사거리",
+  "DND5E.RangeUnits": "사거리 유형 및 단위",
+  "DND5E.Rarity": "등급",
+  "DND5E.Reaction": "대응",
+  "DND5E.ReactionAbbr": "대응",
+  "DND5E.ReactionPl": "대응",
+  "DND5E.Recharge": "재충전",
+  "DND5E.Recovery": "회복",
+  "DND5E.RecoveryFormula": "회복 공식",
+  "DND5E.RequiredMaterials": "필요 재료",
+  "DND5E.Requirements": "요구 사항",
+  "DND5E.Resistances": "저항",
+  "DND5E.Resources": "자원",
+  "DND5E.ResourceLabel": "라벨",
+  "DND5E.ResourceMax": "최대 자원",
+  "DND5E.ResourceValue": "자원 수치",
+  "DND5E.ResourcePrimary": "자원 1",
+  "DND5E.ResourceSecondary": "자원 2",
+  "DND5E.ResourceTertiary": "자원 3",
+  "DND5E.Ritual": "의식",
+  "DND5E.RitualAbbr": "의식",
+  "DND5E.Roll": "굴림",
+  "DND5E.RollConfiguration": {
+    "Title": "굴림 설정",
+    "Configuration": "설정",
+    "Rolls": "굴림 목록"
+  },
+  "DND5E.RollExample": "예시 +1d4",
+  "DND5E.RollMode": "굴림 모드",
+  "DND5E.RollSituationalBonus": "상황 보너스",
+  "DND5E.Rule": {
+    "Tooltip": "툴팁",
+    "Type": {
+      "Label": "규칙 유형",
+      "Condition": "상태",
+      "Rule": "규칙"
+    }
+  },
+  "DND5E.Movement": "이동",
+  "DND5E.SAVE": {
+    "Title": {
+      "one": "내성 굴림",
+      "other": "내성 굴림"
+    },
+    "FIELDS": {
+      "damage": {
+        "label": "내성 피해",
+        "onSave": {
+          "label": "내성 성공 시 피해",
+          "hint": "내성 굴림에 성공했을 때 얼마만큼의 피해를 적용합니까?",
+          "Full": "전체 피해",
+          "Half": "절반 피해",
+          "None": "피해 없음"
+        },
+        "parts": {
+          "label": "피해 항목",
+          "hint": "굴림에 포함할 개별 피해 항목들입니다."
+        }
+      },
+      "effects": {
+        "onSave": {
+          "label": "항상 적용",
+          "hint": "대상이 내성 굴림에 성공하더라도 이 효과를 항상 적용합니다."
+        }
+      },
+      "save": {
+        "label": "내성 세부 사항",
+        "ability": {
+          "label": "내성 능력치",
+          "hint": "내성 굴림에 사용될 능력치입니다."
+        },
+        "dc": {
+          "label": "난이도",
+          "calculation": {
+            "label": "난이도 계산",
+            "hint": "난이도를 계산하는 데 사용되는 방식이나 능력치입니다."
+          },
+          "formula": {
+            "label": "난이도 공식",
+            "hint": "내성 난이도를 설정하기 위한 사용자 정의 공식이나 고정값입니다."
+          },
+          "CustomFormula": "사용자 정의 공식",
+          "DefaultFormula": "8 + @mod + @prof"
+        }
+      }
+    },
+    "OnSave": "내성 성공 시",
+    "Hint": "피해 굴림 옵션이 포함된 내성 굴림을 요청합니다."
+  },
+  "DND5E.SaveBonus": "내성 굴림",
+  "DND5E.SaveGlobalBonusHint": "이 보너스는 이 캐릭터가 수행하는 모든 내성 굴림에 적용됩니다.",
+  "DND5E.Scroll": {
+    "CreateFrom": "{sort} 주문으로 주문서 생성",
+    "CreateScroll": "주문서 생성",
+    "Details": "주문서 세부 사항",
+    "Explanation": {
+      "Label": "설명",
+      "Hint": "주문서에서 사용할 설명 유형입니다.",
+      "Complete": "규칙 전문",
+      "Reference": "주문 참조"
+    },
+    "RequiresConcentration": "집중 필요",
+    "SaveDC": "내성 난이도",
+    "Values": "주문 수치"
+  },
+  "DND5E.Senses": "감각",
+  "DND5E.SensesConfig": "감각 설정",
+  "DND5E.SensesConfigHint": "이 캐릭터가 보유한 특수 지각 능력을 설정합니다.",
+  "DND5E.SenseDarkvision": "암시야",
+  "DND5E.SenseBlindsight": "맹시야",
+  "DND5E.SenseTremorsense": "진동 감지",
+  "DND5E.SenseTruesight": "진시야",
+  "DND5E.SenseUnits": "단위",
+  "DND5E.SenseSpecial": "상시 포착",
+  "DND5E.Shape": "형태",
+  "DND5E.SheetModeEdit": "편집 모드",
+  "DND5E.SheetModePlay": "플레이 모드",
+  "DND5E.SavingThrow": "내성 굴림",
+  "DND5E.SavingThrowDC": "{ability} 내성 난이도 {dc}",
+  "DND5E.SavingThrowRoll": "{ability} 내성 굴림 수행",
+  "DND5E.SaveDC": "난이도 {dc} {ability}",
+  "DND5E.SavePromptTitle": "내성 굴림: {ability}",
+  "DND5E.ScalingFormula": "성장 공식",
+  "DND5E.ScalingMode": "성장 모드",
+  "DND5E.ScalingValue": "성장 수치",
+  "DND5E.School": "학파",
+  "DND5E.SchoolAbj": "방호술",
+  "DND5E.SchoolCon": "소환술",
+  "DND5E.SchoolDiv": "예지술",
+  "DND5E.SchoolEnc": "환혹술",
+  "DND5E.SchoolEvo": "방출술",
+  "DND5E.SchoolIll": "환영술",
+  "DND5E.SchoolNec": "사령술",
+  "DND5E.SchoolTrs": "변환술",
+  "DND5E.Size": "체격",
+  "DND5E.SizeGargantuan": "초대형",
+  "DND5E.SizeGargantuanAbbr": "초대",
+  "DND5E.SizeHuge": "거대",
+  "DND5E.SizeHugeAbbr": "거",
+  "DND5E.SizeLarge": "대형",
+  "DND5E.SizeLargeAbbr": "대",
+  "DND5E.SizeMedium": "중형",
+  "DND5E.SizeMediumAbbr": "중",
+  "DND5E.SizeSmall": "소형",
+  "DND5E.SizeSmallAbbr": "소",
+  "DND5E.SizeTiny": "초소형",
+  "DND5E.SizeTinyAbbr": "초소",
+  "DND5E.Skill": "기술",
+  "DND5E.Skills": "기술",
+  "DND5E.SkillAcr": "곡예",
+  "DND5E.SkillAni": "동물 조련",
+  "DND5E.SkillArc": "비전",
+  "DND5E.SkillAth": "운동",
+  "DND5E.SkillDec": "기만",
+  "DND5E.SkillHis": "역사",
+  "DND5E.SkillIns": "통찰",
+  "DND5E.SkillInv": "조사",
+  "DND5E.SkillItm": "위협",
+  "DND5E.SkillMed": "의학",
+  "DND5E.SkillNat": "자연",
+  "DND5E.SkillPer": "설득",
+  "DND5E.SkillPrc": "포착",
+  "DND5E.SkillPrf": "공연",
+  "DND5E.SkillRel": "종교",
+  "DND5E.SkillSlt": "손재주",
+  "DND5E.SkillSte": "은신",
+  "DND5E.SkillSur": "생존",
+  "DND5E.SkillPromptTitle": "{ability} ({skill}) 판정",
+  "DND5E.SkillConfigureTitle": "{skill} 설정",
+  "DND5E.SkillConfigure": "기술 설정",
+  "DND5E.SkillsConfig": "기술 목록 설정",
+  "DND5E.SkillBonuses": "기술 보너스",
+  "DND5E.SkillBonusCheck": "판정 보너스",
+  "DND5E.SkillBonusPassive": "상시 보너스",
+  "DND5E.SkillConfigurationHint": "기술 숙련 및 보너스를 설정합니다.",
+  "DND5E.SkillGlobalBonusCheckHint": "이 보너스는 이 캐릭터가 수행하는 모든 기술 판정에 적용됩니다.",
+  "DND5E.SkillModifierHint": "{skill} 수정치",
+  "DND5E.SkillPassiveHint": "상시 {skill}",
+  "DND5E.SkillPassiveSpecificHint": "상시 {ability} ({skill})",
+  "DND5E.SkillPassiveScore": "{skill} 상시 점수",
+  "DND5E.SkillPassives": "상시 기술 판정",
+  "DND5E.Skin": "피부색",
+  "DND5E.Skip": "건너뛰기",
+  "DND5E.SOURCE": {
+    "FIELDS": {
+      "source": {
+        "label": "출처",
+        "book": {
+          "label": "서적"
+        },
+        "custom": {
+          "label": "사용자 정의 라벨"
+        },
+        "license": {
+          "label": "라이선스"
+        },
+        "page": {
+          "label": "페이지/단락"
+        },
+        "revision": {
+          "label": "개정 버전"
+        },
+        "rules": {
+          "label": "규칙 버전"
+        },
+        "uuid": {
+          "label": "원본 소스"
+        }
+      }
+    },
+    "Action": {
+      "Configure": "출처 설정"
+    },
+    "Display": {
+      "Full": "{book} {page}",
+      "Page": "{page}페이지"
+    }
+  },
+  "DND5E.Special": "특수",
+  "DND5E.SpecialHint": "세미콜론(;)으로 구분된 특수 값입니다.",
+  "DND5E.SpecialTraits": "특수 특성",
+  "DND5E.Species": {
+    "Label": "종족",
+    "Add": "종족 추가",
+    "Features": "종족 특성",
+    "Name": "종족 이름",
+    "FeaturesLegacy": "종족 특성 (레거시)",
+    "AddLegacy": "종족 추가 (레거시)"
+  },
+  "DND5E.Speed": "속도",
+  "DND5E.SpeedSpecial": "특수 이동",
+  "DND5E.SpellAbility": "주문 시전 능력",
+  "DND5E.SpellAbilitySet": "주 주문시전 능력치로 설정",
+  "DND5E.SpellAdd": "주문 추가",
+  "DND5E.SpellCantrip": "소마법",
+  "DND5E.SpellCastConsume": "주문 슬롯을 소모하시겠습니까?",
+  "DND5E.SpellCastNoSlots": "{name} 주문을 시전하기 위해 사용할 수 있는 {level}레벨 주문 슬롯이 없습니다.",
+  "DND5E.SpellCastNoSlotsLeft": "{name} 주문을 시전하기 위해 사용할 수 있는 주문 슬롯이 없습니다!",
+  "DND5E.SpellCastTime": "시전 시간",
+  "DND5E.SpellCastUpcast": "시전 레벨",
+  "DND5E.SpellcasterLevel": "주문 시전자 레벨",
+  "DND5E.SpellCastingHeader": "주문 시전 세부 사항",
+  "DND5E.Spellcasting": "주문 시전 속성",
+  "DND5E.SpellcastingClass": "{class} 주문 시전",
+  "DND5E.SpellComponent": "주문 구성 요소",
+  "DND5E.SpellComponents": "구성 요소",
+  "DND5E.SpellCreate": "주문 생성",
+  "DND5E.SpellDC": "주문 난이도",
+  "DND5E.SpellDetails": "주문 세부 사항",
+  "DND5E.SpellEffects": "주문 효과",
+  "DND5E.SpellHeader": {
+    "Formula": "공식",
+    "Range": "사거리",
+    "Roll": "굴림",
+    "School": "학파",
+    "Target": "대상",
+    "Time": "시간"
+  },
+  "DND5E.SpellLevel": "주문 레벨",
+  "DND5E.SpellLevels": "주문 레벨",
+  "DND5E.SpellLevel0": "소마법",
+  "DND5E.SpellLevel1": "1레벨",
+  "DND5E.SpellLevel2": "2레벨",
+  "DND5E.SpellLevel3": "3레벨",
+  "DND5E.SpellLevel4": "4레벨",
+  "DND5E.SpellLevel5": "5레벨",
+  "DND5E.SpellLevel6": "6레벨",
+  "DND5E.SpellLevel7": "7레벨",
+  "DND5E.SpellLevel8": "8레벨",
+  "DND5E.SpellLevel9": "9레벨",
+  "DND5E.SpellLevelPact": "계약 슬롯 [레벨 {level}] ({n}개 슬롯)",
+  "DND5E.SpellMaterials": "재료 구성 요소",
+  "DND5E.SpellMaterialsConsumed": "재료 소모",
+  "DND5E.SpellMaterialsCost": "재료 비용",
+  "DND5E.SpellMaterialsDescription": "재료 설명",
+  "DND5E.SpellMaterialsSupply": "재료 비축량",
+  "DND5E.SpellName": "주문 이름",
+  "DND5E.SpellNone": "없음",
+  "DND5E.SpellPrepAtWill": "의지대로",
+  "DND5E.SpellPrepInnate": "선천적 주문시전",
+  "DND5E.SpellPrepRitual": "의식 전용",
+  "DND5E.SpellPrepPrepared": "준비됨",
+  "DND5E.SpellPrepAlways": "항상 준비됨",
+  "DND5E.SpellPreparation": {
+    "Label": "주문 준비",
+    "Formula": "준비 공식",
+    "Method": "시전 방식"
+  },
+  "DND5E.SpellSourceClass": "출처 클래스",
+  "DND5E.SpellPrepared": "준비됨",
+  "DND5E.SpellProgArt": "아티피서",
+  "DND5E.SpellProgAvailable": "사용 가능한 슬롯",
+  "DND5E.SpellProgFull": "풀캐스터 (위저드, 드루이드, 클레릭, 바드, 소서러 등)",
+  "DND5E.SpellProgHalf": "하프캐스터 (팔라딘, 레인저)",
+  "DND5E.SpellProgLeveled": "레벨별 성장 공식",
+  "DND5E.SpellProgOverride": "무시",
+  "DND5E.SpellProgPact": "계약 마법",
+  "DND5E.SpellProgThird": "서드캐스터 (비술 기사, 비전 괴도 등)",
+  "DND5E.SpellProgression": "주문 슬롯 획득 방식",
+  "DND5E.SpellsSearch": "주문 검색",
+  "DND5E.SpellSchool": "마법 학파",
+  "DND5E.SpellScroll": "주문서",
+  "DND5E.SpellSlotExpended": "주문 슬롯 소모됨",
+  "DND5E.SpellSlotN.one": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotN.two": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotN.few": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotN.other": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotsN.one": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotsN.two": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotsN.few": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotsN.other": "{n}레벨 주문 슬롯",
+  "DND5E.SpellSlotsPact": "계약 슬롯",
+  "DND5E.SpellSlotsConfig": "주문 슬롯 설정",
+  "DND5E.SpellTag": "주문 태그",
+  "DND5E.SpellTarget": "주문 대상",
+  "DND5E.SpellUnprepared": "준비되지 않음",
+  "DND5E.SpellUsage": "시전시간",
+  "DND5E.Spellbook": "주문서",
+  "DND5E.Spent": "소모됨",
+  "DND5E.StartingEquipment": {
+    "Title": "시작 장비",
+    "Action": {
+      "AddEntry": "항목 추가",
+      "Configure": "시작 장비 설정",
+      "RemoveEntry": "항목 삭제"
+    },
+    "Choice": {
+      "Armor": "방어구 선택",
+      "Focus": "주문 시전 매개체 선택",
+      "Tool": "도구 선택",
+      "Weapon": "무기 선택"
+    },
+    "DropHint": "연결할 아이템을 여기에 놓으세요",
+    "IfProficient": "숙련 시",
+    "Operator": {
+      "AND": "다음 항목 전부...",
+      "OR": "다음 중 하나..."
+    },
+    "RequireProficiency": "숙련 요구",
+    "SpecificItem": "특정 아이템",
+    "Warning": {
+      "Depth": "시작 장비는 최대 3단계 깊이까지만 허용됩니다.",
+      "ItemTypeInvalid": "{type} 유형의 아이템은 시작 장비에 추가할 수 없습니다."
+    },
+    "Wealth": {
+      "Label": "시작 자산",
+      "Hint": "시작 장비 대신 사용할 수 있는 금화 공식입니다."
+    },
+    "ChooseList": "<em>{prefixes} 선택:</em> {choices}",
+    "Currency": "화폐",
+    "Prefixes": "abcdefghijklmnopqrstuvwxyz"
+  },
+  "DND5E.SubclassAdd": "서브클래스 추가",
+  "DND5E.SubclassIdentifierHint": "이 식별자는 올바른 연결을 위해 상위 클래스의 식별자와 일치해야 합니다.",
+  "DND5E.SubclassAssignmentError": "{class} 클래스에 이미 서브클래스가 있습니다. 새 서브클래스를 추가하기 전에 기존의 {subclass} 서브클래스를 삭제하세요.",
+  "DND5E.SubclassDuplicateError": "이 캐릭터에게 해당 식별자({identifier})를 가진 서브클래스가 이미 존재합니다.",
+  "DND5E.SubclassMismatchWarn": "{name} 서브클래스에 해당하는 식별자 '{class}'를 가진 클래스가 없습니다.",
+  "DND5E.SubclassName": "서브클래스",
+  "DND5E.Subtype": "하위 유형",
+  "DND5E.SUMMON": {
+    "Title": "소환",
+    "FIELDS": {
+      "bonuses": {
+        "ac": {
+          "label": "방어도 보너스",
+          "hint": "소환된 크리처의 스텟 블록에 명시된 수치에 추가될 AC 보너스입니다."
+        },
+        "attackDamage": {
+          "label": "공격 피해 보너스",
+          "hint": "크리처의 공격으로 가하는 추가 피해입니다."
+        },
+        "hd": {
+          "label": "보너스 히트 다이스",
+          "hint": "소환된 크리처의 스텟 블록에 명시된 히트 다이스 외에 추가로 더해질 주사위입니다. NPC 유형의 캐릭터를 소환할 때만 적용됩니다."
+        },
+        "healing": {
+          "label": "치유 보너스",
+          "hint": "치유 능력을 통해 제공되는 추가 회복량입니다."
+        },
+        "hp": {
+          "label": "보너스 생명력",
+          "hint": "소환된 크리처의 스텟 블록에 명시된 수치 외에 추가로 더해질 HP입니다."
+        },
+        "saveDamage": {
+          "label": "내성 굴림 보너스 피해",
+          "hint": "내성 굴림을 요구하는 크리처의 능력을 통해 가하는 추가 피해입니다."
+        }
+      },
+      "creatureSizes": {
+        "label": "크리처 크기",
+        "hint": "소환된 크리처와 토큰은 이 크기를 갖게 됩니다. 여러 크기가 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
+      },
+      "creatureTypes": {
+        "label": "크리처 유형",
+        "hint": "소환된 크리처는 이 유형으로 변환됩니다. 여러 유형이 선택된 경우, 플레이어는 소환 시 그중 하나를 선택할 수 있습니다."
+      },
+      "match": {
+        "attacks": {
+          "label": "공격 연동",
+          "hint": "소환된 크리처의 공격 명중 수정치를 소환사의 수치와 일치시킵니다."
+        },
+        "proficiency": {
+          "label": "숙련 보너스 연동",
+          "hint": "소환된 크리처의 숙련 보너스를 소환사의 보너스와 일치시킵니다."
+        },
+        "saves": {
+          "label": "내성 굴림 연동",
+          "hint": "소환된 크리처 능력의 내성 DC를 소환사의 수치와 일치시킵니다."
+        },
+        "ability": {
+          "label": "연동 능력치",
+          "hint": "공격 명중 및 내성 난이도를 연동할 때 사용할 특정 능력치입니다."
+        },
+        "disposition": {
+          "label": "태도 연동",
+          "hint": "소환된 크리처의 토큰 태도(우호적/적대적 등)를 소환사의 태도와 일치시킵니다."
+        }
+      },
+      "profiles": {
+        "label": "소환 프로필",
+        "element": {
+          "cr": {
+            "label": "위협 등급",
+            "abbr": "CR",
+            "hint": "소환 가능한 크리처의 최대 도전지수입니다."
+          },
+          "level": {
+            "label": "레벨 제한",
+            "hint": "이 프로필을 사용하는 데 필요한 레벨입니다.",
+            "max": {
+              "label": "최대 레벨"
+            },
+            "min": {
+              "label": "최소 레벨"
+            }
+          },
+          "name": {
+            "label": "표시 이름",
+            "hint": "대화창에 표시될 프로필 이름입니다."
+          },
+          "types": {
+            "label": "크리처 유형",
+            "hint": "소환할 크리처를 선택할 수 있는 크리처 유형 목록입니다."
+          },
+          "uuid": {
+            "label": "연결된 크리처"
+          },
+          "count": {
+            "label": "수량"
+          }
+        }
+      },
+    "summon": {
+        "label": "소환 세부 사항",
+        "identifier": {
+          "label": "클래스 식별자",
+          "hint": "프로필 레벨 제한을 판정할 때 캐릭터 레벨을 사용할지, 아니면 특정 클래스 레벨을 사용할지 결정하는 데 쓰이는 식별자입니다."
+        },
+        "mode": {
+          "label": "모드",
+          "hint": "소환할 크리처를 지정하는 방식을 설정합니다.",
+          "CR": "도전지수 및 유형별",
+          "Direct": "직접 연결"
+        },
+        "prompt": {
+          "label": "소환 창 표시",
+          "hint": "플레이어에게 소환수 배치를 요청하는 창을 띄울지 여부입니다. 창 표시가 비활성화되어 있어도 플레이어는 대화창 카드를 통해 소환을 진행할 수 있습니다."
+        }
+      }
+    },
+    "SECTIONS": {
+      "Changes": "수정 사항",
+      "Profiles": "프로필",
+      "Summoning": "소환"
+    },
+    "Action": {
+      "Place": "소환수 배치",
+      "Summon": "소환",
+      "View": "소환수 보기"
+    },
+    "CreatureChanges": {
+      "Label": "크리처 수정",
+      "Hint": "소환되는 크리처에게 적용될 수정 사항입니다. 아래 공식에서 사용되는 모든 @ 참조는 소환사의 능력치를 기준으로 합니다. 소환되는 크리처의 능력치는 @summon을 사용하여 참조할 수 있습니다(예: 크리처의 히트 다이스 개수를 참조하려면 @summon.attributes.hd.max 사용)."
+    },
+    "ItemChanges": {
+      "Label": "아이템 수정",
+      "Hint": "소환된 크리처가 가진 아이템에 적용될 수정 사항입니다."
+    },
+    "Profile": {
+      "Label": "소환 프로필",
+      "Action": {
+        "Create": "프로필 생성",
+        "Delete": "프로필 삭제"
+      },
+      "ChallengeRatingLabel": "도전지수 {cr} 이하",
+      "DropHint": "여기에 크리처를 놓으세요",
+      "Empty": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하세요.",
+      "EmptyDrop": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하거나 소환할 크리처를 여기에 놓으세요."
+    },
+    "Warning": {
+      "NoOwnership": "'{actor}'을(를) 소환하려면 해당 캐릭터의 소유권이 있어야 합니다.",
+      "NoProfile": "'{item}'에서 소환 프로필 {profileId}을(를) 찾을 수 없습니다.",
+      "Wildcard": "와일드카드 이미지를 사용하는 크리처를 소환하려면 파일 탐색기 사용 권한이 있어야 합니다."
+    },
+    "Hint": "장면에 새로운 크리처를 소환합니다."
+  },
+  "DND5E.Summoning": {
+    "Label": "소환"
+  },
+  "DND5E.Supply": "비축량",
+  "DND5E.Suppressed": "억제됨",
+  "DND5E.TARGET": {
+    "FIELDS": {
+      "target": {
+        "label": "대상 지정",
+        "affects": {
+          "label": "영향을 받는 대상",
+          "choice": {
+            "label": "대상 선택",
+            "hint": "범위 대상을 지정할 때, 사용자가 영향을 받을 대상을 직접 선택할 수 있습니까?"
+          },
+          "count": {
+            "label": "대상 수",
+            "hint": "영향을 받을 수 있는 개별 대상의 수입니다."
+          },
+          "special": {
+            "label": "특수 대상 지정",
+            "hint": "특수한 대상 지정 방식에 대한 상세 설명입니다."
+          },
+          "type": {
+            "label": "대상 유형",
+            "hint": "영향을 받을 수 있는 대상의 유형입니다(예: 크리처, 물체, 공간)."
+          }
+        },
+        "override": {
+          "label": "대상 지정 덮어쓰기",
+          "hint": "이 활동을 사용할 때 아이템에 설정된 값 대신 여기서 설정한 대상 지정 값을 사용합니다."
+        },
+        "prompt": {
+          "label": "템플릿 배치 창 표시",
+          "hint": "플레이어에게 템플릿 배치를 요청하는 창을 띄울지 여부입니다. 창 표시가 비활성화되어 있어도 플레이어는 대화창 카드를 통해 템플릿을 배치할 수 있습니다."
+        },
+        "template": {
+          "label": "효과 범위",
+          "contiguous": {
+            "label": "인접 범위",
+            "hint": "생성된 모든 범위가 서로 연결되어 있어야 합니까?"
+          },
+          "count": {
+            "label": "범위 개수",
+            "hint": "지정할 수 있는 개별 범위의 개수입니다."
+          },
+          "height": {
+            "label": "범위 높이",
+            "hint": "원통형 범위 등이 적용될 경우의 높이입니다."
+          },
+          "size": {
+            "label": "범위 크기",
+            "hint": "주요 축에 따른 효과 범위의 크기입니다."
+          },
+          "type": {
+            "label": "범위 유형",
+            "hint": "지정된 효과 범위의 유형입니다."
+          },
+          "units": {
+            "label": "범위 단위",
+            "hint": "효과 범위의 크기를 측정하는 데 사용되는 단위입니다."
+          },
+          "width": {
+            "label": "범위 너비",
+            "hint": "선형 범위 등이 적용될 경우의 너비입니다."
+          }
+        }
+      }
+    },
+    "Action": {
+      "PlaceTemplate": "템플릿 배치"
+    },
+    "Warning": {
+      "PlaceTemplate": "템플릿을 배치할 수 없습니다."
+    },
+    "Type": {
+      "Cube": {
+        "Label": "입방체",
+        "Counted": {
+          "other": "{number}개의 입방체",
+          "one": "{number}개의 입방체"
+        }
+      },
+      "Cylinder": {
+        "Label": "원통",
+        "Counted": {
+          "one": "{number}개의 원통",
+          "other": "{number}개의 원통"
+        }
+      },
+      "Sphere": {
+        "Label": "구체",
+        "Counted": {
+          "one": "{number}개의 구체",
+          "other": "{number}개의 구체"
+        }
+      },
+      "Space": {
+        "Label": "공간",
+        "Counted": {
+          "any": "임의의 공간",
+          "every": "모든 공간",
+          "one": "{number}칸의 공간",
+          "other": "{number}칸의 공간"
+        }
+      },
+      "Cone": {
+        "Label": "원뿔",
+        "Counted": {
+          "one": "{number}개의 원뿔",
+          "other": "{number}개의 원뿔"
+        }
+      },
+      "Line": {
+        "Label": "직선",
+        "Counted": {
+          "one": "{number}개의 직선",
+          "other": "{number}개의 직선"
+        }
+      },
+      "Emanation": {
+        "Label": "방출",
+        "Counted": {
+          "other": "{number}개의 발산",
+          "one": "{number}개의 발산"
+        }
+      },
+      "Any": {
+        "Label": "임의"
+      },
+      "Ally": {
+        "Counted": {
+          "every": "모든 아군",
+          "any": "임의의 아군",
+          "one": "{number}명의 아군",
+          "other": "{number}명의 아군"
+        },
+        "Label": "아군"
+      },
+      "Circle": {
+        "Label": "원형",
+        "Counted": {
+          "one": "{number}개의 원형",
+          "other": "{number}개의 원형"
+        }
+      },
+      "Creature": {
+        "Label": "크리처",
+        "Counted": {
+          "any": "임의의 크리처",
+          "every": "모든 크리처",
+          "one": "{number}마리의 크리처",
+          "other": "{number}마리의 크리처"
+        }
+      },
+      "Enemy": {
+        "Label": "적",
+        "Counted": {
+          "any": "임의의 적",
+          "every": "모든 적",
+          "one": "{number}명의 적",
+          "other": "{number}명의 적"
+        }
+      },
+      "CreatureOrObject": {
+        "Label": "크리처 또는 물체",
+        "Counted": {
+          "any": "임의의 크리처 또는 물체",
+          "every": "모든 크리처 또는 물체",
+          "one": "{number}개의 크리처 또는 물체",
+          "other": "{number}개의 크리처 또는 물체"
+        }
+      },
+      "Object": {
+        "Label": "물체",
+        "Counted": {
+          "any": "임의의 물체",
+          "every": "모든 물체",
+          "one": "{number}개의 물체",
+          "other": "{number}개의 물체"
+        }
+      },
+      "Radius": {
+        "Label": "반경",
+        "Counted": {
+          "one": "{number}개의 반경",
+          "other": "{number}개의 반경"
+        }
+      },
+      "Self": {
+        "Label": "자신"
+      },
+      "Square": {
+        "Label": "정사각형",
+        "Counted": {
+          "one": "{number}개의 정사각형",
+          "other": "{number}개의 정사각형"
+        }
+      },
+      "Target": {
+        "Label": "대상",
+        "Counted": {
+          "any": "임의의 대상",
+          "every": "모든 대상",
+          "one": "{number}개의 대상",
+          "other": "{number}개의 대상"
+        }
+      },
+      "Wall": {
+        "Label": "벽",
+        "Counted": {
+          "one": "{number}개의 벽",
+          "other": "{number}개의 벽"
+        }
+      },
+      "WillingCreature": {
+        "Label": "자발적인 크리처",
+        "Counted": {
+          "any": "임의의 자발적인 크리처",
+          "every": "모든 자발적인 크리처",
+          "one": "{number}마리의 자발적인 크리처",
+          "other": "{number}마리의 자발적인 크리처"
+        }
+      }
+    },
+    "Count": {
+      "Any": "임의",
+      "Every": "모든"
+    },
+    "Formatted": "{count} {type}"
+  },
+  "DND5E.Target": "대상",
+  "DND5E.TargetPl": "대상",
+  "DND5E.TargetType": "대상 유형",
+  "DND5E.TargetTypeArea": "범위",
+  "DND5E.TargetTypeIndividual": "개별",
+  "DND5E.TargetUnits": "효과 범위 단위",
+  "DND5E.TargetValue": "대상 수",
+  "DND5E.TargetWidth": "선형 너비",
+  "DND5E.TemplatePrompt": "템플릿 배치 제안",
+  "DND5E.TemplatePromptTooltip": "체크를 해제하면, 측정된 템플릿 배치를 묻는 창이 표시되지 않습니다.",
+  "DND5E.Temp": "임시",
+  "DND5E.Threshold": "한도",
+  "DND5E.TimeDay": "일",
+  "DND5E.TimeDayAbbr": "일",
+  "DND5E.TimeDisp": "해제될 때까지",
+  "DND5E.TimeDispTrig": "해제되거나 발동될 때까지",
+  "DND5E.TimeHour": "시간",
+  "DND5E.TimeHourAbbr": "시",
+  "DND5E.TimeInst": "즉시",
+  "DND5E.TimeMinute": "분",
+  "DND5E.TimeMinuteAbbr": "분",
+  "DND5E.TimeMonth": "개월",
+  "DND5E.TimePerm": "영구적",
+  "DND5E.TimeRound": "라운드",
+  "DND5E.TimeTurn": "차례",
+  "DND5E.TimeYear": "년",
+  "DND5E.TMP": "임시 HP",
+  "DND5E.ToHit": "명중 굴림",
+  "DND5E.Tokens": {
+    "NoneSelected": "선택된 토큰 없음",
+    "NoneTargeted": "대상으로 지정된 토큰 없음",
+    "Selected": "선택됨",
+    "Targeted": "대상 지정됨"
+  },
+  "DND5E.ToggleDescription": "설명 전환",
+  "DND5E.ToolArtisans": "장인의 도구",
+  "DND5E.ToolBonuses": "도구 보너스",
+  "DND5E.ToolCheck": "도구 판정",
+  "DND5E.ToolConfigure": "도구 숙련 설정",
+  "DND5E.ToolDisguiseKit": "변장 키트",
+  "DND5E.ToolForgeryKit": "위조 도구",
+  "DND5E.ToolGamingSet": "게임 세트",
+  "DND5E.ToolHerbalismKit": "약초학 키트",
+  "DND5E.ToolMusicalInstrument": "악기",
+  "DND5E.ToolNavigators": "항해사의 도구",
+  "DND5E.ToolPoisonersKit": "독 제작자의 도구",
+  "DND5E.ToolPromptTitle": "{tool} 판정",
+  "DND5E.ToolThieves": "도둑 도구",
+  "DND5E.ToolVehicle": "탈것 (지상 또는 해상)",
+  "DND5E.TraitAll": "모든 {category}",
+  "DND5E.TraitArmorPlural.one": "방어구 훈련",
+  "DND5E.TraitArmorPlural.other": "방어구 훈련",
+  "DND5E.TraitArmorProf": "방어구 훈련",
+  "DND5E.TraitArmorLegacyPlural.one": "방어구 숙련",
+  "DND5E.TraitArmorLegacyPlural.other": "방어구 숙련",
+  "DND5E.TraitArmorLegacyProf": "방어구 숙련",
+  "DND5E.TraitCIPlural.one": "상태 면역",
+  "DND5E.TraitCIPlural.other": "상태 면역",
+  "DND5E.TraitConfig": "{trait} 설정",
+  "DND5E.TraitConfigChooseAnyCounted": "{count}개의 임의의 {type}",
+  "DND5E.TraitConfigChooseAnyUncounted": "임의의 {type}",
+  "DND5E.TraitConfigChooseList": "{count}개의 선택지 중 선택: {list}",
+  "DND5E.TraitConfigChooseOther": "{type} 중 {count}개 추가 선택",
+  "DND5E.TraitConfigChooseWrapper": "{choices}",
+  "DND5E.TraitDIPlural.one": "피해 면역",
+  "DND5E.TraitDIPlural.other": "피해 면역",
+  "DND5E.TraitDRPlural.one": "피해 저항",
+  "DND5E.TraitDRPlural.other": "피해 저항",
+  "DND5E.TraitDVPlural.one": "피해 취약",
+  "DND5E.TraitDVPlural.other": "피해 취약",
+  "DND5E.TraitGenericPlural.one": "특성",
+  "DND5E.TraitGenericPlural.other": "특성",
+  "DND5E.TraitLanguagesPlural.one": "언어",
+  "DND5E.TraitLanguagesPlural.other": "언어",
+  "DND5E.TraitSave": "업데이트",
+  "DND5E.TraitSavesPlural.one": "내성 굴림 숙련",
+  "DND5E.TraitSavesPlural.other": "내성 굴림 숙련",
+  "DND5E.TraitSelectorSpecial": "특수 (세미콜론으로 구분)",
+  "DND5E.TraitSkillsPlural.one": "기술 숙련",
+  "DND5E.TraitSkillsPlural.other": "기술 숙련",
+  "DND5E.TraitToolPlural.one": "도구 숙련",
+  "DND5E.TraitToolPlural.other": "도구 숙련",
+  "DND5E.TraitToolProf": "도구 숙련",
+  "DND5E.TraitWeaponPlural.one": "무기 숙련",
+  "DND5E.TraitWeaponPlural.other": "무기 숙련",
+  "DND5E.TraitWeaponProf": "무기 숙련",
+  "DND5E.Traits": "특성",
+  "DND5E.TraitsChosen": "선택된 특성",
+  "DND5E.Trigger": "발동",
+  "DND5E.Type": "유형",
+  "DND5E.Uncrewed": "승무원 없음",
+  "DND5E.Unequipped": "장착 해제됨",
+  "DND5E.Unidentified.DefaultName": "미식별된 {name}",
+  "DND5E.Unidentified.Notice": "상세 내용을 확인하려면 이 아이템을 식별해야 합니다.",
+  "DND5E.Unidentified.Title": "미식별됨",
+  "DND5E.Unidentified.Value": "???",
+  "DND5E.Unknown": "알 수 없음",
+  "DND5E.Unlimited": "무제한",
+  "DND5E.USAGE": {
+    "SECTION": {
+      "Consumption": "소모",
+      "Creation": "생성",
+      "Scaling": "성장"
+    }
+  },
+  "DND5E.Usage": "사용",
+  "DND5E.Use": "사용",
+  "DND5E.UseItem": "{item} 사용",
+  "DND5E.Uses": "사용 횟수",
+  "DND5E.UsesAvailable": "사용 가능한 횟수",
+  "DND5E.UsesMax": "최대 사용 횟수",
+  "DND5E.UsesPeriod": "회복 기간",
+  "DND5E.UsesPeriods": {
+    "Charges": "충전",
+    "ChargesAbbreviation": "충전"
+  },
+  "DND5E.USES": {
+    "FIELDS": {
+      "uses": {
+        "label": "사용 횟수",
+        "max": {
+          "label": "최대 사용 횟수",
+          "hint": "최대 사용 횟수를 결정하는 공식입니다."
+        },
+        "recovery": {
+          "label": "사용 횟수 회복",
+          "hint": "이 활동의 사용 횟수에 대한 회복 프로필입니다.",
+          "FIELDS": {
+            "period": {
+              "label": "회복 주기",
+              "hint": "이 회복이 발생하는 시점입니다."
+            },
+            "type": {
+              "label": "회복 유형",
+              "hint": "사용 횟수가 회복되는 방식입니다."
+            },
+            "formula": {
+              "label": "회복 공식",
+              "hint": "회복되는 사용 횟수를 결정하는 데 사용되는 공식입니다."
+            }
+          }
+        },
+        "spent": {
+          "label": "소모한 사용 횟수",
+          "hint": "이미 소모된 사용 횟수입니다."
+        }
+      }
+    },
+    "Recovery": {
+      "Action": {
+        "Create": "회복 프로필 생성",
+        "Delete": "회복 프로필 삭제"
+      },
+      "Recharge": {
+        "Label": "재충전",
+        "Range": "재충전 {range}"
+      },
+      "Type": {
+        "Formula": "사용자 정의 공식",
+        "LoseAll": "모든 사용 횟수 상실",
+        "RecoverAll": "모든 사용 횟수 회복"
+      },
+      "Combat": "전투",
+      "Period": {
+        "TurnEnd": {
+          "Label": "차례 종료 시",
+          "Abbreviation": "차례 종료"
+        },
+        "Dawn": {
+          "Label": "새벽"
+        },
+        "Day": {
+          "Label": "매일"
+        },
+        "Dusk": {
+          "Label": "해질녘"
+        },
+        "Initiative": {
+          "Label": "선제권 굴림 시"
+        },
+        "LongRest": {
+          "Label": "긴 휴식",
+          "Abbreviation": "긴휴"
+        },
+        "ShortRest": {
+          "Label": "짧은 휴식",
+          "Abbreviation": "짧휴"
+        },
+        "Turn": {
+          "Label": "매 차례"
+        },
+        "TurnStart": {
+          "Label": "차례 시작 시",
+          "Abbreviation": "차례 시작"
+        }
+      },
+      "Never": "없음",
+      "Special": "특수",
+      "Time": "시간"
+    }
+  },
+  "DND5E.UTILITY": {
+    "Title": "유틸리티",
+    "FIELDS": {
+      "roll": {
+        "label": "굴림",
+        "formula": {
+          "label": "굴림 공식",
+          "hint": "임의의 주사위 굴림을 위한 공식입니다."
+        },
+        "name": {
+          "label": "굴림 이름",
+          "hint": "굴림 버튼에 표시될 이름입니다."
+        },
+        "prompt": {
+          "label": "굴림 확인창",
+          "hint": "주사위를 굴릴 때 공식 설정 대화창을 표시합니다."
+        },
+        "visible": {
+          "label": "모두에게 공개",
+          "hint": "대화창의 굴림 버튼을 모든 플레이어에게 표시합니다."
+        }
+      }
+    },
+    "Hint": "임의의 주사위 굴림을 수행하거나, 다른 활동 유형으로 표현되지 않는 기타 행동을 수행했음을 나타냅니다."
+  },
+  "DND5E.Value": "가치",
+  "DND5E.Vehicle": "탈것",
+  "DND5E.Versatile": "다용도",
+  "DND5E.VersatileDamage": "양손 피해",
+  "DND5E.VsDC": "대항 DC",
+  "DND5E.Vulnerabilities": "취약",
+  "DND5E.WarnBadACFormula": "방어도 공식 \"{formula}\"를 계산할 수 없습니다.",
+  "DND5E.WarnCantAddMultipleAdvancements": "현재 여러 개의 성장 아이템을 동시에 캐릭터에게 추가할 수 없습니다. 개별적으로 추가해 주세요.",
+  "DND5E.WarnMultipleArmor": "둘 이상의 방어구를 장착 중입니다. AC 계산이 부정확할 수 있습니다.",
+  "DND5E.WarnMultipleShields": "둘 이상의 방어구를 장착 중입니다. AC 계산이 부정확할 수 있습니다.",
+  "DND5E.WEAPON": {
+    "FIELDS": {
+      "ammunition": {
+        "type": {
+          "label": "탄약 유형"
+        }
+      },
+      "damage": {
+        "hint": "무기 자체의 기본 피해 주사위입니다. 능력 수정치 및 추가 피해는 공격 시 자동으로 더해집니다."
+      },
+      "mastery": {
+        "label": "숙련 효과",
+        "hint": "무기 숙련 또는 관련 특징을 보유한 캐릭터가 사용할 수 있는 특수 무기 능력입니다."
+      },
+      "armor": {
+        "value": {
+          "label": "AC"
+        }
+      }
+    },
+    "Mastery": {
+      "Label": "무기 숙련",
+      "Flavor": "숙련 효과",
+      "Cleave": "가르기",
+      "Graze": "빗겨치기",
+      "Nick": "얕은 공격",
+      "Push": "밀치기",
+      "Sap": "제압",
+      "Slow": "늦추기",
+      "Topple": "넘어뜨리기",
+      "Vex": "교란"
+    }
+  },
+"DND5E.WeaponCategory": "{category} 무기",
+  "DND5E.WeaponImprov": "임시 무기",
+  "DND5E.WeaponMartialM": "군용 근접 무기",
+  "DND5E.WeaponMartialProficiency": "군용 무기",
+  "DND5E.WeaponMartialR": "군용 원거리 무기",
+  "DND5E.WeaponNatural": "자연 무기",
+  "DND5E.WeaponSiege": "공성 무기",
+  "DND5E.WeaponSimpleM": "단순 근접 무기",
+  "DND5E.WeaponSimpleProficiency": "단순 무기",
+  "DND5E.WeaponSimpleR": "단순 원거리 무기",
+  "DND5E.Weight": "무게",
+  "DND5E.WhisperedTo": "귓속말 대상:",
+  "DND5E.Wiki": "위키",
+  "DND5E.available": "사용 가능",
+  "DND5E.description": "Foundry VTT 환경을 위한 던전앤드래곤 5판 시스템입니다.",
+  "DND5E.of": "/",
+  "DND5E.per": "당",
+  "DND5E.spell": "주문",
+  "EDITOR.DND5E.Inline": {
+    "ApplyStatus": "선택한 토큰에 상태 적용",
+    "AwardEach": "각각 {award}",
+    "CheckShort": "{check}",
+    "CheckLong": "{check} 판정",
+    "DamageShort": "{formula} {type}",
+    "DamageLong": "{average} ({formula}) {type}",
+    "DC": "{check} 난이도 {dc}",
+    "DCPassiveShort": "수동 {check} 난이도 {dc}",
+    "DCPassiveLong": "수동 {check} 수치 {dc} 이상",
+    "NoActorWarning": "굴림을 수행할 수 있는 캐릭터를 찾을 수 없습니다.",
+    "RequestRoll": "굴림 요청",
+    "RollRequest": "굴림 요청",
+    "SaveShort": "{save}",
+    "SaveLong": "{save} 내성 굴림",
+    "SpecificCheck": "{ability} ({type})",
+    "Warning": {
+      "NoActivityOnItem": "{actor}의 {item}에 {activity}라는 이름의 활동이 없습니다.",
+      "NoActor": "굴림을 수행할 수 있는 캐릭터를 찾을 수 없습니다.",
+      "NoItemOnActor": "{actor}에게 {item}이라는 이름의 아이템이 없습니다."
+    },
+    "AttackLong": "{formula} 명중 굴림",
+    "AttackShort": "{formula}",
+    "PassiveLong": "수동 {check} 수치",
+    "AttackExtended": "<em>{type}:</em> {parts}",
+    "DamageExtended": "<em>적중 시:</em> {damage}",
+    "DamageDouble": "{first} 및 {second}",
+    "PassiveShort": "수동 {check}",
+    "CheckUsing": "{tool}을 사용한 {check}",
+    "ItemActivity": "{item} ({activity})"
+  },
+  "EFFECT.DND5E": {
+    "StatusBleeding": "출혈",
+    "StatusBloodied": "피투성이",
+    "StatusBurning": "화상",
+    "StatusBurrowing": "굴착",
+    "StatusConcentrating": "집중",
+    "StatusCursed": "저주받음",
+    "StatusDead": "사망",
+    "StatusDehydration": "탈수",
+    "StatusDodging": "회피",
+    "StatusEncumbered": "과적",
+    "StatusEthereal": "에테르화",
+    "StatusExceedingCarryingCapacity": "운반 중량 초과",
+    "StatusFalling": "추락",
+    "StatusFlying": "비행",
+    "StatusHalfCover": "절반 엄폐",
+    "StatusHeavilyEncumbered": "심한 과적",
+    "StatusHiding": "숨겨짐",
+    "StatusHovering": "부양",
+    "StatusMalnutrition": "영양실조",
+    "StatusMarked": "표식 찍힘",
+    "StatusSilenced": "침묵",
+    "StatusSleeping": "수면",
+    "StatusStable": "상태 안정",
+    "StatusSuffocation": "질식",
+    "StatusSurprised": "기습당함",
+    "StatusThreeQuartersCover": "3/4 엄폐",
+    "StatusTotalCover": "완전 엄폐",
+    "StatusTransformed": "변형"
+  },
+  "TYPES.JournalEntryPage.class": "클래스 요약",
+  "TYPES.JournalEntryPage.map": "지도 위치",
+  "TYPES.JournalEntryPage.rule": "규칙",
+  "TYPES.JournalEntryPage.spells": "주문 목록",
+  "TYPES.JournalEntryPage.subclass": "서브클래스 요약",
+  "JOURNALENTRYPAGE.DND5E": {
+    "Class": {
+      "FIELDS": {
+        "description": {
+          "additionalEquipment": {
+            "label": "추가 \"장비\" 설명",
+            "hint": "시작 장비 단락 아래에 표시될 추가 설명 텍스트입니다."
+          },
+          "additionalHitPoints": {
+            "label": "추가 \"HP\" 설명",
+            "hint": "HP 단락 아래에 표시될 추가 설명 텍스트입니다."
+          },
+          "additionalTraits": {
+            "label": "추가 \"숙련\" 설명",
+            "hint": "숙련 단락 아래에 표시될 추가 설명 텍스트입니다."
+          },
+          "subclass": {
+            "label": "서브클래스 소개",
+            "hint": "해당 클래스의 서브클래스 목록 앞에 표시될 서문입니다."
+          },
+          "value": {
+            "label": "소개",
+            "hint": "가장 먼저 나타날 클래스의 요약 설명입니다."
+          }
+        },
+        "item": {
+          "label": "선택된 클래스"
+        },
+        "style": {
+          "label": "스타일",
+          "hint": "클래스에 지정된 방식 대신, 페이지 스타일을 모던 또는 레거시 형식으로 강제 적용합니다."
+        },
+        "subclassHeader": {
+          "label": "서브클래스 머리말"
+        },
+        "subclassItems": {
+          "label": "서브클래스"
+        }
+      },
+      "EquipmentHeader": "장비",
+      "EquipmentDescription": "당신은 배경에서 제공하는 장비 외에, 다음과 같은 장비를 가지고 시작합니다:",
+      "Features": {
+        "DescriptionLegacy": "당신은 {lowercaseName}(으)로서 다음과 같은 클래스 특성을 얻으며, 이는 {name} 표에 요약되어 있습니다.",
+        "DescriptionModern": "{name}(으)로서 당신은 특정 {name} 레벨에 도달할 때마다 다음의 클래스 특성들을 얻습니다. 이 특징들은 {name} 특성 표에 나열되어 있습니다.",
+        "Header": "클래스 특성",
+        "Name": "{level}레벨: {name}"
+      },
+      "HitPoints": {
+        "Header": "HP",
+        "HitDiceLegacy": "<strong>히트 다이스:</strong> {class} 레벨당 {dice}",
+        "HitDiceModern": "{class} 레벨당 {dice}",
+        "Level1": "<strong>1레벨 시 HP:</strong> {max} + 건강 수정치",
+        "LevelX": "<strong>레벨 상승 시 HP:</strong> 1레벨 이후 {class} 레벨당 {dice} (또는 {average}) + 건강 수정치"
+      },
+      "ItemHint": "여기에 클래스를 놓으세요",
+      "NoValidClass": "유효한 클래스가 선택되지 않았습니다. 편집 버튼을 눌러 클래스를 추가하세요.",
+      "OptionalFeaturesCaption": "클래스 선택 특징",
+      "OptionalFeaturesDescription": "다음 단락은 {class}의 선택 특징들을 포함합니다. 이 특징들은 자동으로 부여되지 않으며, DM의 재량에 따라 일부 또는 전부를 선택할 수 있습니다.",
+      "SpellSlotLevel": "슬롯 레벨",
+      "SpellSlots": "주문 슬롯",
+      "SpellSlotsPerSpellLevel": "—주문 레벨당 슬롯—",
+      "Style": {
+        "Inferred": "출처에서 추론",
+        "Legacy": "레거시(기존)",
+        "Modern": "모던(2024)"
+      },
+      "SubclassHint": "여기에 서브클래스를 놓으세요",
+      "TableCaption": "{class} 표",
+      "TableOptionalCaption": "{class} 선택 특징 표",
+      "Traits": {
+        "Caption": "{class} 기본 특성",
+        "Header": "숙련"
+      }
+    },
+    "EditDescription": "편집",
+    "TableTOC": "표: {caption}",
+    "SpellList": {
+      "DropHint": "주문이나 주문 폴더를 여기에 놓아 목록에 추가하세요",
+      "Grouping": {
+        "Label": "그룹화 모드",
+        "Hint": "주문 목록에서 주문들이 기본적으로 그룹화되는 방식을 제어합니다.",
+        "Alphabetical": "알파벳순",
+        "Level": "레벨별",
+        "None": "그룹화 없음",
+        "School": "학파별"
+      },
+      "IdentifierHint": "식별자는 가급적 관련 문서에 정의된 것과 일치해야 합니다. 예를 들어 위저드 클래스의 주문 목록을 만들 때 식별자는 \"wizard\"여야 합니다.",
+      "Type": {
+        "Label": "주문 목록 유형",
+        "Other": "분류 없음"
+      },
+      "UnlinkedSpells": {
+        "Label": "연결되지 않은 주문",
+        "Add": "연결되지 않은 주문 추가",
+        "Configuration": "주문 설정",
+        "Edit": "연결되지 않은 주문 수정"
+      }
+    },
+    "Subclass": {
+      "FIELDS": {
+        "description": {
+          "value": {
+            "label": "소개",
+            "hint": "나열된 특징들 앞에 표시될 서브클래스 설명입니다."
+          }
+        },
+        "item": {
+          "label": "선택된 서브클래스"
+        },
+        "style": {
+          "label": "스타일",
+          "hint": "서브클래스에 지정된 방식 대신, 페이지 스타일을 현대식 또는 레거시 형식으로 강제 적용합니다."
+        }
+      },
+      "ItemHint": "여기에 서브클래스를 놓으세요",
+      "NoValidSubclass": "유효한 서브클래스가 선택되지 않았습니다. 편집 버튼을 눌러 서브클래스를 추가하세요."
+    }
+  },
+"KEYBINDINGS.DND5E.SkipDialogNormal": "대화창 건너뛰기",
+  "KEYBINDINGS.DND5E.SkipDialogAdvantage": "대화창 건너뛰기 (이점/치명타 적용)",
+  "KEYBINDINGS.DND5E.SkipDialogDisadvantage": "대화창 건너뛰기 (불이점/일반 적용)",
+  "MACRO.5eMissingTargetWarn": "제어 중인 캐릭터 '{actor}'에게 {name}라는 이름의 {type}(이)가 없습니다.",
+  "MACRO.5eMultipleTargetsWarn": "제어 중인 캐릭터 '{actor}'에게 {name}라는 이름의 {type}(이)가 둘 이상 있습니다. 첫 번째 항목을 선택합니다.",
+  "MACRO.5eNoActorSelected": "매크로의 대상으로 지정할 캐릭터를 선택하거나 할당하지 않았습니다.",
+  "MACRO.5eUnownedWarn": "본인이 소유한 아이템에 대해서만 매크로 버튼을 생성할 수 있습니다.",
+  "MIGRATION.5eBegin": "DnD5E 시스템 마이그레이션(버전 {version})을 적용 중입니다. 게임이나 서버를 종료하지 말고 잠시만 기다려 주십시오.",
+  "MIGRATION.5eComplete": "DnD5E 시스템 마이그레이션(버전 {version})이 완료되었습니다!",
+  "MIGRATION.5eVersionTooOldWarning": "이 DnD5e 시스템 데이터는 너무 오래된 버전에서 생성되어 최신 버전으로의 안정적인 마이그레이션을 보장할 수 없습니다. 프로세스를 시도하겠으나 오류가 발생할 수 있습니다.",
+  "SETTINGS.5eAutoCollapseCardL": "채팅 로그에서 아이템 카드의 설명을 자동으로 접습니다.",
+  "SETTINGS.5eAutoCollapseCardN": "채팅 아이템 카드 접기",
+  "SETTINGS.5eAutoSpellTemplateL": "주문을 시전할 때 해당되는 경우 측정 템플릿을 즉시 생성합니다 (신뢰 등급 이상의 권한 필요).",
+  "SETTINGS.5eAutoSpellTemplateN": "주문 템플릿 항상 배치",
+  "SETTINGS.5eNoAdvancementsN": "레벨 업 자동화 비활성화",
+  "SETTINGS.5eNoAdvancementsL": "레벨 업 또는 캐릭터 생성 시 선택 사항을 묻지 않습니다.",
+  "SETTINGS.5eNoConcentrationN": "집중 추적 비활성화",
+  "SETTINGS.5eNoConcentrationL": "시스템의 자동화된 집중 추적 기능을 끕니다.",
+  "SETTINGS.5eGridAlignedSquareTemplatesL": "주문이나 아이템 사용으로 생성된 정사각형 템플릿이 그리드 정렬에 고정되며 회전할 수 없게 됩니다.",
+  "SETTINGS.5eGridAlignedSquareTemplatesN": "그리드에 정렬된 정사각형 템플릿",
+  "SETTINGS.DND5E": {
+    "BLOODIED": {
+      "Name": "피투성이 상태",
+      "Hint": "피투성이 상태 아이콘의 표시 여부 및 자동 추적 설정을 구성합니다.",
+      "All": "아군과 적 모두에게 표시",
+      "Player": "아군에게만 표시",
+      "None": "표시 안 함"
+    },
+    "COLLAPSETRAYS": {
+      "Name": "채팅 단락 접기",
+      "Hint": "채팅 카드에 나타나는 피해, 명중, 효과 단락을 자동으로 접습니다.",
+      "Always": "모두 접기",
+      "Older": "오래된 섹션 접기",
+      "Never": "사용 후 접기",
+      "Manual": "수동 (접지 않음)"
+    },
+    "DEFAULTSKILLS": {
+      "Name": "기본 기술",
+      "Hint": "숙련도와 상관없이 NPC 시트에 항상 표시될 기본 기술들입니다."
+    },
+    "THEME": {
+      "Name": "테마",
+      "Hint": "사용자 인터페이스 및 모든 기본 시트에 적용될 테마입니다. 자동 모드는 브라우저나 운영체제의 설정에 따라 결정됩니다."
+    },
+    "RULESVERSION": {
+      "Name": "규칙 버전",
+      "Hint": "2024 버전과 2014 버전 사이의 규칙 관리 방식을 변경합니다.",
+      "Legacy": "레거시 규칙 (2014)",
+      "Modern": "모던 규칙 (2024)"
+    },
+    "VISIBILITY": {
+      "Hint": "플레이어에게 특정 정보의 공개 여부를 결정하는 다양한 설정 옵션입니다. DM이 비밀로 유지하고 싶은 정보를 제어할 수 있습니다.",
+      "Label": "가시성 설정",
+      "Name": "가시성",
+      "Challenge": {
+        "Hint": "플레이어에게 판정 DC를 표시할지, 성공/실패 여부를 강조할지 제어합니다.",
+        "All": "모두 표시",
+        "Name": "DC 가시성",
+        "None": "모두 숨기기",
+        "Player": "다른 플레이어의 것만 표시"
+      },
+      "Attack": {
+        "Name": "공격 결과 가시성",
+        "Hint": "플레이어의 채팅 카드에 명중 굴림 결과의 공개 여부를 제어합니다.",
+        "All": "결과 및 대상 AC 표시",
+        "HideAC": "결과만 표시",
+        "None": "모두 숨기기"
+      },
+      "ItemDescriptions": {
+        "Hint": "DM이 NPC 아이템을 채팅창에 올릴 때 플레이어에게 설명을 숨깁니다. 채팅용 설명이 별도로 정의되지 않은 아이템에만 적용됩니다.",
+        "Name": "NPC 아이템 설명 숨기기"
+      }
+    },
+    "METRIC": {
+      "WeightUnits": {
+        "Hint": "파운드(lbs) 단위를 킬로그램(kgs)으로 대체하고, 하중 계산에 미터법 무게 단위를 사용하도록 업데이트합니다.",
+        "Name": "미터법 무게 단위 사용"
+      },
+      "LengthUnits": {
+        "Hint": "이동 거리 및 감각 사거리 단위를 피트(ft) 대신 미터(m)로 사용합니다.",
+        "Name": "미터법 거리 단위 사용"
+      },
+      "VolumeUnits": {
+        "Name": "미터법 부피 단위 사용",
+        "Hint": "컨테이너 용량 단위를 세제곱피트 대신 리터(L)로 사용합니다."
+      }
+    },
+    "LOYALTY": {
+      "Hint": "선택 사항인 충성 추적 기능을 활성화합니다.",
+      "Name": "충성 수치"
+    },
+    "COMBAT": {
+      "Hint": "전투에 영향을 주는 다양한 설정 옵션입니다.",
+      "Label": "전투 설정",
+      "Name": "전투",
+      "DexTiebreaker": {
+        "Name": "민첩 선제권 판정",
+        "Hint": "선제권 굴림 결과가 동일할 때, 민첩 능력치 원본 값을 더하여 순위를 결정합니다."
+      },
+      "InitiativeScore": {
+        "Name": "선제권 고정 수치",
+        "Hint": "선제권 주사위를 굴리는 대신 HP의 고정 선제권(10 + 보너스)을 사용합니다.",
+        "All": "모두에게 고정 수치 적용",
+        "NPCs": "DM의 NPC에게만 적용",
+        "None": "항상 선제권 굴림 수행"
+      }
+    },
+    "CRITICAL": {
+      "Name": "치명타 피해",
+      "MaxDice": {
+        "Name": "주사위 최댓값 적용",
+        "Hint": "기본 피해 주사위 수치를 최댓값으로 고정하여 치명타를 더 치명적으로 만듭니다."
+      },
+      "MultiplyModifiers": {
+        "Name": "수정치 배가",
+        "Hint": "주사위 굴림 외의 수정치(보너스)도 배수로 적용하여 치명타를 더 치명적으로 만듭니다."
+      }
+    },
+    "General": "일반",
+    "NPCS": {
+      "Name": "NPC",
+      "AutoRecharge": {
+        "Name": "능력 재충전",
+        "Hint": "NPC의 차례가 시작될 때 자동으로 능력 재충전 주사위를 굴립니다.",
+        "No": "자동으로 재충전하지 않음",
+        "Yes": "재충전 및 채팅 카드 표시",
+        "Silent": "채팅 카드 없이 재충전만 수행"
+      },
+      "AutoRollNPCHP": {
+        "Name": "HP 설정",
+        "Hint": "새 토큰을 생성할 때마다 NPC의 최대 HP를 주사위로 굴릴지 설정합니다.",
+        "No": "굴리지 않음 (고정값 사용)",
+        "Silent": "채팅 카드 없이 굴림 수행",
+        "Yes": "굴림 수행 및 채팅 카드 표시"
+      }
+    },
+    "VARIANT": {
+      "Hint": "시스템에서 제공하는 변형 규칙들을 활성화하고 설정합니다.",
+      "Label": "변형 규칙 설정",
+      "Name": "변형 규칙",
+      "AllowFeats": {
+        "Hint": "레거시 규칙 사용 시, 클래스 성장 단계에서 능력치 상승 대신 재주를 선택할 수 있게 허용합니다.",
+        "Name": "재주 허용"
+      },
+      "CurrencyWeight": {
+        "Hint": "소지한 화폐의 무게가 캐릭터의 과적에 영향을 미칩니다.",
+        "Name": "화폐 무게 추적"
+      },
+      "Encumbrance": {
+        "Hint": "소지품 무게에 따른 과적 추적과 상태 이상 효과 자동 적용 기능을 활성화합니다.",
+        "Name": "과적 추적",
+        "None": "없음",
+        "Normal": "일반 (최대 운반 중량 제한)",
+        "Variant": "변형 (하중 및 과적 단계 적용)"
+      },
+      "HonorScore": {
+        "Hint": "선택 사항인 명예 능력치 사용을 활성화합니다.",
+        "Name": "명예 수치"
+      },
+      "LevelingMode": {
+        "Hint": "캐릭터가 레벨을 올리는 방식을 결정합니다.",
+        "Name": "성장 모드",
+        "XP": "경험치",
+        "NoXP": "경험치 없는 성장(이정표 등)",
+        "XPBoons": "경험치 및 장엄한 은혜"
+      },
+      "ProficiencyModifier": {
+        "Bonus": "PHB 방식: 고정 보너스 (+2, +3, +4, +5, +6)",
+        "Dice": "DMG 방식: 주사위 (1d4, 1d6, 1d8, 1d10, 1d12)",
+        "Hint": "숙련 보너스를 고정값으로 사용할지, 주사위 굴림으로 사용할지 설정합니다.",
+        "Name": "숙련 변형 규칙"
+      },
+      "Rest": {
+        "Epic": "에픽 영웅주의 (긴휴: 1시간, 짧휴: 1분)",
+        "Gritty": "처절한 현실주의 (긴휴: 7일, 짧휴: 8시간)",
+        "Hint": "사용할 휴식 변형 규칙을 설정합니다.",
+        "Name": "휴식 변형 규칙",
+        "Normal": "기본 규칙 (긴휴: 8시간, 짧휴: 1시간)"
+      },
+      "SanityScore": {
+        "Hint": "선택 사항인 이성 능력치 사용을 활성화합니다.",
+        "Name": "이성 수치"
+      }
+    },
+    "PERMISSIONS": {
+      "AllowSummoning": {
+        "Hint": "플레이어가 소환 능력을 사용하여 캐릭터를 소환할 수 있도록 허용합니다. 플레이어는 기본 권한인 토큰 생성 권한도 가지고 있어야 합니다.",
+        "Name": "소환 허용"
+      },
+      "AllowTransformation": {
+        "Hint": "플레이어가 자신의 캐릭터를 변신시킬 수 있도록 허용합니다. 플레이어는 기본 권한인 캐릭터 생성 및 토큰 생성 권한도 가지고 있어야 합니다.",
+        "Name": "변신 허용"
+      },
+      "AllowRests": {
+        "Hint": "플레이어가 캐릭터 시트에서 직접 휴식을 취할 수 있게 합니다. 이 옵션이 비활성화되면, 플레이어는 DM이 그룹 시트에서 휴식을 요청할 때만 휴식을 취할 수 있습니다.",
+        "Name": "개별 휴식 허용"
+      }
+    },
+    "AUTOMATION": {
+      "Movement": {
+        "Name": "이동 자동화",
+        "Hint": "시스템에서 사용하는 이동 자동화 수준을 설정합니다. 토큰 차단 기능을 포함한 전체 자동화, 험지만 적용하는 부분 자동화, 또는 전체 비활성화 중에서 선택할 수 있습니다.",
+        "Full": "전체 자동화",
+        "NoBlocking": "부분 자동화",
+        "None": "없음"
+      }
+    }
+  },
+  "SHEETS.DND5E": {
+    "THEME": {
+      "Label": "테마",
+      "Automatic": "자동",
+      "Dark": "다크 모드",
+      "Light": "라이트 모드"
+    }
+  },
+  "SIDEBAR.SortModePriority": "우선순위별 정렬",
+  "DND5E.EQUIPMENT": {
+    "Type": {
+      "Trinket": {
+        "Label": "잡동사니"
+      },
+      "Wand": {
+        "Label": "마법봉"
+      },
+      "Rod": {
+        "Label": "막대"
+      },
+      "Ring": {
+        "Label": "반지"
+      },
+      "Clothing": {
+        "Label": "의복"
+      },
+      "Wondrous": {
+        "Label": "경이 물품"
+      },
+      "Vehicle": {
+        "Label": "탈것 장비"
+      }
+    }
+  },
+  "DND5E.FACILITY": {
+    "FIELDS": {
+      "size": {
+        "label": "크기"
+      },
+      "type": {
+        "subtype": {
+          "label": "유형"
+        },
+        "value": {
+          "label": "카테고리"
+        }
+      },
+      "defenders": {
+        "max": {
+          "label": "방어병"
+        }
+      },
+      "level": {
+        "label": "필요 레벨"
+      },
+      "trade": {
+        "stock": {
+          "value": {
+            "label": "가치"
+          },
+          "stocked": {
+            "hint": "변동하는 상품 수량 대신, 보충됨 또는 비어 있음 상태로 간주되는 시설에 적합합니다.",
+            "label": "보충됨"
+          },
+          "max": {
+            "label": "최대"
+          }
+        },
+        "profit": {
+          "label": "이익 계수"
+        },
+        "creatures": {
+          "max": {
+            "label": "크리처 수용량"
+          }
+        }
+      },
+      "disabled": {
+        "label": "비활성화됨",
+        "hint": "비활성화된 시설은 명령을 받을 수 없으며 다음 차례 시작 시 수리됩니다."
+      },
+      "free": {
+        "label": "무료 시설",
+        "hint": "무료 시설은 특수 시설 제한 개수에 포함되지 않습니다."
+      },
+      "order": {
+        "label": "명령"
+      },
+      "building": {
+        "built": {
+          "label": "건설됨",
+          "hint": "기본 시설은 사용하기 전에 먼저 건설되어야 합니다."
+        }
+      },
+      "enlargeable": {
+        "hint": "일부 특수 시설은 비용을 지불하고 크기 카테고리를 확장할 수 있습니다.",
+        "label": "확장 가능"
+      },
+      "hirelings": {
+        "max": {
+          "label": "고용인"
+        }
+      },
+      "progress": {
+        "max": {
+          "label": "합계"
+        },
+        "order": {
+          "label": "수행 중"
+        },
+        "value": {
+          "label": "현재"
+        }
+      }
+    },
+    "Orders": {
+      "enlarge": {
+        "inf": "확장",
+        "present": "확장 중"
+      },
+      "craft": {
+        "present": "제작 중",
+        "inf": "제작"
+      },
+      "change": {
+        "present": "변경 중",
+        "inf": "변경"
+      },
+      "build": {
+        "inf": "건설",
+        "present": "건설 중"
+      },
+      "Label": "명령",
+      "maintain": {
+        "present": "유지 관리 중",
+        "inf": "유지 관리"
+      },
+      "trade": {
+        "present": "교역 중",
+        "inf": "교역"
+      },
+      "empower": {
+        "inf": "강화",
+        "present": "강화 중"
+      },
+      "recruit": {
+        "inf": "모집",
+        "present": "모집 중"
+      },
+      "harvest": {
+        "inf": "수확",
+        "present": "수확 중"
+      },
+      "repair": {
+        "inf": "수리",
+        "present": "수리 중"
+      },
+      "research": {
+        "inf": "연구",
+        "present": "연구 중"
+      }
+    },
+    "Types": {
+      "Special": {
+        "Sanctuary": "성소",
+        "TeleportationCircle": "순간이동의 원",
+        "Reliquary": "성물함",
+        "Demiplane": "데미플레인",
+        "Observatory": "천문대",
+        "Barrack": "병영",
+        "GamingHall": "오락실",
+        "Label": {
+          "one": "특수 시설",
+          "other": "특수 시설"
+        },
+        "Armory": "무기고",
+        "Garden": "정원",
+        "Library": "도서관",
+        "Smithy": "대장간",
+        "Storehouse": "창고",
+        "Workshop": "작업실",
+        "Greenhouse": "온실",
+        "Laboratory": "실험실",
+        "Sacristy": "제구실",
+        "Scriptorium": "필사실",
+        "Stable": "마구간",
+        "Theater": "극장",
+        "TrainingArea": "훈련장",
+        "TrophyRoom": "전리품 보관실",
+        "Archive": "기록 보관소",
+        "MeditationChamber": "명상실",
+        "Menagerie": "동물원",
+        "Pub": "주점",
+        "Sanctum": "밀실",
+        "ArcaneStudy": "비전 서재",
+        "Guildhall": "길드 홀",
+        "WarRoom": "작전 회의실"
+      },
+      "Basic": {
+        "Kitchen": "주방",
+        "Label": {
+          "other": "기본 시설",
+          "one": "기본 시설"
+        },
+        "Bedroom": "침실",
+        "DiningRoom": "식당",
+        "Parlor": "응접실",
+        "Courtyard": "안뜰",
+        "Storage": "수납실"
+      }
+    },
+    "NoDefenders": "본거지에 방어병이 없습니다.",
+    "AvailableFacility": {
+      "basic": {
+        "build": "시설 건설",
+        "free": "무료 시설"
+      },
+      "special": {
+        "free": "시설 추가"
+      }
+    },
+    "Order": {
+      "Issue": "명령 하달: {order}",
+      "Execute": "명령 수행"
+    },
+    "Action": {
+      "DeleteOccupant": "거주자 삭제",
+      "DeleteDefender": "방어병 삭제",
+      "RemoveCraft": "제작 항목 제거"
+    },
+    "Costs": {
+      "Automatic": "자동 차감",
+      "Days": "{days}일",
+      "Label": "비용",
+      "Paid": "지불됨",
+      "Unpaid": "미지불",
+      "Manual": "지불 완료로 표시"
+    },
+    "Craft": {
+      "BaseItem": {
+        "Hint": "활성화하면 기본 아이템을 제작하는 대신 정가로 구매합니다.",
+        "Label": "기본 아이템 구매"
+      },
+      "Hint": "현재 이 시설에서 제작하거나 수확 중인 아이템들입니다."
+    },
+    "Description": "설명",
+    "Build": {
+      "Unbuilt": "미건설"
+    },
+    "Goods": "상품",
+    "Occupants": "거주자",
+    "Trade": {
+      "Creatures": {
+        "Buy": "구매하려는 동물을 위의 칸에 넣고 아래의 비용을 업데이트하세요."
+      },
+      "Stocked": {
+        "Label": "물자 완전 보충",
+        "Hint": "이 시설의 물자를 완전히 보충하는 데 필요한 비용을 아래에 입력하세요."
+      },
+      "Price": {
+        "Label": "기본 가격",
+        "Hint": "판매할 재고를 선택하고 위의 기본 가격을 입력하세요."
+      },
+      "Sell": {
+        "Label": "재고 판매",
+        "Supplement": "판매"
+      },
+      "Stock": {
+        "Buy": "구매",
+        "Sell": "판매"
+      },
+      "Buy": {
+        "Supplement": "구매"
+      }
+    },
+    "Use": {
+      "Description": "{link} {facilityType}에 <strong>{order}</strong> 명령을 내렸습니다."
+    },
+    "Progress": "진행도",
+    "Properties": "속성",
+    "Sizes": {
+      "cramped": "비좁음",
+      "roomy": "넉넉함",
+      "vast": "광활함"
+    },
+    "Squares": "{squares}칸"
+  },
+"DND5E.Bastion": {
+    "Confirm": "본거지 턴을 진행하시겠습니까?",
+    "Action": {
+      "BastionTurn": "본거지 턴 진행"
+    },
+    "Attack": {
+      "Result": {
+        "Deaths": {
+          "other": "본거지에 대한 공격으로 <strong>{deaths}</strong>명의 방어병이 전사했습니다!",
+          "one": "본거지에 대한 공격으로 <strong>{deaths}</strong>명의 방어병이 전사했습니다!"
+        },
+        "Damaged": "공격으로 인해 {link} 시설이 파손되었습니다.",
+        "Undefended": "방어병이 없는 본거지가 공격받았습니다!",
+        "NoDeaths": "피해 없이 본거지에 대한 공격을 물리쳤습니다!"
+      },
+      "Automatic": "자동 해결",
+      "Resolve": "공격 해결",
+      "NoActorWarning": "공격 대상으로 선택된 캐릭터가 없습니다. 토큰을 선택하거나 캐릭터 시트를 열어주세요.",
+      "Formula": "공격 공식",
+      "Title": "본거지 공격"
+    },
+    "Button": {
+      "Hint": "게임 메인 인터페이스에 본거지 턴을 진행하는 버튼을 표시합니다.",
+      "Label": "본거지 턴 버튼"
+    },
+    "Configuration": {
+      "Hint": "DMG 2024에 수록된 본거지 시스템을 위한 다양한 설정 옵션입니다.",
+      "Label": "본거지 설정",
+      "Name": "본거지"
+    },
+    "Duration": {
+      "Label": "턴 기간 (일)"
+    },
+    "Enabled": {
+      "Label": "본거지 활성화",
+      "Hint": "활성화하면 플레이어 캐릭터가 5레벨부터 캐릭터 시트에서 새로운 '본거지' 탭을 사용할 수 있으며, 시설을 건설하고 명령을 내릴 수 있습니다."
+    },
+    "Gold": {
+      "Unclaimed": "미수령",
+      "Claimed": "수령함",
+      "Claim": "수익 수령"
+    },
+    "Label": "본거지",
+    "Summary": {
+      "Order": "{link} 시설이 <strong>{order}</strong> 명령을 완료했습니다.",
+      "NoOrders": "이번 턴에 특수 시설에 내려진 명령이 없습니다.",
+      "Gold": "{value} ({claimed})"
+    },
+    "Trade": {
+      "Cancel": "대기 중인 교역 취소",
+      "Invalid": "대기 중인 교역을 삭제하면 교역 명령이 무효화됩니다.",
+      "Pending": "교역 대기 중"
+    }
+  },
+  "DND5E.ArmorValue": "방어도 수치",
+  "DND5E.ABILITY": {
+    "SECTIONS": {
+      "Score": "{ability} 점수",
+      "Bonuses": {
+        "Hint": "이 보너스들은 {ability} 능력치로 수행하는 판정 및 내성 굴림에 적용됩니다.",
+        "Label": "{ability} 보너스"
+      },
+      "Global": {
+        "Hint": "이 보너스들은 모든 능력치로 수행하는 판정 및 내성 굴림에 적용됩니다.",
+        "Label": "전역 보너스"
+      }
+    },
+    "Configure": {
+      "Title": "{ability} 설정",
+      "CheckLabel": "{ability} - 판정",
+      "SaveLabel": "{ability} - 내성 굴림"
+    }
+  },
+  "DND5E.AbilityScoreMaxShort": "최댓값",
+  "DND5E.AbilityScoreShort": "수치",
+  "TYPES.ChatMessage": {
+    "turn": "전투 차례 메시지",
+    "rest": "휴식 메시지",
+    "request": "메시지 요청"
+  },
+  "DND5E.Language": {
+    "Language": {
+      "Druidique": "드루이드어",
+      "Giant": "거인어",
+      "Gnoll": "놀어",
+      "Goblin": "고블린어",
+      "Halfling": "하플링어",
+      "Orc": "오크어",
+      "ThievesCant": "도둑의 은어",
+      "Celestial": "천상어",
+      "Abyssal": "심연어",
+      "Aquan": "수중어",
+      "Aarakocra": "아라코크라어",
+      "CommonSign": "공용어 수화",
+      "DeepSpeech": "심연어",
+      "Draconic": "용언",
+      "Dwarvish": "드워프어",
+      "Elvish": "엘프어",
+      "Gith": "기스어",
+      "Gnomish": "노움어",
+      "Infernal": "하계어",
+      "Ignan": "화염어",
+      "Auran": "공기어",
+      "Common": "공용어",
+      "Primordial": "원시어",
+      "Sylvan": "삼림어",
+      "Terran": "대지어",
+      "Undercommon": "지하 공용어"
+    },
+    "Communication": {
+      "Telepathy": "정신감응",
+      "Label": "원거리 통신"
+    },
+    "All": "모든 언어",
+    "Label": "언어",
+    "Category": {
+      "Exotic": "특수 언어",
+      "Rare": "희귀 언어",
+      "Standard": "표준 언어"
+    }
+  },
+  "DND5E.LegendaryResistance": {
+    "Action": {
+      "Resist": "전설적 저항"
+    },
+    "Label": "전설적 저항",
+    "Max": "전설적 저항 최대 횟수",
+    "Ordinal": {
+      "one": "{n}번째 전설적 저항",
+      "two": "{n}번째 전설적 저항",
+      "few": "{n}번째 전설적 저항",
+      "other": "{n}번째 전설적 저항"
+    },
+    "Remaining": "남은 전설적 저항",
+    "Resisted": "전설적 저항 사용함",
+    "LabelPl": "전설적 저항",
+    "Spent": "소모한 전설적 저항",
+    "LairUses": "일일 {normal}회, 또는 본거지 내에서 일일 {lair}회"
+  },
+  "DND5E.NPC": {
+    "SECTIONS": {
+      "Actions": "행동",
+      "BonusActions": "보조 행동",
+      "LegendaryActions": "전설적 행동",
+      "Reactions": "대응",
+      "Traits": "특성",
+      "MythicActions": "신화적 행동"
+    },
+    "Label": "NPC",
+    "FIELDS": {
+      "traits": {
+        "important": {
+          "hint": "중요 NPC는 죽음 내성 굴림, 히트 다이스, 충성도(활성화된 경우)를 추적합니다. 클래스 레벨이 있는 NPC는 이 설정과 관계없이 항상 중요 NPC로 간주됩니다.",
+          "label": "중요 NPC"
+        }
+      },
+      "attributes": {
+        "price": {
+          "denomination": {
+            "label": "화폐 단위"
+          },
+          "hint": "일일 고용 비용 또는 가축의 구매 가격입니다.",
+          "label": "비용",
+          "value": {
+            "label": "수량"
+          }
+        }
+      }
+    },
+    "ActionCostCounted": {
+      "other": "{number} 행동 소모"
+    }
+  },
+  "DND5E.RechargeShort": "짧은 또는 긴 휴식 후 재충전",
+  "DND5E.REST": {
+    "Long": {
+      "Label": "긴 휴식",
+      "Abbreviation": "긴휴",
+      "Hint": {
+        "Group": "긴 휴식을 취하면 파티 구성원은 HP, 히트 다이스, 클래스 자원, 횟수 제한 아이템의 충전량 및 주문 슬롯을 회복합니다.",
+        "GroupLegacy": "긴 휴식을 취하면 파티 구성원은 HP, 히트 다이스의 절반, 클래스 자원, 횟수 제한 아이템의 충전량 및 주문 슬롯을 회복합니다.",
+        "Normal": "긴 휴식을 취하면 HP, 히트 다이스, 클래스 자원, 횟수 제한 아이템의 충전량 및 주문 슬롯을 회복합니다.",
+        "NormalLegacy": "긴 휴식을 취하면 HP, 히트 다이스의 절반, 클래스 자원, 횟수 제한 아이템의 충전량 및 주문 슬롯을 회복합니다."
+      },
+      "LabelShort": "긴 휴식",
+      "Recovery": "긴 휴식 후 회복",
+      "Result": {
+        "Full": "{name}이(가) 긴 휴식을 취하여 {health}와 {dice}를 회복했습니다.",
+        "HitDice": "{name}이(가) 긴 휴식을 취하여 {dice}를 회복했습니다.",
+        "HitPoints": "{name}이(가) 긴 휴식을 취하여 {health}를 회복했습니다.",
+        "Short": "{name}이(가) 긴 휴식을 취했습니다."
+      }
+    },
+    "Short": {
+      "Label": "짧은 휴식",
+      "Hint": {
+        "Group": "짧은 휴식을 취하면 파티 구성원은 히트 다이스를 소모하여 HP를 회복하고 아이템 사용 횟수를 회복할 수 있습니다.",
+        "Normal": "짧은 휴식을 취하면 남은 히트 다이스를 소모하여 HP를 회복하고 아이템 사용 횟수를 회복할 수 있습니다."
+      },
+      "Abbreviation": "짧휴",
+      "LabelShort": "짧은 휴식",
+      "Recovery": "짧은 휴식 후 회복",
+      "Result": {
+        "Full": "{name}이(가) 짧은 휴식을 취하며 {dice}를 소모해 {health}를 회복했습니다.",
+        "Short": "{name}이(가) 짧은 휴식을 취했습니다."
+      }
+    },
+    "HitDice": {
+      "AutoSpend": {
+        "Hint": "HP가 완전히 회복되거나 주사위가 소진될 때까지 자동으로 히트 다이스를 소모합니다.",
+        "Label": "히트 다이스 자동 소모"
+      },
+      "None": "이번 휴식 동안 굴릴 수 있는 히트 다이스가 남지 않았습니다.",
+      "Select": "굴릴 주사위 선택"
+    },
+    "Configuration": "휴식 설정",
+    "Label": "휴식",
+    "NewDay": {
+      "Hint": "해질녘, 새벽 또는 새로운 하루가 시작될 때 재충전되는 횟수 제한 특징들을 회복합니다.",
+      "Label": "새로운 하루"
+    },
+    "RecoverTempHP": {
+      "Label": "임시 HP 제거"
+    },
+    "RecoverTempMaxHP": {
+      "Hint": "캐릭터의 최대 HP에 적용된 모든 수정 사항을 제거합니다.",
+      "Label": "최대 HP 복구"
+    },
+    "Request": {
+      "AutoRest": {
+        "Hint": "플레이어에게 휴식 요청을 보내는 대신, 선택된 캐릭터들에게 즉시 휴식을 적용합니다.",
+        "Label": "자동 휴식"
+      },
+      "Label": "휴식 요청"
+    },
+    "Warning": {
+      "OnlyByRequest": "휴식은 DM의 요청이 있어야만 가능합니다."
+    }
+  },
+  "DND5E.UNITS": {
+    "VOLUME": {
+      "Liter": {
+        "Abbreviation": "L",
+        "Label": "리터"
+      },
+      "CubicFoot": {
+        "Counted": {
+          "narrow": {
+            "other": "{number}ft³",
+            "one": "{number}ft³"
+          },
+          "short": {
+            "one": "{number} 세제곱피트",
+            "other": "{number} 세제곱피트"
+          },
+          "long": {
+            "one": "{number} 세제곱피트",
+            "other": "{number} 세제곱피트"
+          }
+        },
+        "Label": "세제곱피트",
+        "Abbreviation": "ft³"
+      },
+      "Label": "부피 단위"
+    },
+    "DISTANCE": {
+      "Meter": {
+        "Label": "미터",
+        "Abbreviation": "m"
+      },
+      "Mile": {
+        "Label": "마일",
+        "Abbreviation": "mi"
+      },
+      "Label": "거리 단위",
+      "Foot": {
+        "Label": "피트",
+        "Abbreviation": "ft"
+      },
+      "Kilometer": {
+        "Label": "킬로미터",
+        "Abbreviation": "km"
+      }
+    },
+    "TIME": {
+      "Day": {
+        "Label": "일"
+      },
+      "Hour": {
+        "Label": "시간"
+      },
+      "Minute": {
+        "Label": "분"
+      },
+      "Month": {
+        "Label": "개월"
+      },
+      "Second": {
+        "Label": "초"
+      },
+      "Round": {
+        "Counted": {
+          "one": "{number} 라운드",
+          "other": "{number} 라운드",
+          "narrow": "{number}R"
+        },
+        "Label": "라운드"
+      },
+      "Turn": {
+        "Label": "턴",
+        "Abbreviation": "t",
+        "Counted": {
+          "narrow": "{number}t",
+          "one": "{number} 턴",
+          "other": "{number} 턴"
+        }
+      },
+      "Week": {
+        "Label": "주"
+      },
+      "Year": {
+        "Label": "년"
+      }
+    },
+"WEIGHT": {
+      "Label": "무게 단위",
+      "Kilogram": {
+        "Label": "킬로그램",
+        "Abbreviation": "kg"
+      },
+      "Megagram": {
+        "Label": "톤",
+        "Abbreviation": "t",
+        "Counted": {
+          "narrow": {
+            "one": "{number}t",
+            "other": "{number}t"
+          },
+          "short": {
+            "one": "{number} t",
+            "other": "{number} t"
+          },
+          "long": {
+            "one": "{number} 톤",
+            "other": "{number} 톤"
+          }
+        }
+      },
+      "Pound": {
+        "Label": "파운드",
+        "Abbreviation": "lb"
+      },
+      "Ton": {
+        "Label": "톤",
+        "Abbreviation": "tn",
+        "Counted": {
+          "narrow": {
+            "one": "{number}tn",
+            "other": "{number}tn"
+          },
+          "short": {
+            "one": "{number} tn",
+            "other": "{number} tn"
+          },
+          "long": {
+            "one": "{number} 톤",
+            "other": "{number} 톤"
+          }
+        }
+      }
+    },
+    "TRAVEL": {
+      "Kilometer": {
+        "AbbreviationHour": "km/h",
+        "AbbreviationDay": "km/일",
+        "Label": "킬로미터"
+      },
+      "Label": "여행 단위",
+      "Mile": {
+        "AbbreviationDay": "mi/일",
+        "AbbreviationHour": "mph",
+        "Label": "마일"
+      }
+    }
+  },
+  "DND5E.AbilityModifierShort": "수정치",
+  "DND5E.CAST": {
+    "Action": {
+      "RemoveSpell": "주문 제거"
+    },
+    "FIELDS": {
+      "spell": {
+        "properties": {
+          "label": "무시할 속성",
+          "hint": "주문을 시전할 때 무시할 구성 요소 및 태그입니다."
+        },
+        "level": {
+          "hint": "주문 자체의 레벨과 다를 경우, 주문을 시전할 기본 레벨을 설정합니다.",
+          "label": "시전 레벨"
+        },
+        "challenge": {
+          "attack": {
+            "label": "공격 보너스",
+            "hint": "주문의 일반적인 공격 보너스 대신 사용할 고정 명중 보너스입니다."
+          },
+          "save": {
+            "label": "내성 난이도",
+            "hint": "주문의 일반적인 난이도 대신 사용할 고정 DC입니다."
+          },
+          "override": {
+            "label": "수치 덮어쓰기",
+            "hint": "시전 시 주문의 일반적인 명중 보너스와 내성 난이도를 덮어씁니다."
+          }
+        },
+        "label": "시전 세부 사항",
+        "spellbook": {
+          "label": "주문서에 표시",
+          "hint": "캐릭터 시트의 주문 탭에 이 주문을 표시합니다."
+        },
+        "uuid": {
+          "label": "시전할 주문"
+        },
+        "ability": {
+          "label": "주문 시전 능력",
+          "hint": "크리처의 일반적인 주문시전 능력을 대체하여 사용할 능력치입니다."
+        }
+      }
+    },
+  "SECTIONS": {
+      "Spell": "주문",
+      "Spellbook": "추가 주문"
+    },
+    "Enchantment": {
+      "Name": "주문 수정 사항"
+    },
+    "Title": "주문 시전",
+    "Hint": "아이템을 통해 주문을 시전합니다."
+  },
+  "TYPES.Item.facility": "시설",
+  "TYPES.Item.facilityPl": "시설",
+  "DND5E.CONTAINER": {
+    "Details": "용기 세부 사항",
+    "FIELDS": {
+      "capacity": {
+        "label": "수용량",
+        "count": {
+          "label": "아이템 개수"
+        },
+        "weight": {
+          "label": "중량 수용량",
+          "units": {
+            "label": "무게 단위"
+          },
+          "value": {
+            "label": "최대 무게"
+          }
+        },
+        "volume": {
+          "label": "부피 수용량",
+          "units": {
+            "label": "부피 단위"
+          },
+          "value": {
+            "label": "최대 부피"
+          }
+        }
+      },
+      "properties": {
+        "label": "용기 속성"
+      }
+    }
+  },
+  "DND5E.CHATMESSAGE": {
+    "TURN": {
+      "NoCombatant": "전투원이 더 이상 존재하지 않습니다!"
+    },
+    "Deltas": {
+      "Recovery": "회복",
+      "Created": "아이템 생성됨",
+      "Deleted": "아이템 삭제됨"
+    },
+    "Activities": "활동",
+    "REQUEST": {
+      "Action": {
+        "Handle": "요청 처리"
+      },
+      "Complete": "요청 완료",
+      "PartyMembers": "파티원"
+    }
+  },
+  "DND5E.CreatureTag": "{size} 체격 {type}, {alignment}",
+  "DND5E.Habitat": {
+    "Categories": {
+      "Any": "모든 서식지",
+      "Arctic": "극지",
+      "Coastal": "해안",
+      "Desert": "사막",
+      "Forest": "삼림",
+      "Hill": "언덕",
+      "Grassland": "초원",
+      "Mountain": "산악",
+      "Planar": "차원",
+      "Swamp": "늪지",
+      "Underdark": "언더다크",
+      "Underwater": "수중",
+      "Urban": "도시"
+    },
+    "Configuration": {
+      "Custom": "사용자 정의",
+      "Label": "서식지",
+      "Legend": "카테고리",
+      "Subtype": "{type} 하위 유형",
+      "Title": "서식지 설정"
+    },
+    "Subtype": "{type} ({subtype})"
+  },
+  "DND5E.Treasure": {
+    "Categories": {
+      "Arcana": "신비",
+      "Any": "임의",
+      "Armaments": "병기",
+      "Implements": "소품",
+      "Individual": "개별",
+      "None": "없음",
+      "Relics": "성물"
+    },
+    "Configuration": {
+      "Label": "보물",
+      "Title": "보물 설정"
+    }
+  },
+  "DND5E.ItemFacilityDetails": "시설 세부 사항",
+  "DND5E.ExperiencePoints": {
+    "Abbreviation": "XP",
+    "Boons": {
+      "one": "{number}개의 혜택",
+      "other": "{number}개의 혜택"
+    },
+    "Current": "현재 XP",
+    "Format": "{value} XP",
+    "Progress": "다음 레벨까지 남은 진행도",
+    "StatBlock": {
+      "Standard": "{value} XP",
+      "Lair": "{value} XP (본거지 내에서는 {lair} XP)"
+    },
+    "Value": "XP 가치",
+    "Label": "경험치",
+    "Pool": "XP 저장고"
+  },
+  "DND5E.FORWARD": {
+    "Title": "전달",
+    "FIELDS": {
+      "activity": {
+        "label": "발동될 활동"
+      }
+    },
+    "Warning": {
+      "NoActivity": "전달 활동을 사용하려면 먼저 연결된 활동을 설정해야 합니다."
+    },
+    "Hint": "이 아이템에 설정된 다른 활동을 발동시키며, 자원 소모 및 성장 수치를 다르게 적용합니다."
+  },
+  "DND5E.FlagsAlertHintLegacy": "선제권에 +5 보너스를 제공합니다.",
+  "DND5E.Gear": "장비",
+  "DND5E.LAIR": {
+    "Label": "본거지",
+    "Action": {
+      "Label": "본거지 액션",
+      "Initiative": "본거지 행동 선제권 수치",
+      "Uses": "본거지 액션 사용"
+    },
+    "HasLair": "본거지 보유",
+    "Inside": "본거지 내부"
+  },
+  "DND5E.GlobalBonus": "전역 보너스",
+  "DND5E.FEATURE": {
+    "FIELDS": {
+      "properties": {
+        "label": "특징 속성"
+      },
+      "requirements": {
+        "label": "요구사항"
+      },
+      "type": {
+        "label": "특징 유형"
+      },
+      "cover": {
+        "label": "엄폐",
+        "hint": "이 탈것의 특징을 통해 승무원에게 제공되는 엄폐입니다."
+      }
+    }
+  },
+  "DND5E.HITPOINTS": {
+    "Counted": {
+      "other": "{number} HP",
+      "one": "{number} HP"
+    },
+    "DT": {
+      "abbr": "피해 임계치"
+    },
+    "Other": {
+      "label": "기타 옵션"
+    }
+  },
+  "DND5E.HitPointsTempMaxHint": "최대 HP의 일시적인 수정치입니다.",
+  "DND5E.HitPointsOverrideHint": "클래스 HP, 보너스 및 능력 수정치를 무시하고 자동으로 계산된 HP를 이 수치로 대체합니다.",
+  "DND5E.HITDICE": {
+    "Action": {
+      "Decrease": "감소",
+      "Increase": "증가"
+    },
+    "Available": "{number}개 사용 가능",
+    "Config": "히트 다이스 조정",
+    "Counted": {
+      "one": "{number}개의 히트 다이스",
+      "other": "{number}개의 히트 다이스"
+    },
+    "Abbreviation": "HD"
+  },
+  "DND5E.Items": "아이템",
+  "DND5E.ItemSpeciesDetailsLegacy": "종족 세부 사항",
+  "DND5E.LegendaryAction": {
+    "Label": "전설적 행동",
+    "Max": "전설적 행동 최대 횟수",
+    "Ordinal": {
+      "one": "{n}번째 전설적 행동",
+      "two": "{n}번째 전설적 행동",
+      "few": "{n}번째 전설적 행동",
+      "other": "{n}번째 전설적 행동"
+    },
+    "Remaining": "남은 전설적 행동",
+    "Description": "전설적 행동 사용 횟수: {uses}. {name}은(는) 다른 크리처의 차례가 끝난 직후에 사용 횟수를 소모하여 다음 중 하나의 행동을 수행할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 모든 사용 횟수를 회복합니다.",
+    "DescriptionLegacy": "{name}은(는) 아래 옵션 중 {usesNamed}을(를) 선택하여 수행할 수 있습니다. 전설적 행동 옵션은 한 번에 하나만 사용할 수 있으며, 다른 크리처의 턴이 끝났을 때만 사용할 수 있습니다. {name}은(는) 자신의 턴이 시작될 때 소모한 전설적 행동 횟수를 회복합니다.",
+    "LairUses": "{normal}회 (본거지 내에서는 {lair}회)",
+    "LabelPl": "전설적 행동",
+    "Spent": "소모한 전설적 행동"
+  },
+  "DND5E.Loyalty": "충성도",
+  "DND5E.ProficiencyOther": "기타",
+  "DND5E.RacialTraitsLegacy": "종족 특성",
+  "DND5E.NUMBER": {
+    "1": "하나",
+    "2": "둘",
+    "3": "셋",
+    "4": "넷",
+    "5": "다섯",
+    "6": "여섯",
+    "7": "일곱",
+    "8": "여덟",
+    "9": "아홉"
+  },
+  "DND5E.ProficiencyBonusAbbr": "숙련",
+  "DND5E.RechargeLong": "긴 휴식 후 재충전",
+  "DND5E.ROLL": {
+    "Range": {
+      "Label": "굴림 범위",
+      "Maximum": "최대 결과",
+      "Minimum": "최소 결과"
+    },
+    "Section": "{label} 굴림",
+    "Status": "상태"
+  },
+  "DND5E.SKILL": {
+    "SECTIONS": {
+      "Global": {
+        "Label": "전역 보너스",
+        "Hint": "이 보너스들은 모든 기술 판정에 적용됩니다."
+      },
+      "Details": "{label} 세부 사항",
+      "Bonuses": {
+        "Label": "{label} 보너스",
+        "Hint": "이 보너스들은 {label} 판정 및 수동 점수에 적용됩니다."
+      }
+    }
+  },
+  "DND5E.TOOL": {
+    "SECTIONS": {
+      "Bonuses": {
+        "Label": "{label} 보너스",
+        "Hint": "이 보너스들은 {label} 판정에 적용됩니다."
+      },
+      "Global": {
+        "Label": "전역 보너스",
+        "Hint": "이 보너스들은 모든 도구 판정에 적용됩니다."
+      },
+      "Details": "{label} 세부 사항"
+    }
+  },
+  "DND5E.TraitDMPlural.one": "피해 수정",
+  "DND5E.TraitDMPlural.other": "피해 수정",
+  "DND5E.SavingThrowShort": "내성",
+  "DND5E.SpellSlotTemporary": "임시 주문 슬롯",
+  "DND5E.Unit": "단위",
+  "DND5E.ORDINAL": {
+    "one": "{number}번째",
+    "two": "{number}번째",
+    "few": "{number}번째",
+    "other": "{number}번째"
+  },
+  "DND5E.VEHICLE": {
+    "MOUNTABLE": {
+      "FIELDS": {
+        "hp": {
+          "label": "HP",
+          "dt": {
+            "label": "피해 임계치"
+          },
+          "max": {
+            "label": "최대 HP"
+          },
+          "value": {
+            "label": "현재 HP"
+          },
+          "conditions": {
+            "label": "건강 상태"
+          }
+        },
+        "cover": {
+          "hint": "이 장비를 사용하는 승무원에게 제공되는 엄폐입니다.",
+          "label": "엄폐"
+        },
+        "speed": {
+          "conditions": {
+            "label": "속도 상태"
+          },
+          "value": {
+            "label": "속도"
+          }
+        },
+        "crew": {
+          "label": "승무원"
+        }
+      }
+    },
+    "FIELDS": {
+      "attributes": {
+        "actions": {
+          "label": "행동",
+          "max": {
+            "hint": "최대 승무원 상태에서 수행 가능한 행동입니다.",
+            "label": "최대 행동"
+          },
+          "spent": {
+            "label": "소모한 행동"
+          },
+          "stations": {
+            "label": "행동 초소"
+          },
+          "thresholds": {
+            "full": {
+              "label": "최대 승무원"
+            },
+            "mid": {
+              "label": "부분 승무원"
+            },
+            "min": {
+              "label": "최소 승무원"
+            },
+            "label": "임계값"
+          }
+        },
+        "capacity": {
+          "cargo": {
+            "value": {
+              "label": "화물"
+            }
+          },
+          "label": "수용량"
+        }
+      },
+      "crew": {
+        "max": {
+          "label": "승무원"
+        }
+      },
+      "passengers": {
+        "max": {
+          "label": "승객"
+        }
+      },
+      "traits": {
+        "beam": {
+          "value": {
+            "label": "선폭"
+          }
+        },
+        "keel": {
+          "value": {
+            "label": "용골"
+          }
+        }
+      }
+    },
+    "Action": {
+      "Create": {
+        "Equipment": "장비 생성",
+        "Feature": "특징 생성",
+        "Weapon": "무기 생성"
+      },
+      "Crew": {
+        "Decrease": "감소",
+        "Increase": "증가"
+      },
+      "Drop": {
+        "Animal": "역용 동물 놓기",
+        "Crew": "승무원 놓기",
+        "Passengers": "승객 놓기"
+      },
+      "Uncrew": "배치 해제"
+    },
+    "Actions": {
+      "Ordinal": {
+        "one": "{n}번째 행동",
+        "two": "{n}번째 행동",
+        "few": "{n}번째 행동",
+        "other": "{n}번째 행동"
+      }
+    },
+    "Activation": {
+      "Crew": {
+        "label": "승무원 행동"
+      }
+    },
+    "Crew": {
+      "Assigned": "배정됨",
+      "Label": "승무원",
+      "Passengers": "승객",
+      "Unassigned": "미배정"
+    },
+    "Mishap": {
+      "label": "사고",
+      "Threshold": {
+        "abbr": "사고 난이도",
+        "label": "사고 임계값"
+      }
+    },
+    "Option": {
+      "Abilities": "능력치 표시",
+      "Initiative": "선제권 표시",
+      "Quality": "품질 표시"
+    },
+    "Tabs": {
+      "Cargo": "화물",
+      "CrewPassengers": "승무원 및 승객"
+    },
+    "Type": {
+      "Air": {
+        "label": "비행 탈것"
+      },
+      "label": "탈것 유형",
+      "Land": {
+        "label": "지상 탈것"
+      },
+      "Space": {
+        "label": "우주 탈것"
+      },
+      "Water": {
+        "label": "수상 탈것"
+      }
+    }
+  },
+  "DND5E.DeathSaveBonus": "죽음 내성 굴림 보너스",
+  "DND5E.DeathSaveConfigure": "죽음 내성 굴림 설정",
+  "DND5E.ACTIVEEFFECT": {
+    "FIELDS": {
+      "statuses": {
+        "label": "상태",
+        "hint": "이 활성 효과가 적용되는 동안, 대상은 해당 상태 이상을 추가로 겪는 것으로 처리됩니다."
+      }
+    },
+    "AttributeKeyTooltip": "일반적인 키 목록은 <a href=\"{url}\">위키</a>를 참조하세요."
+  },
+  "DND5E.BONUSES": {
+    "FIELDS": {
+      "bonuses": {
+        "label": "전역 보너스",
+        "hint": "전역 보너스는 특정 굴림에 추가되는 공식입니다.",
+        "abilities": {
+          "label": "전역 능력 보너스",
+          "check": {
+            "label": "능력 판정"
+          },
+          "save": {
+            "label": "내성 굴림"
+          },
+          "skill": {
+            "label": "기술 판정"
+          }
+        },
+        "msak": {
+          "damage": {
+            "label": "근거리 주문 피해"
+          },
+          "label": "근거리 주문 보너스",
+          "attack": {
+            "label": "근거리 주문 공격"
+          }
+        },
+        "mwak": {
+          "label": "근거리 무기 보너스",
+          "attack": {
+            "label": "근거리 무기 공격"
+          },
+          "damage": {
+            "label": "근거리 무기 피해"
+          }
+        },
+        "rsak": {
+          "label": "원거리 주문 보너스",
+          "attack": {
+            "label": "원거리 주문 공격"
+          },
+          "damage": {
+            "label": "원거리 주문 피해"
+          }
+        },
+        "rwak": {
+          "label": "원거리 무기 보너스",
+          "attack": {
+            "label": "원거리 무기 공격"
+          },
+          "damage": {
+            "label": "원거리 무기 피해"
+          }
+        },
+        "spell": {
+          "label": "전역 주문 보너스",
+          "dc": {
+            "label": "주문 내성 DC"
+          }
+        }
+      }
+    }
+  },
+  "DND5E.COMBAT": {
+    "Group": {
+      "ActiveCount": "{combatants}명 중 {current}명",
+      "Title": "{name} 그룹"
+    }
+  },
+  "DND5E.COMBATANT": {
+    "Counted": {
+      "one": "{number}명의 전투원",
+      "other": "{number}명의 전투원"
+    }
+  },
+  "DND5E.CONDITIONS": {
+    "RiderConditions": {
+      "hint": "이 활성 효과가 적용될 때, 해당 상태이상들이 별도로 적용됩니다.",
+      "label": "분리된 상태"
+    }
+  },
+  "DND5E.DisplayCard": "채팅창에 표시",
+  "KEYBINDINGS.DND5E.DragCopy": "문서 드래그 시 복사 강제",
+  "KEYBINDINGS.DND5E.DragMove": "문서 드래그 시 이동 강제",
+  "DND5E.TRANSFORM": {
+    "FIELDS": {
+      "profiles": {
+        "label": "변신 프로필",
+        "element": {
+          "cr": {
+            "abbr": "CR",
+            "label": "도전지수",
+            "hint": "원본 크리처의 최대 CR입니다."
+          },
+          "level": {
+            "label": "레벨 제한",
+            "hint": "이 프로필을 사용하는 데 필요한 레벨입니다.",
+            "max": {
+              "label": "최대 레벨"
+            },
+            "min": {
+              "label": "최소 레벨"
+            }
+          },
+          "movement": {
+            "label": "제한된 이동 유형",
+            "hint": "원본 크리처에게 허용되지 않는 이동 유형들입니다."
+          },
+          "name": {
+            "hint": "대화창에 표시될 프로필 이름입니다.",
+            "label": "표시 이름"
+          },
+          "sizes": {
+            "label": "생명체 크기",
+            "hint": "원본 크리처를 선택할 수 있는 크기 목록입니다."
+          },
+          "types": {
+            "hint": "원본 크리처를 선택할 수 있는 크리처 유형 목록입니다.",
+            "label": "생명체 유형"
+          },
+          "uuid": {
+            "label": "연결된 캐릭터"
+          }
+        }
+      },
+      "transform": {
+        "label": "변신 세부 사항",
+        "customize": {
+          "label": "사용자 정의",
+          "hint": "선택된 프리셋의 기본 설정 대신 사용자 정의 변신 설정을 사용합니다."
+        },
+        "identifier": {
+          "label": "클래스 식별자",
+          "hint": "프로필 레벨 제한을 판정할 때 캐릭터 레벨을 사용할지, 특정 클래스 레벨을 사용할지 결정하는 데 쓰이는 식별자입니다."
+        },
+        "mode": {
+          "label": "모드",
+          "hint": "변신할 원본 크리처를 선택하는 방식을 설정합니다.",
+          "Direct": "직접 연결",
+          "CR": "도전지수별"
+        },
+        "preset": {
+          "label": "프리셋"
+        }
+      }
+    },
+    "Setting": {
+      "Keep": {
+        "Biography": {
+          "Label": "일대기"
+        },
+        "CreatureType": {
+          "Label": "크리처 유형"
+        },
+        "Equipment": {
+          "Label": "장비"
+        },
+        "Features": {
+          "Label": "특징"
+        },
+        "Health": {
+          "Label": "HP 및 히트 다이스"
+        },
+        "Mental": {
+          "Hint": "지능, 지혜, 매력 능력치 수치를 유지합니다.",
+          "Label": "정신 능력치"
+        },
+        "Physical": {
+          "Hint": "근력, 민첩, 건강 능력치 수치를 유지합니다.",
+          "Label": "신체 능력치"
+        },
+        "Proficiency": {
+          "Label": "숙련 보너스"
+        },
+        "Saves": {
+          "Label": "내성 굴림 숙련"
+        },
+        "Self": {
+          "Hint": "초상화와 토큰 이미지만 변경하며, 다른 설정은 무시합니다.",
+          "Label": "자신 유지"
+        },
+        "Skills": {
+          "Label": "기술 숙련"
+        },
+        "Spells": {
+          "Label": "주문"
+        },
+        "Vision": {
+          "Label": "시각"
+        },
+        "Languages": {
+          "Label": "언어"
+        },
+        "GearProficiency": {
+          "Label": "장비 숙련"
+        },
+        "Resistances": {
+          "Label": "피해 저항"
+        },
+        "TempHP": {
+          "Label": "임시 HP"
+        }
+      },
+      "Effects": {
+        "All": {
+          "Hint": "다른 효과 설정을 무시하고 모든 효과를 유지합니다.",
+          "Label": "모든 효과"
+        },
+        "Background": {
+          "Label": "배경 효과"
+        },
+        "Class": {
+          "Label": "클래스 효과"
+        },
+        "Equipment": {
+          "Label": "장비 효과"
+        },
+        "Feature": {
+          "Label": "특징 효과"
+        },
+        "Origin": {
+          "Hint": "이 캐릭터에게 직접 생성된 모든 효과를 유지합니다.",
+          "Label": "이 캐릭터"
+        },
+        "OtherOrigin": {
+          "Hint": "외부 캐릭터에 의해 부여된 모든 효과를 유지합니다.",
+          "Label": "다른 캐릭터"
+        },
+        "Spell": {
+          "Label": "주문 효과"
+        }
+      },
+      "FIELDS": {
+        "effects": {
+          "label": "활성 효과"
+        },
+        "keep": {
+          "hint": "원본 캐릭터로부터 유지될 세부 사항들입니다.",
+          "label": "유지"
+        },
+        "merge": {
+          "hint": "숙련도를 병합하며, 수정치가 더 높은 쪽을 유지합니다.",
+          "label": "병합"
+        },
+        "other": {
+          "label": "기타 옵션"
+        },
+        "tempFormula": {
+          "hint": "변신 시 추가될 임시 HP 공식입니다.",
+          "label": "임시 HP 공식"
+        },
+        "transformTokens": {
+          "label": "토큰 변신"
+        },
+        "minimumAC": {
+          "hint": "변신한 크리처의 AC를 정의하는 공식입니다. 캐릭터의 AC가 이보다 높지 않을 경우에만 적용됩니다.",
+          "label": "최소 방어도"
+        },
+        "spellLists": {
+          "hint": "캐릭터가 해당 아이템을 보유하고 있다면, 이 주문 목록에 있는 주문들은 유지됩니다.",
+          "label": "유지될 주문 목록"
+        }
+      },
+      "Merge": {
+        "Saves": {
+          "Label": "내성 굴림 숙련"
+        },
+        "Skills": {
+          "Label": "기술 숙련"
+        }
+      }
+    },
+    "Action": {
+      "Restore": "변형 복구",
+      "Transform": "변형"
+    },
+    "Dialog": {
+      "Title": "변형 설정"
+    },
+    "Preset": {
+      "Appearance": {
+        "Label": "외형만 변경"
+      },
+      "Default": "기본값",
+      "Label": "프리셋",
+      "Polymorph": {
+        "Label": "변이"
+      },
+      "WildShape": {
+        "Label": "야생 형상"
+      }
+    },
+    "Profile": {
+      "Action": {
+        "Create": "프로필 생성",
+        "Delete": "프로필 삭제"
+      },
+      "ChallengeRatingLabel": "위협 등급 {cr} 이하",
+      "Empty": "위의 <i class=\"fas fa-plus\"></i> 버튼을 클릭하여 프로필을 생성하세요.",
+      "Label": "변형 프로필",
+      "DropHint": "여기에 크리처를 놓으세요"
+    },
+    "SECTIONS": {
+      "Profiles": "프로필",
+      "Settings": "설정",
+      "Transformation": "변형"
+    },
+    "TemporaryClass": "임시 클래스",
+    "Title": "변형시키기",
+    "Warning": {
+      "NoOwnership": "이 캐릭터를 변형시킬 권한이 없습니다.",
+      "NoPermission": "플레이어에게 변형 권한이 부여되지 않았습니다.",
+      "OriginalActor": "ID가 {reference}인 원본 캐릭터를 찾을 수 없습니다.",
+      "SourceActor": "변형을 위한 원본 캐릭터를 찾을 수 없습니다."
+    },
+    "Hint": "한 캐릭터의 능력치를 사용하여 다른 캐릭터를 수정합니다."
+  },
+  "SOURCE.BOOK.SRD52": "시스템 참조 문서(SRD) 5.2",
+  "DND5E.JOURNALENTRY": {
+    "Navigation": {
+      "Next": "다음",
+      "Previous": "이전",
+      "Up": "위로"
+    }
+  },
+  "SOURCE.BOOK.SRD51": "시스템 참조 문서(SRD) 5.1",
+  "SOURCE.BOOK.FreeRules": "무료 규칙(Free Rules)",
+  "DND5E.ITEM": {
+    "Category": {
+      "Physical": "물리적",
+      "Label": "카테고리"
+    },
+    "Property": {
+      "Adamantine": "아다만틴",
+      "Ammunition": "탄환",
+      "Concentration": "집중",
+      "Finesse": "기교",
+      "Firearm": "총화기",
+      "Focus": "매개체",
+      "Heavy": "중량",
+      "Magical": "마법",
+      "Reach": "간격",
+      "Ritual": "의식",
+      "Somatic": "동작",
+      "Light": "경량",
+      "Loading": "장전",
+      "Material": "재료",
+      "Returning": "귀환",
+      "Silvered": "은도금",
+      "Reload": "재장전",
+      "Thrown": "투척",
+      "TwoHanded": "양손",
+      "Versatile": "다용도",
+      "Verbal": "주문",
+      "Trait": "지속 특징",
+      "WeightlessContents": "무게 없는 내용물",
+      "Special": "특수",
+      "StealthDisadvantage": "은신 불리",
+      "Sidekick": "사이드킥"
+    },
+    "SECTIONS": {
+      "Activities": "활동",
+      "Advancement": "성장",
+      "Contents": "내용물",
+      "Details": "세부 사항",
+      "Effects": "효과",
+      "Description": "설명"
+    }
+  },
+  "DND5E.Remaining": "남음",
+  "TYPES.RegionBehavior": {
+    "dnd5e.difficultTerrain": "험지",
+    "dnd5e.rotateArea": "구역 회전"
+  },
+  "DND5E.Challenge": "위협 등급",
+  "DND5E.ENCOUNTER": {
+    "Tab": {
+      "Loot": "전리품",
+      "Description": "설명",
+      "Members": "구성원"
+    },
+    "Action": {
+      "Award": "XP 및 화폐 보상",
+      "AddCreature": "크리처 추가"
+    },
+    "Difficulty": {
+      "high": "매우 어려움",
+      "low": "쉬움",
+      "moderate": "보통"
+    }
+  },
+  "DND5E.FlagsHalflingNimbleness": "하플링의 기민함",
+  "DND5E.SPELLCASTING": {
+    "METHODS": {
+      "Innate": {
+        "label": "선천적 주문"
+      },
+      "Spell": {
+        "label": "주문",
+        "Full": {
+          "label": "풀캐스터 (위저드, 드루이드, 클레릭, 바드, 소서러)"
+        },
+        "Half": {
+          "label": "하프캐스터 (팔라딘, 레인저)"
+        },
+        "Third": {
+          "label": "서드캐스터 (비술 기사, 비전 괴도)"
+        },
+        "Artificer": {
+          "label": "아티피서"
+        }
+      },
+      "Pact": {
+        "label": "계약 마법",
+        "Full": {
+          "label": "계약 마법"
+        },
+        "abbr": "계약"
+      },
+      "AtWill": {
+        "label": "임의 시전"
+      },
+      "Ritual": {
+        "label": "의식 전용"
+      }
+    },
+    "SLOTS": {
+      "spell0": "소주문",
+      "spell1": "1레벨",
+      "spell2": "2레벨",
+      "spell3": "3레벨",
+      "spell4": "4레벨",
+      "spell5": "5레벨",
+      "spell6": "6레벨",
+      "spell7": "7레벨",
+      "spell8": "8레벨",
+      "spell9": "9레벨"
+    },
+  "STATES": {
+      "Unprepared": "준비되지 않음",
+      "Prepared": "준비됨",
+      "AlwaysPrepared": "항상 준비됨"
+    },
+    "Unlabeled": "이름 없는 시전"
+  },
+  "TYPES.Actor.encounter": "인카운터",
+  "TYPES.Actor.encounterPl": "인카운터",
+  "DND5E.ACTOR": {
+    "Warning": {
+      "CreateActor": "컴펜디엄에서 직접 소환하려면 새 캐릭터 생성 권한이 있어야 합니다.",
+      "InvalidItem": "{itemType} 유형의 아이템은 {actorType}에 추가할 수 없습니다.",
+      "NoActor": "소환할 UUID {uuid}를 가진 캐릭터를 찾을 수 없습니다.",
+      "Singleton": "{actorType}에는 {itemType} 유형의 아이템을 하나만 추가할 수 있습니다."
+    }
+  },
+  "DND5E.FlagsHalflingNimblenessHint": "자신보다 큰 크리처의 공간을 통과할 때 이동이 차단되지 않습니다.",
+  "DND5E.FlagsToolExpertise": "도구 전문성",
+  "DND5E.FlagsToolExpertiseHint": "숙련된 도구를 사용하는 모든 능력 판정 시 숙련 보너스를 두 배로 적용합니다.",
+  "DND5E.LevelAvg": "평균 레벨",
+  "DND5E.Method": "방식",
+  "DND5E.Preparation": "준비",
+  "DND5E.REGIONBEHAVIORS": {
+    "DIFFICULTTERRAIN": {
+      "FIELDS": {
+        "ignoredDispositions": {
+          "hint": "이 태도를 가진 토큰들은 해당 험지의 영향을 받지 않습니다.",
+          "label": "무시할 태도"
+        },
+        "magical": {
+          "hint": "이 험지는 마법 효과에 의해 생성되었습니다.",
+          "label": "마법적"
+        },
+        "types": {
+          "hint": "이 험지의 기원을 가장 잘 설명하는 유형입니다.",
+          "label": "유형"
+        }
+      },
+      "Type": {
+        "All": "모든 유형",
+        "Ice": "빙판",
+        "Magical": "마법적",
+        "Nonmagical": "비마법적",
+        "Plants": "식물 또는 덤불",
+        "Rocks": "암석 또는 바위",
+        "Liquid": "얕은 액체",
+        "Slope": "가파른 경사",
+        "Snow": "깊은 눈",
+        "Mud": "진흙탕",
+        "Sand": "유사",
+        "Webs": "끈적이는 거미줄"
+      }
+    },
+    "ROTATEAREA": {
+      "Action": {
+        "AddPosition": "위치 추가",
+        "DeletePosition": "위치 삭제",
+        "RotateToPosition": "해당 위치로 회전"
+      },
+      "DirectionMode": {
+        "Clockwise": "시계 방향",
+        "CounterClockwise": "반시계 방향",
+        "Longest": "가장 먼 경로",
+        "Shortest": "가장 가까운 경로"
+      },
+      "FIELDS": {
+        "directionMode": {
+          "label": "방향 모드",
+          "hint": "다음 위치로 이동할 때 회전 방향을 선택하는 방식을 결정합니다."
+        },
+        "lights": {
+          "ids": {
+            "label": "광원"
+          }
+        },
+        "positions": {
+          "label": "위치",
+          "element": {
+            "angle": {
+              "label": "각도"
+            }
+          }
+        },
+        "regions": {
+          "ids": {
+            "label": "구역"
+          }
+        },
+        "sounds": {
+          "ids": {
+            "label": "환경음"
+          }
+        },
+        "tiles": {
+          "ids": {
+            "label": "타일"
+          }
+        },
+        "time": {
+          "mode": {
+            "label": "속도 모드",
+            "hint": "이동 거리와 관계없이 회전 시간이 동일한지(고정), 이동 거리에 비례하는지(가변) 설정합니다."
+          },
+          "value": {
+            "label": "회복 시간",
+            "hint": "다음 위치까지 회전하는 데 걸리는 시간(고정 모드) 또는 90° 회전하는 데 걸리는 시간(가변 모드)을 밀리초(ms) 단위로 입력합니다."
+          }
+        },
+        "walls": {
+          "ids": {
+            "label": "벽"
+          },
+          "link": {
+            "label": "벽 연결",
+            "hint": "지정된 벽에 붙어 있는 모든 벽 세그먼트를 함께 회전시킵니다."
+          }
+        }
+      },
+      "SpeedMode": {
+        "Fixed": "고정 (전체 회전 시간)",
+        "Variable": "가변 (90˚ 회전에 필요한 시간)"
+      },
+      "Warning": {
+        "RecursiveRegion": "행동이 포함된 동일한 구역은 회전시킬 수 없습니다."
+      }
+    }
+  },
+  "DND5E.SheetClass": {
+    "Character": "기본 5e 캐릭터 시트",
+    "ClassSummary": "기본 5e 클래스 요약 시트",
+    "Container": "기본 5e 용기 시트",
+    "DifficultTerrain": "기본 5e 험지 시트",
+    "Encounter": "기본 5e 만남 시트",
+    "Group": "기본 5e 그룹 시트",
+    "Item": "기본 5e 아이템 시트",
+    "JournalEntry": "기본 5e 저널 시트",
+    "JournalEntryLegacy": "레거시 5e 저널 시트",
+    "MapLocation": "기본 5e 지도 위치 시트",
+    "NPC": "기본 5e NPC 시트",
+    "RotateArea": "기본 5e 구역 회전 시트",
+    "Rule": "기본 5e 규칙 시트",
+    "SpellList": "기본 5e 주문 목록 시트",
+    "Token": "기본 5e 토큰 시트",
+    "Vehicle": "기본 5e 탈것 시트"
+  },
+  "DND5E.SkillRoll": "{ability} ({skill}) 판정",
+  "DND5E.SpellLevelSpell": "{level} ({n}개 슬롯)",
+  "DND5E.Summary": "요약",
+  "DND5E.MOVEMENT": {
+    "Type": {
+      "Burrow": "굴착",
+      "Climb": "등반",
+      "Fly": "비행",
+      "Speed": "속도",
+      "Swim": "수영",
+      "Walk": "보행"
+    },
+    "Action": {
+      "Configure": "속도 설정"
+    },
+    "FIELDS": {
+      "bonus": {
+        "label": "이동 보너스"
+      },
+      "ignoredDifficultTerrain": {
+        "label": "무시할 험지"
+      },
+      "special": {
+        "label": "특수 이동"
+      },
+      "speeds": {
+        "label": "속도"
+      },
+      "units": {
+        "label": "단위"
+      }
+    },
+    "Hover": "부양",
+    "Speed": "전투 속도"
+  },
+  "DND5E.TRAVEL": {
+    "Label": "여행 속도",
+    "Pace": {
+      "Slow": "느리게",
+      "Fast": "빠르게",
+      "Normal": "보통"
+    },
+    "Type": {
+      "Water": "수상",
+      "Air": "공중",
+      "Land": "지상"
+    },
+    "FIELDS": {
+      "pace": {
+        "label": "페이스"
+      },
+      "time": {
+        "hint": "여행 속도를 페이스로 변환하기 위해 사용하는 하루 이동 시간입니다.",
+        "label": "일일 이동 시간"
+      }
+    },
+    "Per": {
+      "Day": "일당",
+      "Hour": "시간당"
+    },
+    "Slowed": {
+      "Group": "동료 중 한 명 이상의 속도가 절반 이하로 떨어졌으므로 그룹의 페이스가 느려집니다.",
+      "Member": "이 동료가 그룹 전체의 속도를 늦추고 있습니다."
+    },
+    "Speed": "여행 속도"
+  },
+"DND5E.Loot.Trade": "상품",
+  "DND5E.Quality": "품질",
+  "DND5E.SkillTitle": "{ability} ({skill})",
+  "DND5E.SpellAttackBonus": "주문 공격 보너스",
+  "DND5E.CALENDAR": {
+    "Action": {
+      "AdvanceTime": "{amount} 앞으로",
+      "OpenCharacterSheet": "캐릭터 시트 열기",
+      "OpenPartySheet": "파티 시트 열기",
+      "ReverseTime": "{amount} 뒤로",
+      "SetDate": "날짜 설정"
+    },
+    "Component": {
+      "Day": "일",
+      "Month": "월",
+      "Year": "년"
+    },
+    "Configuration": {
+      "DisabledMessage": "플레이어가 사용하려면 DM이 캘린더 인터페이스를 활성화해야 합니다.",
+      "Hint": "캘린더 HUD의 표시 방식과 작동 방식을 제어합니다.",
+      "Label": "캘린더 설정",
+      "Name": "캘린더",
+      "Preferences": "캘린더 기본 설정",
+      "UnavailableMessage": "모듈에 의해 비활성화되어 기본 캘린더 인터페이스를 사용할 수 없습니다."
+    },
+    "FIELDS": {
+      "calendar": {
+        "hint": "게임 내 시간을 추적하는 데 사용할 달력 체계입니다.",
+        "label": "달력"
+      },
+      "enabled": {
+        "hint": "모든 사용자가 캘린더 인터페이스를 보고 맞춤 설정할 수 있도록 허용합니다.",
+        "label": "활성화"
+      },
+      "formatters": {
+        "date": {
+          "label": "날짜 형식"
+        },
+        "time": {
+          "label": "시간 형식"
+        }
+      },
+      "visible": {
+        "label": "캘린더 HUD 표시"
+      }
+    },
+    "Formatters": {
+      "Date": "날짜 형식",
+      "ApproximateDate": {
+        "EarlySeason": "{season} 초입",
+        "Label": "대략적인 날짜",
+        "LateSeason": "{season} 끝물",
+        "MidSeason": "{season} 한창"
+      },
+      "ApproximateTime": {
+        "Afternoon": "오후",
+        "Dawn": "새벽",
+        "Dusk": "해 질 녘",
+        "Evening": "저녁",
+        "Label": "대략적인 시간",
+        "Midnight": "자정",
+        "Morning": "아침",
+        "Night": "밤",
+        "Noon": "정오",
+        "Sunrise": "일출",
+        "Sunset": "일몰"
+      },
+      "HoursMinutes": {
+        "Format": "{H}:{M}",
+        "Label": "시와 분"
+      },
+      "HoursMinutesSeconds": {
+        "Format": "{H}:{M}:{S}",
+        "Label": "시, 분, 초"
+      },
+      "MonthDay": {
+        "Format": "{B} {D}일",
+        "Label": "월과 일"
+      },
+      "MonthDayYear": {
+        "Format": "{y}년 {B} {D}일",
+        "Label": "년, 월, 일"
+      },
+      "Time": "시간 형식"
+    },
+    "Gregorian": "그레고리력",
+    "Greyhawk": {
+      "Day": {
+        "Starday": "성진일(Starday)",
+        "Sunday": "태양일(Sunday)",
+        "Moonday": "월요일(Moonday)",
+        "Godsday": "제신일(Godsday)",
+        "Waterday": "수요일(Waterday)",
+        "Earthday": "토요일(Earthday)",
+        "Freeday": "자유일(Freeday)"
+      },
+      "Festival": {
+        "Needfest": "동지제(Needfest)",
+        "Growfest": "개화제(Growfest)",
+        "Richfest": "성하제(Richfest)",
+        "Brewfest": "수확제(Brewfest)"
+      },
+      "Formatters": {
+        "MonthDay": "{B} {d}일",
+        "MonthDayYear": "{y}년 {B} {d}일"
+      },
+      "Month": {
+        "Fireseek": "화탐월(Fireseek)",
+        "Readying": "준비월(Readying)",
+        "Coldeven": "냉빙월(Coldeven)",
+        "Planting": "식재월(Planting)",
+        "Flocktime": "유목월(Flocktime)",
+        "Wealsun": "번영월(Wealsun)",
+        "Reaping": "수확월(Reaping)",
+        "Godmonth": "성월(Godmonth)",
+        "Harvester": "추수월(Harvester)",
+        "Patchwall": "보수월(Patchwall)",
+        "Readyreat": "준비월(Readyreat)",
+        "Sunsebb": "일몰월(Sunsebb)"
+      },
+      "Name": "그레이호크 달력",
+      "Season": {
+        "Spring": "봄",
+        "Summer": "여름",
+        "Fall": "가을",
+        "Winter": "겨울"
+      }
+    },
+    "Harptos": {
+      "Day": {
+        "One": "첫째 날",
+        "Two": "둘째 날",
+        "Three": "셋째 날",
+        "Four": "넷째 날",
+        "Five": "다섯째 날",
+        "Six": "여섯째 날",
+        "Seven": "일곱째 날",
+        "Eight": "여덟째 날",
+        "Nine": "아홉째 날",
+        "Ten": "열째 날"
+      },
+      "Festival": {
+        "Midwinter": "동지제(Midwinter)",
+        "Greengrass": "녹초제(Greengrass)",
+        "Midsummer": "하지제(Midsummer)",
+        "Shieldmeet": "방패제(Shieldmeet)",
+        "Highharvestide": "대수확제(Highharvestide)",
+        "FeastOfTheMoon": "월만제(Feast of the Moon)"
+      },
+      "Formatters": {
+        "DayMonth": "{B} {d}일",
+        "DayMonthYear": "DR {y}년 {B} {d}일",
+        "FestivalDayYear": "DR {y}년 {day}"
+      },
+      "Month": {
+        "Hammer": "해머(Hammer)",
+        "HammerCommon": "한겨울",
+        "Alturiak": "알투리악(Alturiak)",
+        "AlturiakCommon": "겨울의 발톱",
+        "Ches": "체스(Ches)",
+        "ChesCommon": "일몰의 발톱",
+        "Tarsakh": "타르삭(Tarsakh)",
+        "TarsakhCommon": "폭풍의 발톱",
+        "Mirtul": "미르툴(Mirtul)",
+        "MirtulCommon": "해빙기",
+        "Kythorn": "카이손(Kythorn)",
+        "KythornCommon": "개화기",
+        "Flamerule": "플레임룰(Flamerule)",
+        "FlameruleCommon": "한여름",
+        "Eleasis": "엘리아시스(Eleasis)",
+        "EleasisCommon": "높은 태양",
+        "Eleint": "엘레인트(Eleint)",
+        "EleintCommon": "쇠퇴기",
+        "Marpenoth": "마펜노스(Marpenoth)",
+        "MarpenothCommon": "낙엽기",
+        "Uktar": "욱타르(Uktar)",
+        "UktarCommon": "부패기",
+        "Nightal": "나이탈(Nightal)",
+        "NightalCommon": "황혼기"
+      },
+      "Name": "하드토스 달력 (포가튼 렐름)",
+      "Season": {
+        "Spring": "봄",
+        "Summer": "여름",
+        "Fall": "가을",
+        "Winter": "겨울"
+      }
+    },
+    "Khorvaire": {
+      "Day": {
+        "Sul": "술요일(Sul)",
+        "Mol": "몰요일(Mol)",
+        "Zol": "졸요일(Zol)",
+        "Wir": "위르요일(Wir)",
+        "Zor": "조르요일(Zor)",
+        "Far": "파르요일(Far)",
+        "Sar": "사르요일(Sar)"
+      },
+      "Formatters": {
+        "DayMonth": "{B} {d}일",
+        "DayMonthYear": "YK {y}년 {B} {d}일"
+      },
+      "Month": {
+        "Zarantyr": "자란티르(Zarantyr)",
+        "Olarune": "올라룬(Olarune)",
+        "Therendor": "세렌도르(Therendor)",
+        "Eyre": "에이레(Eyre)",
+        "Dravago": "드라바고(Dravago)",
+        "Nymm": "님(Nymm)",
+        "Lharvion": "라르비온(Lharvion)",
+        "Barrakas": "바라카스(Barrakas)",
+        "Rhaan": "란(Rhaan)",
+        "Sypheros": "시페로스(Sypheros)",
+        "Aryth": "아리스(Aryth)",
+        "Vult": "불트(Vult)"
+      },
+      "Name": "코르베어 달력 (에버론)",
+      "Season": {
+        "Spring": "봄",
+        "Summer": "여름",
+        "Autumn": "가을",
+        "Winter": "겨울"
+      }
+    }
+  }
+}
+}
