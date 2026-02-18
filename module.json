@@ -1,8 +1,8 @@
 {
-	"id": "dnd5e-ko",
-	"title": "DND Korean SEPI",
-	"description": "D&D 5e 시스템의 한국어화 모듈입니다.",
-	"version":  "#{VERSION}#",
+	"id": "Sepi_DnD_2024_KR",
+	"title": "DND 2024 Korean for SEPI",
+	"description": "D&D 2024판 한글화 모듈.",
+	"version":  "beta",
 	"library": "false",
 	"manifestPlusVersion": "1.2.0",
 	"compatibility": {
@@ -12,9 +12,9 @@
 	  },
 	"authors": [
 		{
-		  "name": "Crownel",
-		  "url": "https://twitter.com/TR_crownel",
-		  "discord": "Crownel#4367"
+		  "name": "Sepi",
+		  "url": "https://ck-hearth.notion.site/Candlekeep-212f7f5a1e80806fa543e0304a27ac58",
+		  "discord": "None"
 		}
 	  ],
 	"esmodules": ["scripts/babele-register.js"],
@@ -22,7 +22,7 @@
 	"relationships": {
 		"systems": [
 			{
-				"id": "dnd5e",
+				"id": "Sepi_DnD_2024_KR",
         		"type": "system",
 				"compatibility": {
       				"verified": "4.0.1"
@@ -45,7 +45,7 @@
 	],
 	"license": "LICENSE",
   	"readme": "README.md",
-	"url": "https://github.com/psk05020/dnd5e",
-	"manifest": "https://raw.githubusercontent.com/psk05020/dnd5e/master/module.json",
-	"download": "https://github.com/psk05020/dnd5e/archive/refs/heads/master.zip"
+	"url": "https://github.com/psk05020/Sepi_DnD_2024_KR",
+	"manifest": "https://raw.githubusercontent.com/psk05020/Sepi_DnD_2024_KR/master/module.json",
+	"download": "https://github.com/psk05020/Sepi_DnD_2024_KR/archive/refs/heads/master.zip"
 }
