@@ -4358,8 +4358,8 @@
                     "requirements": "피투성이(Bloodied) 상태일 때"
                 }
             }
-        }
-"Bandit": {
+        },
+        "Bandit": {
             "name": "Bandit",
             "description": "<div class=\"gear\"><p><strong>Équipement :</strong> @UUID[Compendium.dnd5e.equipment24.Item.phbwepLightCross]{arbalète légère}, @UUID[Compendium.dnd5e.equipment24.Item.phbarmLeatherArm]{armure de cuir}, @UUID[Compendium.dnd5e.equipment24.Item.phbwepScimitar00]{cimeterre}</p></div><h1>Bandits</h1><p>@Embed[Compendium.dnd5e.content24.JournalEntry.mmAppendixMonste.JournalEntryPage.ORyQoMthsD5YZa49 caption=false cite=false classes=\"no-embed mm\"]</p><h2>Bandit</h2><p>@Embed[Compendium.dnd5e.content24.JournalEntry.mmAppendixMonste.JournalEntryPage.BOqXIilnnBRsQabZ caption=false cite=false classes=\"no-embed mm free-rules-embed\"]</p><p><em>Illustration du token par <a href=\"https://www.forgotten-adventures.net/\" target=\"_blank\" rel=\"noopener\">Forgotten Adventures</a>.</em></p>",
             "items": {
@@ -9460,7 +9460,8 @@
         },
         "Giant Fly": {
             "name": "거대 파리"
-"Giant Frog": {
+        },
+        "Giant Frog": {
             "name": "거대 개구리",
             "description": "<p><em>토큰 일러스트: <a href=\"https://www.forgotten-adventures.net/\" target=\"_blank\" rel=\"noopener\">Forgotten Adventures</a>.</em></p>",
             "items": {
@@ -20177,3 +20178,4 @@
             "languages": "당신이 아는 언어를 이해함"
         }
     }
+}
