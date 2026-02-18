@@ -175,7 +175,7 @@
         "Counted": {
           "one": "승무원 행동 {number}회",
           "other": "승무원 행동 {number}회"
-        }
+       }
       },
       "Day": {
         "Label": "일",
@@ -209,7 +209,8 @@
     "Warning": {
       "NoActions": "사용 가능한 {type}이 없지만, 이를 활성화하려면 적어도 {required}의 비용이 필요합니다.",
       "NotEnoughActions": "활성화하기 위한 {type}이 부족합니다. {required}만큼 필요하지만 현재 {available}만 가능합니다."
-    },
+    }
+},
     "DND5E.ACTIVITY": {
     "Action": {
       "Create": "활동 생성",
